@@ -1,6 +1,6 @@
 # 20220126
 
-## git@github.com: Permission denied (publickey) 
+# git@github.com: Permission denied (publickey) 
 このリポジトリをローカルで作成しpushする際に下記のようなエラー発生
 
 ```
@@ -18,7 +18,7 @@ and the repository exists.
 
 [こちら](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)の記事を参考にpushできるようになる
 
-### 実際に対応した手順
+## 実際に対応した手順
 
 1. `$ cd ~/.ssh` で鍵を入れるフォルダに移動
 2. `$ ssh-keygen -t rsa` で鍵を作成（何か聞かれた場合は全てEnter押せば問題なし）
@@ -36,13 +36,24 @@ and the repository exists.
 6. `ssh -T git@github.com` で、`Hi (account名)! You've successfully authenticated, but GitHub does not provide shell access.` となっていればOK
 
 
-## mac os コマンドメモ
+# mac os コマンドメモ
 
-`$ {A} && {B}`
+## $ {A} && {B}
 
-→ Aを実行して、Bを実行する。
+Aを実行して、Bを実行する。
 
 ※ディレクトリを作成しつつ、そのディレクトリに移動したい場合があった際に、わざわざ2回打たなくて済むようになる
 
 （例）
 `mkdir test && cd test`
+
+## touch {A}
+
+Aという空のファイルを作成する
+
+(例)
+`touch .gitignore`
+
+## ls -a
+
+隠しファイル含め、ファイルを一覧表示する
