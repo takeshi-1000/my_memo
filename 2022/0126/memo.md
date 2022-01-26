@@ -57,3 +57,28 @@ Aという空のファイルを作成する
 ## ls -a
 
 隠しファイル含め、ファイルを一覧表示する
+
+# .gitignore
+git管理下に置きたくないファイルがある場合に、.gitignoreにそのファイルを明示しておくことで、git管理下から外すことができる（APIKeyやMeta情報など）
+
+## 適用方法
+
+※testフォルダに、test.txtというファイルを作成して、このファイルの変更を無視したいとする。画像のような状態
+
+<img width="800" alt="スクリーンショット 2022-01-26 23 50 39" src="https://user-images.githubusercontent.com/16571394/151185796-86bde6cd-4115-46c2-9eec-69fadc0957f7.png">
+
+1. .gitignoreを画像のように編集する
+
+<img width="800" alt="スクリーンショット 2022-01-26 23 55 10" src="https://user-images.githubusercontent.com/16571394/151186809-b58f5761-8b01-439f-9948-fd032f33f0ae.png">
+
+2. 下記コマンドを実行する
+`$ git add .gitignore`
+`$ git commit -m""`
+
+3. `$ git status` すると差分が出てなければ、正しく.gitignoreの適用ができている
+
+
+
+
+
+
