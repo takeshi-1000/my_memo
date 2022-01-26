@@ -1,9 +1,9 @@
 # 20220126
 
 ## メモした内容
-- [git@github.com: Permission denied (publickey) ]()
-- [mac os コマンドメモ]()
-- [.gitignore]()
+- [git@github.com: Permission denied (publickey) ](https://github.com/takeshi-1000/my_memo/blob/feature/2022_0126/2022/0126/memo.md#gitgithubcom-permission-denied-publickey)
+- [mac os コマンドメモ](https://github.com/takeshi-1000/my_memo/blob/feature/2022_0126/2022/0126/memo.md#mac-os-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A1%E3%83%A2)
+- [.gitignore](https://github.com/takeshi-1000/my_memo/blob/feature/2022_0126/2022/0126/memo.md#mac-os-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A1%E3%83%A2)
 
 # git@github.com: Permission denied (publickey) 
 このリポジトリをローカルで作成しpushする際に下記のようなエラー発生
@@ -62,6 +62,19 @@ Aという空のファイルを作成する
 ## ls -a
 
 隠しファイル含め、ファイルを一覧表示する
+
+## rm
+
+ファイルの削除が可能
+
+(例)
+`rm sample.txt`
+
+`-r` オプションでディレクトリごと削除が可能
+
+(例)
+`rm -r sample`
+
 
 # .gitignore
 git管理下に置きたくないファイルがある場合に、.gitignoreにそのファイルを明示しておくことで、git管理下から外すことができる（APIKeyやMeta情報など）
