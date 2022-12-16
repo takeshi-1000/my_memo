@@ -1,0 +1,47 @@
+$ ~/me/takeshi-1000/swift-project/build/Ninja-RelWithDebInfoAssert/swift-macosx-arm64/bin/swiftc main2.swift -c
+expression has no type
+(declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:8:11 function_ref=unapplied)Please submit a bug report (https://swift.org/contributing/#reporting-bugs) and include the crash backtrace.
+Stack dump:
+0.        Program arguments: /Users/takeshikomori/me/takeshi-1000/swift-project/build/Ninja-RelWithDebInfoAssert/swift-macosx-arm64/bin/swift-frontend -frontend -c -primary-file main2.swift -target arm64-apple-macosx12.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -color-diagnostics -new-driver-path /Users/takeshikomori/me/takeshi-1000/swift-project/build/Ninja-RelWithDebInfoAssert/swift-macosx-arm64/bin/swift-driver -empty-abi-descriptor -resource-dir /Users/takeshikomori/me/takeshi-1000/swift-project/build/Ninja-RelWithDebInfoAssert/swift-macosx-arm64/lib/swift -module-name main2 -o main2.o
+1.        Swift version 5.8-dev (LLVM 3e962dd4df3a4b4, Swift 0b05a1ed2d652e1)
+2.        Compiling with the current language version
+3.        While walking into body of 'test(hoge:)' (at main2.swift:8:1)
+4.        While walking into initializer for declaration 0x1389adc68 (at main2.swift:10:5)
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  swift-frontend           0x0000000106cc216c llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 56
+1  swift-frontend           0x0000000106cc1360 llvm::sys::RunSignalHandlers() + 112
+2  swift-frontend           0x0000000106cc27ac SignalHandler(int) + 304
+3  libsystem_platform.dylib 0x00000001944534a4 _sigtramp + 56
+4  libsystem_pthread.dylib  0x000000019443bee0 pthread_kill + 288
+5  libsystem_c.dylib        0x0000000194376340 abort + 168
+6  swift-frontend           0x0000000107274bb8 (anonymous namespace)::Verifier::walkToExprPost(swift::Expr*) (.cold.17) + 0
+7  swift-frontend           0x0000000103332164 (anonymous namespace)::Verifier::walkToExprPost(swift::Expr*) + 27364
+8  swift-frontend           0x000000010333b89c (anonymous namespace)::Traversal::doIt(swift::Expr*) + 160
+9  swift-frontend           0x000000010333d234 swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Stmt*) + 908
+10 swift-frontend           0x000000010333b9a4 (anonymous namespace)::Traversal::doIt(swift::Stmt*) + 124
+11 swift-frontend           0x000000010333cff4 swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Stmt*) + 332
+12 swift-frontend           0x000000010333b9a4 (anonymous namespace)::Traversal::doIt(swift::Stmt*) + 124
+13 swift-frontend           0x000000010333c8bc swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Expr*) + 1880
+14 swift-frontend           0x000000010333b878 (anonymous namespace)::Traversal::doIt(swift::Expr*) + 124
+15 swift-frontend           0x000000010333c21c swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Expr*) + 184
+16 swift-frontend           0x000000010333b878 (anonymous namespace)::Traversal::doIt(swift::Expr*) + 124
+17 swift-frontend           0x000000010333e838 swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Decl*) + 2760
+18 swift-frontend           0x000000010333bf34 (anonymous namespace)::Traversal::doIt(swift::Decl*) + 260
+19 swift-frontend           0x000000010333cf58 swift::ASTVisitor<(anonymous namespace)::Traversal, swift::Expr*, swift::Stmt*, bool, swift::Pattern*, bool, void>::visit(swift::Stmt*) + 176
+20 swift-frontend           0x000000010333b9a4 (anonymous namespace)::Traversal::doIt(swift::Stmt*) + 124
+21 swift-frontend           0x000000010333f488 (anonymous namespace)::Traversal::visitAbstractFunctionDecl(swift::AbstractFunctionDecl*) + 628
+22 swift-frontend           0x000000010333bf34 (anonymous namespace)::Traversal::doIt(swift::Decl*) + 260
+23 swift-frontend           0x000000010333be24 swift::Decl::walk(swift::ASTWalker&) + 32
+24 swift-frontend           0x00000001034de9e4 swift::SourceFile::walk(swift::ASTWalker&) + 220
+25 swift-frontend           0x000000010332a41c swift::verify(swift::SourceFile&) + 80
+26 swift-frontend           0x00000001035e393c swift::TypeCheckSourceFileRequest::cacheResult(std::__1::tuple<>) const + 76
+27 swift-frontend           0x0000000103146900 llvm::Expected<swift::TypeCheckSourceFileRequest::OutputType> swift::Evaluator::getResultCached<swift::TypeCheckSourceFileRequest, (void*)0>(swift::TypeCheckSourceFileRequest const&) + 104
+28 swift-frontend           0x00000001031449a8 swift::TypeCheckSourceFileRequest::OutputType swift::evaluateOrDefault<swift::TypeCheckSourceFileRequest>(swift::Evaluator&, swift::TypeCheckSourceFileRequest, swift::TypeCheckSourceFileRequest::OutputType) + 28
+29 swift-frontend           0x000000010228e3ec bool llvm::function_ref<bool (swift::SourceFile&)>::callback_fn<swift::CompilerInstance::performSema()::$_7>(long, swift::SourceFile&) + 16
+30 swift-frontend           0x000000010228775c swift::CompilerInstance::forEachFileToTypeCheck(llvm::function_ref<bool (swift::SourceFile&)>) + 76
+31 swift-frontend           0x00000001022876f0 swift::CompilerInstance::performSema() + 76
+32 swift-frontend           0x00000001020de95c withSemanticAnalysis(swift::CompilerInstance&, swift::FrontendObserver*, llvm::function_ref<bool (swift::CompilerInstance&)>, bool) + 60
+33 swift-frontend           0x00000001020d1a80 swift::performFrontend(llvm::ArrayRef<char const*>, char const*, void*, swift::FrontendObserver*) + 2876
+34 swift-frontend           0x00000001020a0b48 swift::mainEntry(int, char const**) + 3440
+35 dyld                     0x00000001192a108c start + 520
+zsh: abort       main2.swift -c
