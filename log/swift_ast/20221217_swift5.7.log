@@ -1,0 +1,134 @@
+$ swiftc -version
+swift-driver version: 1.62.8 Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+Target: arm64-apple-macosx12.0
+
+$ swiftc -dump-ast main2.swift
+main2.swift:10:23: error: type of expression is ambiguous without more context
+    let str: String = {
+                      ^
+(source_file "main2.swift"
+  (enum_decl range=[main2.swift:3:1 - line:6:1] "Hoge" interface type='Hoge.Type' access=internal non-resilient
+    (enum_case_decl range=[main2.swift:4:5 - line:4:10]
+      (enum_element_decl range=[main2.swift:4:10 - line:4:10] "test" interface type='(Hoge.Type) -> Hoge' access=internal))
+    (enum_element_decl range=[main2.swift:4:10 - line:4:10] "test" interface type='(Hoge.Type) -> Hoge' access=internal)
+    (enum_case_decl range=[main2.swift:5:5 - line:5:66]
+      (enum_element_decl range=[main2.swift:5:10 - line:5:66] "test2(_:isError:)" interface type='(Hoge.Type) -> ((message: String, message2: String), Bool) -> Hoge' access=internal
+        (parameter_list range=[main2.swift:5:15 - line:5:66]
+          (parameter 'anonname=0x1490e1d58' type='(message: String, message2: String)' interface type='(message: String, message2: String)')
+          (parameter "isError" apiName=isError type='Bool' interface type='Bool'))))
+    (enum_element_decl range=[main2.swift:5:10 - line:5:66] "test2(_:isError:)" interface type='(Hoge.Type) -> ((message: String, message2: String), Bool) -> Hoge' access=internal
+      (parameter_list range=[main2.swift:5:15 - line:5:66]
+        (parameter 'anonname=0x1490e1d58' type='(message: String, message2: String)' interface type='(message: String, message2: String)')
+        (parameter "isError" apiName=isError type='Bool' interface type='Bool'))))
+  (func_decl range=[main2.swift:8:1 - line:20:1] "test(hoge:)" interface type='(Hoge) -> String' access=internal
+    (parameter_list range=[main2.swift:8:10 - line:8:21]
+      (parameter "hoge" apiName=hoge type='Hoge' interface type='Hoge'))
+    (result
+      (type_ident
+        (component id='String' bind=Swift.(file).String)))
+    (brace_stmt range=[main2.swift:8:33 - line:20:1]
+      (pattern_binding_decl range=[main2.swift:10:5 - line:17:7]
+        (pattern_typed type='String'
+          (pattern_named type='String' 'str')
+          (type_ident
+            (component id='String' bind=Swift.(file).String)))
+        Original init:
+        (call_expr type='<<error type>>' location=main2.swift:10:23 range=[main2.swift:10:23 - line:17:7]
+          (closure_expr type='<null>' discriminator=0 captures=(hoge<direct>)
+            (parameter_list range=[main2.swift:10:23 - line:10:23])
+            (brace_stmt range=[main2.swift:10:23 - line:17:5]
+              (switch_stmt range=[main2.swift:11:9 - line:16:9]
+                (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:8:11 function_ref=unapplied)
+                (case_stmt range=[main2.swift:12:9 - line:13:20]
+                  (case_body_variables
+                  )
+                  (case_label_item
+                  (pattern_enum_element <null>.test))
+                  (brace_stmt implicit range=[main2.swift:13:13 - line:13:20]
+                    (return_stmt range=[main2.swift:13:13 - line:13:20]
+                      (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+                (case_stmt range=[main2.swift:14:9 - line:15:20]
+                  (case_body_variables
+                    (var_decl implicit range=[main2.swift:14:26 - line:14:26] "message" type='<null type>' let)
+                    (var_decl implicit range=[main2.swift:14:39 - line:14:39] "message2" type='<null type>' let)
+                    (var_decl implicit range=[main2.swift:14:54 - line:14:54] "isError" type='<null type>' let)
+                  )
+                  (case_label_item
+                  (pattern_enum_element <null>.test2
+                    (pattern_tuple names='',''
+                      (pattern_tuple names='',''
+                        (pattern_let
+                          (pattern_named 'message'))
+                        (pattern_let
+                          (pattern_named 'message2')))
+                      (pattern_let
+                        (pattern_named 'isError')))))
+                  (brace_stmt implicit range=[main2.swift:15:13 - line:15:20]
+                    (return_stmt range=[main2.swift:15:13 - line:15:20]
+                      (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+          (argument_list))
+        Processed init:
+        (call_expr type='<<error type>>' location=main2.swift:10:23 range=[main2.swift:10:23 - line:17:7]
+          (closure_expr type='<null>' discriminator=0 captures=(hoge<direct>)
+            (parameter_list range=[main2.swift:10:23 - line:10:23])
+            (brace_stmt range=[main2.swift:10:23 - line:17:5]
+              (switch_stmt range=[main2.swift:11:9 - line:16:9]
+                (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:8:11 function_ref=unapplied)
+                (case_stmt range=[main2.swift:12:9 - line:13:20]
+                  (case_body_variables
+                  )
+                  (case_label_item
+                  (pattern_enum_element <null>.test))
+                  (brace_stmt implicit range=[main2.swift:13:13 - line:13:20]
+                    (return_stmt range=[main2.swift:13:13 - line:13:20]
+                      (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+                (case_stmt range=[main2.swift:14:9 - line:15:20]
+                  (case_body_variables
+                    (var_decl implicit range=[main2.swift:14:26 - line:14:26] "message" type='<null type>' let)
+                    (var_decl implicit range=[main2.swift:14:39 - line:14:39] "message2" type='<null type>' let)
+                    (var_decl implicit range=[main2.swift:14:54 - line:14:54] "isError" type='<null type>' let)
+                  )
+                  (case_label_item
+                  (pattern_enum_element <null>.test2
+                    (pattern_tuple names='',''
+                      (pattern_tuple names='',''
+                        (pattern_let
+                          (pattern_named 'message'))
+                        (pattern_let
+                          (pattern_named 'message2')))
+                      (pattern_let
+                        (pattern_named 'isError')))))
+                  (brace_stmt implicit range=[main2.swift:15:13 - line:15:20]
+                    (return_stmt range=[main2.swift:15:13 - line:15:20]
+                      (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+          (argument_list)))
+
+      (var_decl range=[main2.swift:10:9 - line:10:9] "str" type='String' interface type='String' access=private let readImpl=stored immutable)
+
+      (return_stmt range=[main2.swift:19:5 - line:19:12]
+        (declref_expr type='String' location=main2.swift:19:12 range=[main2.swift:19:12 - line:19:12] decl=main2.(file).test(hoge:).str@main2.swift:10:9 function_ref=unapplied))))
+  (top_level_code_decl range=[main2.swift:22:1 - line:22:24]
+    (brace_stmt implicit range=[main2.swift:22:1 - line:22:24]
+      (call_expr type='()' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:24] nothrow
+        (declref_expr type='(Any..., String, String) -> ()' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:1] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+        (argument_list labels=_:separator:terminator:
+          (argument
+            (vararg_expansion_expr implicit type='Any...' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+              (array_expr implicit type='Any...' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23] initializer=**NULL**
+                (erasure_expr implicit type='Any' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+                  (call_expr type='String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23] nothrow
+                    (declref_expr type='(Hoge) -> String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:7] decl=main2.(file).test(hoge:)@main2.swift:8:6 function_ref=single)
+                    (argument_list labels=hoge:
+                      (argument label=hoge
+                        (dot_syntax_call_expr type='Hoge' location=main2.swift:22:19 range=[main2.swift:22:18 - line:22:19] nothrow
+                          (declref_expr type='(Hoge.Type) -> Hoge' location=main2.swift:22:19 range=[main2.swift:22:19 - line:22:19] decl=main2.(file).Hoge.test@main2.swift:4:10 function_ref=unapplied)
+                          (argument_list implicit
+                            (argument
+                              (type_expr implicit type='Hoge.Type' location=main2.swift:22:18 range=[main2.swift:22:18 - line:22:18] typerepr='Hoge'))
+                          )))
+                    ))))))
+          (argument label=separator
+            (default_argument_expr implicit type='String' location=main2.swift:22:6 range=[main2.swift:22:6 - line:22:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+          (argument label=terminator
+            (default_argument_expr implicit type='String' location=main2.swift:22:6 range=[main2.swift:22:6 - line:22:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2))
+        )))))
