@@ -1,0 +1,192 @@
+[takeshikomori@MacBook-Pro-2:~/me/takeshi-1000/testSwiftProgram]
+$ swiftc test3.swift -dump-ast
+test3.swift:5:26: error: cannot infer return type for closure with multiple statements; add explicit type to disambiguate
+let results = scores.map {
+                         ^
+(source_file "test3.swift"
+  (import_decl range=[test3.swift:1:1 - line:1:8] 'Foundation')
+  (top_level_code_decl range=[test3.swift:3:1 - line:3:26]
+    (brace_stmt implicit range=[test3.swift:3:1 - line:3:26]
+      (pattern_binding_decl range=[test3.swift:3:1 - line:3:26]
+        (pattern_named type='[Int]' 'scores')
+        Original init:
+        (array_expr type='[Int]' location=test3.swift:3:14 range=[test3.swift:3:14 - line:3:26] initializer=Swift.(file).Array extension.init(arrayLiteral:) [with (substitution_map generic_signature=<Element> (substitution Element -> Int))]
+          (integer_literal_expr type='Int' location=test3.swift:3:15 range=[test3.swift:3:15 - line:3:15] value=100 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:20 range=[test3.swift:3:20 - line:3:20] value=80 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:24 range=[test3.swift:3:24 - line:3:24] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+        Processed init:
+        (array_expr type='[Int]' location=test3.swift:3:14 range=[test3.swift:3:14 - line:3:26] initializer=Swift.(file).Array extension.init(arrayLiteral:) [with (substitution_map generic_signature=<Element> (substitution Element -> Int))]
+          (integer_literal_expr type='Int' location=test3.swift:3:15 range=[test3.swift:3:15 - line:3:15] value=100 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:20 range=[test3.swift:3:20 - line:3:20] value=80 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:24 range=[test3.swift:3:24 - line:3:24] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)))
+))
+  (var_decl range=[test3.swift:3:5 - line:3:5] "scores" type='[Int]' interface type='[Int]' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[test3.swift:5:1 - line:11:1]
+    (brace_stmt implicit range=[test3.swift:5:1 - line:11:1]
+      (pattern_binding_decl range=[test3.swift:5:1 - line:11:1]
+        (pattern_named type='<<error type>>' 'results')
+        Original init:
+        (call_expr type='<<error type>>' location=test3.swift:5:22 range=[test3.swift:5:15 - line:11:1]
+          (unresolved_dot_expr type='<null>' field 'map' function_ref=single
+            (declref_expr type='<null>' decl=test3.(file).scores@test3.swift:3:5 function_ref=unapplied))
+          (argument_list
+            (argument
+              (closure_expr type='<null>' discriminator=0
+                (parameter_list range=[test3.swift:5:26 - line:5:26]
+                  (parameter "$0"))
+                (brace_stmt range=[test3.swift:5:26 - line:11:1]
+                  (if_stmt range=[test3.swift:6:5 - line:10:5]
+                    (sequence_expr type='<null>'
+                      (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied)
+                      (unresolved_decl_ref_expr type='<null>' name=>= function_ref=unapplied)
+                      (integer_literal_expr type='<null>' value=85 builtin_initializer=**NULL** initializer=**NULL**))
+                    (brace_stmt range=[test3.swift:6:17 - line:8:5]
+                      (return_stmt range=[test3.swift:7:9 - line:7:16]
+                        (interpolated_string_literal_expr type='<null>' literal_capacity=7 interpolation_count=1 builder_init=**NULL** result_init=**NULL**
+                          (tap_expr implicit type='<null>' var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                            (**NULL EXPRESSION**)
+                            (brace_stmt implicit range=[test3.swift:7:16 - line:7:16]
+                              (var_decl implicit "$interpolation" type='<null type>')
+
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="" builtin_initializer=**NULL** initializer=**NULL**))
+                                ))
+                              (call_expr type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendInterpolation' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list
+                                  (argument
+                                    (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                ))
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="%: Pass" builtin_initializer=**NULL** initializer=**NULL**))
+                                )))))))
+                    (brace_stmt range=[test3.swift:8:12 - line:10:5]
+                      (return_stmt range=[test3.swift:9:9 - line:9:16]
+                        (interpolated_string_literal_expr type='<null>' literal_capacity=7 interpolation_count=1 builder_init=**NULL** result_init=**NULL**
+                          (tap_expr implicit type='<null>' var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                            (**NULL EXPRESSION**)
+                            (brace_stmt implicit range=[test3.swift:9:16 - line:9:16]
+                              (var_decl implicit "$interpolation" type='<null type>')
+
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="" builtin_initializer=**NULL** initializer=**NULL**))
+                                ))
+                              (call_expr type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendInterpolation' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list
+                                  (argument
+                                    (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                ))
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="%: Fail" builtin_initializer=**NULL** initializer=**NULL**))
+                                )))))))))))
+          ))
+        Processed init:
+        (call_expr type='<<error type>>' location=test3.swift:5:22 range=[test3.swift:5:15 - line:11:1]
+          (unresolved_dot_expr type='<null>' field 'map' function_ref=single
+            (declref_expr type='<null>' decl=test3.(file).scores@test3.swift:3:5 function_ref=unapplied))
+          (argument_list
+            (argument
+              (closure_expr type='<null>' discriminator=0
+                (parameter_list range=[test3.swift:5:26 - line:5:26]
+                  (parameter "$0"))
+                (brace_stmt range=[test3.swift:5:26 - line:11:1]
+                  (if_stmt range=[test3.swift:6:5 - line:10:5]
+                    (sequence_expr type='<null>'
+                      (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied)
+                      (unresolved_decl_ref_expr type='<null>' name=>= function_ref=unapplied)
+                      (integer_literal_expr type='<null>' value=85 builtin_initializer=**NULL** initializer=**NULL**))
+                    (brace_stmt range=[test3.swift:6:17 - line:8:5]
+                      (return_stmt range=[test3.swift:7:9 - line:7:16]
+                        (interpolated_string_literal_expr type='<null>' literal_capacity=7 interpolation_count=1 builder_init=**NULL** result_init=**NULL**
+                          (tap_expr implicit type='<null>' var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                            (**NULL EXPRESSION**)
+                            (brace_stmt implicit range=[test3.swift:7:16 - line:7:16]
+                              (var_decl implicit "$interpolation" type='<null type>')
+
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="" builtin_initializer=**NULL** initializer=**NULL**))
+                                ))
+                              (call_expr type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendInterpolation' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list
+                                  (argument
+                                    (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                ))
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="%: Pass" builtin_initializer=**NULL** initializer=**NULL**))
+                                )))))))
+                    (brace_stmt range=[test3.swift:8:12 - line:10:5]
+                      (return_stmt range=[test3.swift:9:9 - line:9:16]
+                        (interpolated_string_literal_expr type='<null>' literal_capacity=7 interpolation_count=1 builder_init=**NULL** result_init=**NULL**
+                          (tap_expr implicit type='<null>' var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                            (**NULL EXPRESSION**)
+                            (brace_stmt implicit range=[test3.swift:9:16 - line:9:16]
+                              (var_decl implicit "$interpolation" type='<null type>')
+
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="" builtin_initializer=**NULL** initializer=**NULL**))
+                                ))
+                              (call_expr type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendInterpolation' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list
+                                  (argument
+                                    (declref_expr type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                ))
+                              (call_expr implicit type='<null>'
+                                (unresolved_dot_expr implicit type='<null>' field 'appendLiteral(_:)' function_ref=unapplied
+                                  (declref_expr implicit type='<null>' decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied))
+                                (argument_list implicit
+                                  (argument
+                                    (string_literal_expr type='<null>' encoding=utf8 value="%: Fail" builtin_initializer=**NULL** initializer=**NULL**))
+                                )))))))))))
+          )))
+))
+  (var_decl range=[test3.swift:5:5 - line:5:5] "results" type='<<error type>>' interface type='<<error type>>' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[test3.swift:13:1 - line:13:13]
+    (brace_stmt implicit range=[test3.swift:13:1 - line:13:13]
+      (call_expr type='()' location=test3.swift:13:1 range=[test3.swift:13:1 - line:13:13] nothrow
+        (declref_expr type='(Any..., String, String) -> ()' location=test3.swift:13:1 range=[test3.swift:13:1 - line:13:1] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+        (argument_list labels=_:separator:terminator:
+          (argument
+            (vararg_expansion_expr implicit type='Any...' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7]
+              (array_expr implicit type='Any...' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7] initializer=**NULL**
+                (erasure_expr implicit type='Any' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7]
+                  (string_literal_expr type='String' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7] encoding=utf8 value="hoge" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)))))
+          (argument label=separator
+            (default_argument_expr implicit type='String' location=test3.swift:13:6 range=[test3.swift:13:6 - line:13:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+          (argument label=terminator
+            (default_argument_expr implicit type='String' location=test3.swift:13:6 range=[test3.swift:13:6 - line:13:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2))
+        )))))
