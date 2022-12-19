@@ -1,0 +1,276 @@
+$ swiftc test3.swift -dump-ast
+(source_file "test3.swift"
+  (import_decl range=[test3.swift:1:1 - line:1:8] 'Foundation')
+  (top_level_code_decl range=[test3.swift:3:1 - line:3:26]
+    (brace_stmt implicit range=[test3.swift:3:1 - line:3:26]
+      (pattern_binding_decl range=[test3.swift:3:1 - line:3:26]
+        (pattern_named type='[Int]' 'scores')
+        Original init:
+        (array_expr type='[Int]' location=test3.swift:3:14 range=[test3.swift:3:14 - line:3:26] initializer=Swift.(file).Array extension.init(arrayLiteral:) [with (substitution_map generic_signature=<Element> (substitution Element -> Int))]
+          (integer_literal_expr type='Int' location=test3.swift:3:15 range=[test3.swift:3:15 - line:3:15] value=100 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:20 range=[test3.swift:3:20 - line:3:20] value=80 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:24 range=[test3.swift:3:24 - line:3:24] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+        Processed init:
+        (array_expr type='[Int]' location=test3.swift:3:14 range=[test3.swift:3:14 - line:3:26] initializer=Swift.(file).Array extension.init(arrayLiteral:) [with (substitution_map generic_signature=<Element> (substitution Element -> Int))]
+          (integer_literal_expr type='Int' location=test3.swift:3:15 range=[test3.swift:3:15 - line:3:15] value=100 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:20 range=[test3.swift:3:20 - line:3:20] value=80 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+          (integer_literal_expr type='Int' location=test3.swift:3:24 range=[test3.swift:3:24 - line:3:24] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)))
+))
+  (var_decl range=[test3.swift:3:5 - line:3:5] "scores" type='[Int]' interface type='[Int]' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[test3.swift:5:1 - line:11:1]
+    (brace_stmt implicit range=[test3.swift:5:1 - line:11:1]
+      (pattern_binding_decl range=[test3.swift:5:1 - line:11:1]
+        (pattern_named type='[String]' 'results')
+        Original init:
+        (call_expr type='[String]' location=test3.swift:5:22 range=[test3.swift:5:15 - line:11:1] nothrow
+          (dot_syntax_call_expr type='((Int) throws -> String) throws -> [String]' location=test3.swift:5:22 range=[test3.swift:5:15 - line:5:22] nothrow
+            (declref_expr type='([Int]) -> ((Int) throws -> String) throws -> [String]' location=test3.swift:5:22 range=[test3.swift:5:22 - line:5:22] decl=Swift.(file).Collection extension.map [with (substitution_map generic_signature=<Self, T where Self : Collection> (substitution Self -> [Int]) (substitution T -> String))] function_ref=single)
+            (argument_list implicit
+              (argument
+                (declref_expr type='[Int]' location=test3.swift:5:15 range=[test3.swift:5:15 - line:5:15] decl=test3.(file).scores@test3.swift:3:5 function_ref=unapplied))
+            ))
+          (argument_list
+            (argument
+              (function_conversion_expr implicit type='(Int) throws -> String' location=test3.swift:5:26 range=[test3.swift:5:26 - line:11:1]
+                (closure_expr type='(Int) -> String' location=test3.swift:5:26 range=[test3.swift:5:26 - line:11:1] discriminator=0
+                  (parameter_list range=[test3.swift:5:26 - line:5:26]
+                    (parameter "$0" type='Int' interface type='Int'))
+                  (brace_stmt range=[test3.swift:5:26 - line:11:1]
+                    (if_stmt range=[test3.swift:6:5 - line:10:5]
+                      (binary_expr type='Bool' location=test3.swift:6:11 range=[test3.swift:6:8 - line:6:14] nothrow
+                        (dot_syntax_call_expr implicit type='(Int, Int) -> Bool' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] nothrow
+                          (declref_expr type='(Int.Type) -> (Int, Int) -> Bool' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] decl=Swift.(file).Int extension.>= function_ref=single)
+                          (argument_list implicit
+                            (argument
+                              (type_expr implicit type='Int.Type' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] typerepr='Int'))
+                          ))
+                        (argument_list implicit
+                          (argument
+                            (declref_expr type='Int' location=test3.swift:6:8 range=[test3.swift:6:8 - line:6:8] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                          (argument
+                            (integer_literal_expr type='Int' location=test3.swift:6:14 range=[test3.swift:6:14 - line:6:14] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+                        ))
+                      (brace_stmt range=[test3.swift:6:17 - line:8:5]
+                        (return_stmt range=[test3.swift:7:9 - line:7:16]
+                          (interpolated_string_literal_expr type='String' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] trailing_quote_loc=test3.swift:7:29 literal_capacity=7 interpolation_count=1 builder_init=Swift.(file).DefaultStringInterpolation.init(literalCapacity:interpolationCount:) result_init=Swift.(file).String extension.init(stringInterpolation:)
+                            (tap_expr implicit type='String.StringInterpolation' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                              (opaque_value_expr implicit type='String.StringInterpolation' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] @ 0x13ec94dc0)
+                              (brace_stmt implicit range=[test3.swift:7:16 - line:7:16]
+                                (var_decl implicit "$interpolation" type='String.StringInterpolation' interface type='String.StringInterpolation' access=private readImpl=stored writeImpl=stored readWriteImpl=stored)
+
+                                (call_expr implicit type='()' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:16] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] encoding=utf8 value="" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))
+                                (call_expr type='()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:21] nothrow
+                                  (dot_syntax_call_expr implicit type='(Int) -> ()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (Int) -> ()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] decl=Swift.(file).DefaultStringInterpolation.appendInterpolation [with (substitution_map generic_signature=<T where T : CustomStringConvertible> (substitution T -> Int))] function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list
+                                    (argument
+                                      (declref_expr type='Int' location=test3.swift:7:19 range=[test3.swift:7:19 - line:7:19] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                  ))
+                                (call_expr implicit type='()' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] encoding=utf8 value="%: Pass" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  )))))))
+                      (brace_stmt range=[test3.swift:8:12 - line:10:5]
+                        (return_stmt range=[test3.swift:9:9 - line:9:16]
+                          (interpolated_string_literal_expr type='String' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] trailing_quote_loc=test3.swift:9:29 literal_capacity=7 interpolation_count=1 builder_init=Swift.(file).DefaultStringInterpolation.init(literalCapacity:interpolationCount:) result_init=Swift.(file).String extension.init(stringInterpolation:)
+                            (tap_expr implicit type='String.StringInterpolation' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                              (opaque_value_expr implicit type='String.StringInterpolation' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] @ 0x13ec94ea8)
+                              (brace_stmt implicit range=[test3.swift:9:16 - line:9:16]
+                                (var_decl implicit "$interpolation" type='String.StringInterpolation' interface type='String.StringInterpolation' access=private readImpl=stored writeImpl=stored readWriteImpl=stored)
+
+                                (call_expr implicit type='()' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:16] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] encoding=utf8 value="" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))
+                                (call_expr type='()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:21] nothrow
+                                  (dot_syntax_call_expr implicit type='(Int) -> ()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (Int) -> ()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] decl=Swift.(file).DefaultStringInterpolation.appendInterpolation [with (substitution_map generic_signature=<T where T : CustomStringConvertible> (substitution T -> Int))] function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list
+                                    (argument
+                                      (declref_expr type='Int' location=test3.swift:9:19 range=[test3.swift:9:19 - line:9:19] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                  ))
+                                (call_expr implicit type='()' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] encoding=utf8 value="%: Fail" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))))))))))))
+          ))
+        Processed init:
+        (call_expr type='[String]' location=test3.swift:5:22 range=[test3.swift:5:15 - line:11:1] nothrow
+          (dot_syntax_call_expr type='((Int) throws -> String) throws -> [String]' location=test3.swift:5:22 range=[test3.swift:5:15 - line:5:22] nothrow
+            (declref_expr type='([Int]) -> ((Int) throws -> String) throws -> [String]' location=test3.swift:5:22 range=[test3.swift:5:22 - line:5:22] decl=Swift.(file).Collection extension.map [with (substitution_map generic_signature=<Self, T where Self : Collection> (substitution Self -> [Int]) (substitution T -> String))] function_ref=single)
+            (argument_list implicit
+              (argument
+                (declref_expr type='[Int]' location=test3.swift:5:15 range=[test3.swift:5:15 - line:5:15] decl=test3.(file).scores@test3.swift:3:5 function_ref=unapplied))
+            ))
+          (argument_list
+            (argument
+              (function_conversion_expr implicit type='(Int) throws -> String' location=test3.swift:5:26 range=[test3.swift:5:26 - line:11:1]
+                (closure_expr type='(Int) -> String' location=test3.swift:5:26 range=[test3.swift:5:26 - line:11:1] discriminator=0
+                  (parameter_list range=[test3.swift:5:26 - line:5:26]
+                    (parameter "$0" type='Int' interface type='Int'))
+                  (brace_stmt range=[test3.swift:5:26 - line:11:1]
+                    (if_stmt range=[test3.swift:6:5 - line:10:5]
+                      (binary_expr type='Bool' location=test3.swift:6:11 range=[test3.swift:6:8 - line:6:14] nothrow
+                        (dot_syntax_call_expr implicit type='(Int, Int) -> Bool' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] nothrow
+                          (declref_expr type='(Int.Type) -> (Int, Int) -> Bool' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] decl=Swift.(file).Int extension.>= function_ref=single)
+                          (argument_list implicit
+                            (argument
+                              (type_expr implicit type='Int.Type' location=test3.swift:6:11 range=[test3.swift:6:11 - line:6:11] typerepr='Int'))
+                          ))
+                        (argument_list implicit
+                          (argument
+                            (declref_expr type='Int' location=test3.swift:6:8 range=[test3.swift:6:8 - line:6:8] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                          (argument
+                            (integer_literal_expr type='Int' location=test3.swift:6:14 range=[test3.swift:6:14 - line:6:14] value=85 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+                        ))
+                      (brace_stmt range=[test3.swift:6:17 - line:8:5]
+                        (return_stmt range=[test3.swift:7:9 - line:7:16]
+                          (interpolated_string_literal_expr type='String' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] trailing_quote_loc=test3.swift:7:29 literal_capacity=7 interpolation_count=1 builder_init=Swift.(file).DefaultStringInterpolation.init(literalCapacity:interpolationCount:) result_init=Swift.(file).String extension.init(stringInterpolation:)
+                            (tap_expr implicit type='String.StringInterpolation' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                              (opaque_value_expr implicit type='String.StringInterpolation' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] @ 0x13ec94dc0)
+                              (brace_stmt implicit range=[test3.swift:7:16 - line:7:16]
+                                (var_decl implicit "$interpolation" type='String.StringInterpolation' interface type='String.StringInterpolation' access=private readImpl=stored writeImpl=stored readWriteImpl=stored)
+
+                                (call_expr implicit type='()' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:16] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:17 range=[test3.swift:7:17 - line:7:17] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:7:16 range=[test3.swift:7:16 - line:7:16] encoding=utf8 value="" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))
+                                (call_expr type='()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:21] nothrow
+                                  (dot_syntax_call_expr implicit type='(Int) -> ()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (Int) -> ()' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] decl=Swift.(file).DefaultStringInterpolation.appendInterpolation [with (substitution_map generic_signature=<T where T : CustomStringConvertible> (substitution T -> Int))] function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:18 range=[test3.swift:7:18 - line:7:18] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list
+                                    (argument
+                                      (declref_expr type='Int' location=test3.swift:7:19 range=[test3.swift:7:19 - line:7:19] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                  ))
+                                (call_expr implicit type='()' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:7:22 range=[test3.swift:7:22 - line:7:22] encoding=utf8 value="%: Pass" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  )))))))
+                      (brace_stmt range=[test3.swift:8:12 - line:10:5]
+                        (return_stmt range=[test3.swift:9:9 - line:9:16]
+                          (interpolated_string_literal_expr type='String' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] trailing_quote_loc=test3.swift:9:29 literal_capacity=7 interpolation_count=1 builder_init=Swift.(file).DefaultStringInterpolation.init(literalCapacity:interpolationCount:) result_init=Swift.(file).String extension.init(stringInterpolation:)
+                            (tap_expr implicit type='String.StringInterpolation' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] var=test3.(file).top-level code.explicit closure discriminator=0.$interpolation
+                              (opaque_value_expr implicit type='String.StringInterpolation' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] @ 0x13ec94ea8)
+                              (brace_stmt implicit range=[test3.swift:9:16 - line:9:16]
+                                (var_decl implicit "$interpolation" type='String.StringInterpolation' interface type='String.StringInterpolation' access=private readImpl=stored writeImpl=stored readWriteImpl=stored)
+
+                                (call_expr implicit type='()' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:16] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:17 range=[test3.swift:9:17 - line:9:17] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:9:16 range=[test3.swift:9:16 - line:9:16] encoding=utf8 value="" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))
+                                (call_expr type='()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:21] nothrow
+                                  (dot_syntax_call_expr implicit type='(Int) -> ()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (Int) -> ()' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] decl=Swift.(file).DefaultStringInterpolation.appendInterpolation [with (substitution_map generic_signature=<T where T : CustomStringConvertible> (substitution T -> Int))] function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:18 range=[test3.swift:9:18 - line:9:18] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list
+                                    (argument
+                                      (declref_expr type='Int' location=test3.swift:9:19 range=[test3.swift:9:19 - line:9:19] decl=test3.(file).top-level code.explicit closure discriminator=0.$0@test3.swift:5:26 function_ref=unapplied))
+                                  ))
+                                (call_expr implicit type='()' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] nothrow
+                                  (dot_syntax_call_expr implicit type='(String) -> ()' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] nothrow
+                                    (declref_expr implicit type='(inout DefaultStringInterpolation) -> (String) -> ()' decl=Swift.(file).DefaultStringInterpolation.appendLiteral function_ref=double)
+                                    (argument_list implicit
+                                      (argument inout
+                                        (inout_expr implicit type='inout DefaultStringInterpolation' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22]
+                                          (declref_expr implicit type='@lvalue String.StringInterpolation' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] decl=test3.(file).top-level code.explicit closure discriminator=0.$interpolation function_ref=unapplied)))
+                                    ))
+                                  (argument_list implicit
+                                    (argument
+                                      (string_literal_expr type='String' location=test3.swift:9:22 range=[test3.swift:9:22 - line:9:22] encoding=utf8 value="%: Fail" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))
+                                  ))))))))))))
+          )))
+))
+  (var_decl range=[test3.swift:5:5 - line:5:5] "results" type='[String]' interface type='[String]' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[test3.swift:13:1 - line:13:13]
+    (brace_stmt implicit range=[test3.swift:13:1 - line:13:13]
+      (call_expr type='()' location=test3.swift:13:1 range=[test3.swift:13:1 - line:13:13] nothrow
+        (declref_expr type='(Any..., String, String) -> ()' location=test3.swift:13:1 range=[test3.swift:13:1 - line:13:1] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+        (argument_list labels=_:separator:terminator:
+          (argument
+            (vararg_expansion_expr implicit type='Any...' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7]
+              (array_expr implicit type='Any...' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7] initializer=**NULL**
+                (erasure_expr implicit type='Any' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7]
+                  (string_literal_expr type='String' location=test3.swift:13:7 range=[test3.swift:13:7 - line:13:7] encoding=utf8 value="hoge" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)))))
+          (argument label=separator
+            (default_argument_expr implicit type='String' location=test3.swift:13:6 range=[test3.swift:13:6 - line:13:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+          (argument label=terminator
+            (default_argument_expr implicit type='String' location=test3.swift:13:6 range=[test3.swift:13:6 - line:13:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2))
+        )))))
