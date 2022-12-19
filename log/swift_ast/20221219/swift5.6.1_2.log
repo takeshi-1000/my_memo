@@ -1,0 +1,563 @@
+[takeshikomori@MacBook-Pro-2:~/me/takeshi-1000/testSwiftProgram]
+$ swiftc main2.swift -c -Xfrontend -debug-constraints                
+---Constraint solving at [main2.swift:21:21 - line:21:21]---
+---Initial constraints for the given expression---
+(boolean_literal_expr type='$T0' location=main2.swift:21:21 range=[main2.swift:21:21 - line:21:21] value=true builtin_initializer=**NULL** initializer=**NULL**)
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: Bool at [main2.swift:21:14 - line:21:14]
+Type Variables:
+  $T0 [noescape allowed] bindings={(subtypes of) Bool} @ locator@0x12c120e00 [BooleanLiteral@main2.swift:21:21]
+  $T1 [noescape allowed] bindings={(subtypes of) Bool} @ locator@0x12c120ee0 [BooleanLiteral@main2.swift:21:21 -> contextual type -> pattern match]
+
+Active Constraints:
+
+Inactive Constraints:
+  $T0 literal conforms to ExpressibleByBooleanLiteral [[locator@0x12c120e00 [BooleanLiteral@main2.swift:21:21]]];
+  $T1 conv Bool [[locator@0x12c120f50 [BooleanLiteral@main2.swift:21:21 -> contextual type -> pattern match]]];
+  $T0 conv Bool [[locator@0x12c120eb8 [BooleanLiteral@main2.swift:21:21 -> contextual type]]];
+  ---Constraint graph---
+  $T0:
+    Constraints:
+      $T0 literal conforms to ExpressibleByBooleanLiteral [[locator@0x12c120e00 [BooleanLiteral@main2.swift:21:21]]];
+      $T0 conv Bool [[locator@0x12c120eb8 [BooleanLiteral@main2.swift:21:21 -> contextual type]]];
+
+  $T1:
+    Constraints:
+      $T1 conv Bool [[locator@0x12c120f50 [BooleanLiteral@main2.swift:21:21 -> contextual type -> pattern match]]];
+
+---Connected components---
+  0: $T0
+  1: $T1
+  (solving component #1
+    ($T1 bindings={(subtypes of) Bool})
+    Initial bindings: $T1 := Bool
+    (attempting type variable $T1 := Bool
+      (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+    )
+  finished component #1)
+  (solving component #0
+    ($T0 bindings={(subtypes of) Bool})
+    Initial bindings: $T0 := Bool
+    (attempting type variable $T0 := Bool
+      (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+    )
+  finished component #0)
+    (composed solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+---Solver statistics---
+Total number of scopes explored: 6
+Maximum depth reached while exploring solutions: 3
+Time: 4.152000e+00ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T0 as Bool @ locator@0x12c120e00 [BooleanLiteral@main2.swift:21:21]
+  $T1 as Bool @ locator@0x12c120ee0 [BooleanLiteral@main2.swift:21:21 -> contextual type -> pattern match]
+
+Overload choices:
+
+Constraint restrictions:
+
+Trailing closure matching:
+
+Disjunction choices:
+---Type-checked expression---
+(boolean_literal_expr type='Bool' location=main2.swift:21:21 range=[main2.swift:21:21 - line:21:21] value=true builtin_initializer=Swift.(file).Bool extension.init(_builtinBooleanLiteral:) initializer=**NULL**)
+---Constraint solving at [main2.swift:22:1 - line:22:24]---
+  (overload set choice binding $T1 := (Hoge) -> String)
+(disabled disjunction term $T0 bound to decl Swift.(file).print(_:separator:terminator:to:) : <Target where Target : TextOutputStream> (Any..., separator: String, terminator: String, to: inout Target) -> () [[locator@0x12c123e00 [OverloadedDeclRef@main2.swift:22:1]]];)
+(introducing single enabled disjunction term $T0 bound to decl Swift.(file).print(_:separator:terminator:) : (Any..., String, String) -> () [[locator@0x12c123e00 [OverloadedDeclRef@main2.swift:22:1]]];)
+  (overload set choice binding $T0 := (Any..., String, String) -> ())
+(common result type for $T0 is ())
+(increasing score due to empty-existential conversion)
+---Initial constraints for the given expression---
+(call_expr type='()' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:24]
+  (overloaded_decl_ref_expr type='$T0' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:1] name=print number_of_decls=2 function_ref=single decls=[
+    Swift.(file).print(_:separator:terminator:),
+    Swift.(file).print(_:separator:terminator:to:)])
+  (argument_list
+    (argument
+      (call_expr type='String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+        (declref_expr type='(Hoge) -> String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:7] decl=main2.(file).test(hoge:)@main2.swift:7:6 function_ref=single)
+        (argument_list labels=hoge:
+          (argument label=hoge
+            (unresolved_member_chain_expr implicit type='$T4' location=main2.swift:22:19 range=[main2.swift:22:18 - line:22:19]
+              (unresolved_member_expr type='$T3' location=main2.swift:22:19 range=[main2.swift:22:18 - line:22:19] name='test' function_ref=unapplied)))
+        )))
+  ))
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+Contextual Type: <null>
+Type Variables:
+  $T0 [lvalue allowed] [noescape allowed] as (Any..., String, String) -> () @ locator@0x12c123e00 [OverloadedDeclRef@main2.swift:22:1]
+  $T1 [lvalue allowed] [noescape allowed] as (Hoge) -> String @ locator@0x12c123f98 [DeclRef@main2.swift:22:7]
+  $T2 [noescape allowed] hole delayed #defaultable_bindings=1 bindings={} @ locator@0x12c123fe0 [UnresolvedMember@main2.swift:22:19 -> member reference base]
+  $T3 [lvalue allowed] [noescape allowed] delayed involves_type_vars=[$T4] bindings={} @ locator@0x12c124008 [UnresolvedMember@main2.swift:22:19 -> unresolved member]
+  $T4 [lvalue allowed] [noescape allowed] involves_type_vars=[$T3] bindings={(subtypes of) Hoge} @ locator@0x12c124118 [UnresolvedMemberChainResult@main2.swift:22:19 -> unresolved chain result]
+  $T5 [noescape allowed] as String @ locator@0x12c124268 [Call@main2.swift:22:7 -> function result]
+  $T6 [noescape allowed] as () @ locator@0x12c124468 [Call@main2.swift:22:1 -> function result]
+
+Active Constraints:
+
+Inactive Constraints:
+  $T2.Type[(implicit) .test: value] == $T3 [[locator@0x12c124008 [UnresolvedMember@main2.swift:22:19 -> unresolved member]]];
+  $T3 conv $T4 [[locator@0x12c124118 [UnresolvedMemberChainResult@main2.swift:22:19 -> unresolved chain result]]];
+  $T4 unresolved member chain base $T2 [[locator@0x12c124118 [UnresolvedMemberChainResult@main2.swift:22:19 -> unresolved chain result]]];
+  $T4 arg conv Hoge [[locator@0x12c124350 [Call@main2.swift:22:7 -> apply argument -> comparing call argument #0 to parameter #0]]];
+Resolved overloads:
+  selected overload set choice test: $T1 == (Hoge) -> String
+  selected overload set choice print: $T0 == (Any..., String, String) -> ()
+
+  ($T4 involves_type_vars=[$T3] bindings={(subtypes of) Hoge})
+  Initial bindings: $T4 := Hoge
+  (attempting type variable $T4 := Hoge
+    ($T2 bindings={(supertypes of) Hoge})
+    ($T3 delayed bindings={(subtypes of) Hoge})
+    Initial bindings: $T2 := Hoge
+    (attempting type variable $T2 := Hoge
+      (overload set choice binding $T3 := Hoge)
+      (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0)
+    )
+  )
+---Solver statistics---
+Total number of scopes explored: 3
+Maximum depth reached while exploring solutions: 3
+Time: 1.829000e+00ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+Type variables:
+  $T5 as String @ locator@0x12c124268 [Call@main2.swift:22:7 -> function result]
+  $T2 as Hoge @ locator@0x12c123fe0 [UnresolvedMember@main2.swift:22:19 -> member reference base]
+  $T1 as (Hoge) -> String @ locator@0x12c123f98 [DeclRef@main2.swift:22:7]
+  $T3 as Hoge @ locator@0x12c124008 [UnresolvedMember@main2.swift:22:19 -> unresolved member]
+  $T6 as () @ locator@0x12c124468 [Call@main2.swift:22:1 -> function result]
+  $T4 as Hoge @ locator@0x12c124118 [UnresolvedMemberChainResult@main2.swift:22:19 -> unresolved chain result]
+  $T0 as (Any..., String, String) -> () @ locator@0x12c123e00 [OverloadedDeclRef@main2.swift:22:1]
+
+Overload choices:
+  locator@0x12c124008 [UnresolvedMember@main2.swift:22:19 -> unresolved member] with main2.(file).Hoge.test@main2.swift:3:10 as Hoge.Type.test: Hoge
+
+  locator@0x12c123f98 [DeclRef@main2.swift:22:7] with main2.(file).test(hoge:)@main2.swift:7:6 as test: (Hoge) -> String
+
+  locator@0x12c123e00 [OverloadedDeclRef@main2.swift:22:1] with Swift.(file).print(_:separator:terminator:) as print: (Any..., String, String) -> ()
+
+
+Constraint restrictions:
+  String to Any is [existential]
+
+Trailing closure matching:
+  locator@0x12c124328 [Call@main2.swift:22:7 -> apply argument]: forward
+  locator@0x12c124528 [Call@main2.swift:22:1 -> apply argument]: forward
+
+Disjunction choices:
+---Type-checked expression---
+(call_expr type='()' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:24]
+  (declref_expr type='(Any..., String, String) -> ()' location=main2.swift:22:1 range=[main2.swift:22:1 - line:22:1] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+  (argument_list labels=_:separator:terminator:
+    (argument
+      (vararg_expansion_expr implicit type='Any...' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+        (array_expr implicit type='Any...' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23] initializer=**NULL**
+          (erasure_expr implicit type='Any' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+            (call_expr type='String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:23]
+              (declref_expr type='(Hoge) -> String' location=main2.swift:22:7 range=[main2.swift:22:7 - line:22:7] decl=main2.(file).test(hoge:)@main2.swift:7:6 function_ref=single)
+              (argument_list labels=hoge:
+                (argument label=hoge
+                  (dot_syntax_call_expr type='Hoge' location=main2.swift:22:19 range=[main2.swift:22:18 - line:22:19]
+                    (declref_expr type='(Hoge.Type) -> Hoge' location=main2.swift:22:19 range=[main2.swift:22:19 - line:22:19] decl=main2.(file).Hoge.test@main2.swift:3:10 function_ref=unapplied)
+                    (argument_list implicit
+                      (argument
+                        (type_expr implicit type='Hoge.Type' location=main2.swift:22:18 range=[main2.swift:22:18 - line:22:18] typerepr='Hoge'))
+                    )))
+              ))))))
+    (argument label=separator
+      (default_argument_expr implicit type='String' location=main2.swift:22:6 range=[main2.swift:22:6 - line:22:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+    (argument label=terminator
+      (default_argument_expr implicit type='String' location=main2.swift:22:6 range=[main2.swift:22:6 - line:22:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2))
+  ))
+---Constraint solving at [main2.swift:23:1 - line:23:14]---
+  (overload set choice binding $T1 := Bool)
+(disabled disjunction term $T0 bound to decl Swift.(file).print(_:separator:terminator:to:) : <Target where Target : TextOutputStream> (Any..., separator: String, terminator: String, to: inout Target) -> () [[locator@0x12c123e00 [OverloadedDeclRef@main2.swift:23:1]]];)
+(introducing single enabled disjunction term $T0 bound to decl Swift.(file).print(_:separator:terminator:) : (Any..., String, String) -> () [[locator@0x12c123e00 [OverloadedDeclRef@main2.swift:23:1]]];)
+  (overload set choice binding $T0 := (Any..., String, String) -> ())
+(common result type for $T0 is ())
+(increasing score due to empty-existential conversion)
+---Initial constraints for the given expression---
+(call_expr type='()' location=main2.swift:23:1 range=[main2.swift:23:1 - line:23:14]
+  (overloaded_decl_ref_expr type='$T0' location=main2.swift:23:1 range=[main2.swift:23:1 - line:23:1] name=print number_of_decls=2 function_ref=single decls=[
+    Swift.(file).print(_:separator:terminator:),
+    Swift.(file).print(_:separator:terminator:to:)])
+  (argument_list
+    (argument
+      (declref_expr type='Bool' location=main2.swift:23:7 range=[main2.swift:23:7 - line:23:7] decl=main2.(file).boolVal@main2.swift:21:5 function_ref=unapplied))
+  ))
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+Contextual Type: <null>
+Type Variables:
+  $T0 [lvalue allowed] [noescape allowed] as (Any..., String, String) -> () @ locator@0x12c123e00 [OverloadedDeclRef@main2.swift:23:1]
+  $T1 [lvalue allowed] [noescape allowed] as Bool @ locator@0x12c123f98 [DeclRef@main2.swift:23:7]
+  $T2 [noescape allowed] as () @ locator@0x12c123ff8 [Call@main2.swift:23:1 -> function result]
+
+Active Constraints:
+
+Inactive Constraints:
+Resolved overloads:
+  selected overload set choice boolVal: $T1 == Bool
+  selected overload set choice print: $T0 == (Any..., String, String) -> ()
+
+  (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0)
+---Solver statistics---
+Total number of scopes explored: 1
+Maximum depth reached while exploring solutions: 1
+Time: 2.390000e-01ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+Type variables:
+  $T2 as () @ locator@0x12c123ff8 [Call@main2.swift:23:1 -> function result]
+  $T1 as Bool @ locator@0x12c123f98 [DeclRef@main2.swift:23:7]
+  $T0 as (Any..., String, String) -> () @ locator@0x12c123e00 [OverloadedDeclRef@main2.swift:23:1]
+
+Overload choices:
+  locator@0x12c123f98 [DeclRef@main2.swift:23:7] with main2.(file).boolVal@main2.swift:21:5 as boolVal: Bool
+
+  locator@0x12c123e00 [OverloadedDeclRef@main2.swift:23:1] with Swift.(file).print(_:separator:terminator:) as print: (Any..., String, String) -> ()
+
+
+Constraint restrictions:
+  Bool to Any is [existential]
+
+Trailing closure matching:
+  locator@0x12c1240b8 [Call@main2.swift:23:1 -> apply argument]: forward
+
+Disjunction choices:
+---Type-checked expression---
+(call_expr type='()' location=main2.swift:23:1 range=[main2.swift:23:1 - line:23:14]
+  (declref_expr type='(Any..., String, String) -> ()' location=main2.swift:23:1 range=[main2.swift:23:1 - line:23:1] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+  (argument_list labels=_:separator:terminator:
+    (argument
+      (vararg_expansion_expr implicit type='Any...' location=main2.swift:23:7 range=[main2.swift:23:7 - line:23:7]
+        (array_expr implicit type='Any...' location=main2.swift:23:7 range=[main2.swift:23:7 - line:23:7] initializer=**NULL**
+          (erasure_expr implicit type='Any' location=main2.swift:23:7 range=[main2.swift:23:7 - line:23:7]
+            (declref_expr type='Bool' location=main2.swift:23:7 range=[main2.swift:23:7 - line:23:7] decl=main2.(file).boolVal@main2.swift:21:5 function_ref=unapplied)))))
+    (argument label=separator
+      (default_argument_expr implicit type='String' location=main2.swift:23:6 range=[main2.swift:23:6 - line:23:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+    (argument label=terminator
+      (default_argument_expr implicit type='String' location=main2.swift:23:6 range=[main2.swift:23:6 - line:23:6] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2))
+  ))
+---Constraint solving at [main2.swift:9:23 - line:16:7]---
+---Initial constraints for the given expression---
+(call_expr type='$T2' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:7]
+  (closure_expr type='$T0' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:5] discriminator=0
+    (parameter_list range=[main2.swift:9:23 - line:9:23])
+    (brace_stmt range=[main2.swift:9:23 - line:16:5]
+      (switch_stmt range=[main2.swift:10:9 - line:15:9]
+        (unresolved_decl_ref_expr type='<null>' name=hoge function_ref=unapplied)
+        (case_stmt range=[main2.swift:11:9 - line:12:20]
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_expr
+            (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+          (brace_stmt implicit range=[main2.swift:12:13 - line:12:20]
+            (return_stmt range=[main2.swift:12:13 - line:12:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+        (case_stmt range=[main2.swift:13:9 - line:14:20]
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:26 - line:13:26] "message" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:39 - line:13:39] "message2" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:54 - line:13:54] "isError" type='<null type>' let)
+          )
+          (case_label_item
+          (pattern_expr
+            (call_expr type='<null>'
+              (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+              (argument_list
+                (argument
+                  (tuple_expr type='<null>' names='',''
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message')))
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message2')))))
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'isError'))))
+              ))))
+          (brace_stmt implicit range=[main2.swift:14:13 - line:14:20]
+            (return_stmt range=[main2.swift:14:13 - line:14:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+  (argument_list))
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: String at [main2.swift:9:14 - line:9:14]
+Type Variables:
+  $T0 [noescape allowed] bindings={} defaults={() -> $T1} @ locator@0x12c121e00 [Closure@main2.swift:9:23]
+  $T1 hole #defaultable_bindings=1 bindings={} @ locator@0x12c121e50 [Closure@main2.swift:9:23 -> closure result]
+  $T2 [noescape allowed] delayed bindings={(subtypes of) String} @ locator@0x12c121f58 [Call@main2.swift:9:23 -> function result]
+  $T3 [noescape allowed] bindings={(subtypes of) String} @ locator@0x12c122090 [Call@main2.swift:9:23 -> contextual type -> pattern match]
+
+Active Constraints:
+
+Inactive Constraints:
+  $T0 closure can default to () -> $T1 [[locator@0x12c121e00 [Closure@main2.swift:9:23]]];
+  () -> $T2 applicable fn $T0 [[locator@0x12c121fd0 [Call@main2.swift:9:23 -> apply function]]];
+  $T3 conv String [[locator@0x12c122100 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+  $T2 conv String [[locator@0x12c122068 [Call@main2.swift:9:23 -> contextual type]]];
+  ---Constraint graph---
+  $T0:
+    Constraints:
+      $T0 closure can default to () -> $T1 [[locator@0x12c121e00 [Closure@main2.swift:9:23]]];
+      () -> $T2 applicable fn $T0 [[locator@0x12c121fd0 [Call@main2.swift:9:23 -> apply function]]];
+
+  $T1:
+    Constraints:
+      $T0 closure can default to () -> $T1 [[locator@0x12c121e00 [Closure@main2.swift:9:23]]];
+
+  $T2:
+    Constraints:
+      () -> $T2 applicable fn $T0 [[locator@0x12c121fd0 [Call@main2.swift:9:23 -> apply function]]];
+      $T2 conv String [[locator@0x12c122068 [Call@main2.swift:9:23 -> contextual type]]];
+
+  $T3:
+    Constraints:
+      $T3 conv String [[locator@0x12c122100 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+
+---Connected components---
+  0: $T0 $T1 $T2
+  1: $T3
+  (solving component #1
+    ($T3 bindings={(subtypes of) String})
+    Initial bindings: $T3 := String
+    (attempting type variable $T3 := String
+      (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+    )
+  finished component #1)
+  (solving component #0
+    ($T0 bindings={} defaults={() -> $T1})
+    ($T2 delayed bindings={(subtypes of) String})
+    Initial bindings: $T0 := () -> $T1
+    (attempting type variable $T0 := () -> $T1
+      ($T1 bindings={(subtypes of) String})
+      Initial bindings: $T1 := String
+      (attempting type variable $T1 := String
+        (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+      )
+    )
+  finished component #0)
+    (composed solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+---Solver statistics---
+Total number of scopes explored: 7
+Maximum depth reached while exploring solutions: 4
+Time: 7.050000e-01ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T3 as String @ locator@0x12c122090 [Call@main2.swift:9:23 -> contextual type -> pattern match]
+  $T1 as String @ locator@0x12c121e50 [Closure@main2.swift:9:23 -> closure result]
+  $T0 as () -> String @ locator@0x12c121e00 [Closure@main2.swift:9:23]
+  $T2 as String @ locator@0x12c121f58 [Call@main2.swift:9:23 -> function result]
+
+Overload choices:
+
+Constraint restrictions:
+
+Trailing closure matching:
+  locator@0x12c122208 [Call@main2.swift:9:23 -> apply argument]: forward
+
+Disjunction choices:
+---Type-checked expression---
+(call_expr type='String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:7]
+  (closure_expr type='() -> String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:5] discriminator=0
+    (parameter_list range=[main2.swift:9:23 - line:9:23])
+    (brace_stmt range=[main2.swift:9:23 - line:16:5]
+      (switch_stmt range=[main2.swift:10:9 - line:15:9]
+        (unresolved_decl_ref_expr type='<null>' name=hoge function_ref=unapplied)
+        (case_stmt range=[main2.swift:11:9 - line:12:20]
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_expr
+            (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+          (brace_stmt implicit range=[main2.swift:12:13 - line:12:20]
+            (return_stmt range=[main2.swift:12:13 - line:12:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+        (case_stmt range=[main2.swift:13:9 - line:14:20]
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:26 - line:13:26] "message" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:39 - line:13:39] "message2" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:54 - line:13:54] "isError" type='<null type>' let)
+          )
+          (case_label_item
+          (pattern_expr
+            (call_expr type='<null>'
+              (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+              (argument_list
+                (argument
+                  (tuple_expr type='<null>' names='',''
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message')))
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message2')))))
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'isError'))))
+              ))))
+          (brace_stmt implicit range=[main2.swift:14:13 - line:14:20]
+            (return_stmt range=[main2.swift:14:13 - line:14:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+  (argument_list))
+---Constraint solving at [main2.swift:10:16 - line:10:16]---
+  (overload set choice binding $T0 := Hoge)
+---Initial constraints for the given expression---
+(declref_expr type='Hoge' location=main2.swift:10:16 range=[main2.swift:10:16 - line:10:16] decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: <null>
+Type Variables:
+  $T0 [lvalue allowed] [noescape allowed] as Hoge @ locator@0x12c125a00 [DeclRef@main2.swift:10:16]
+
+Active Constraints:
+
+Inactive Constraints:
+Resolved overloads:
+  selected overload set choice hoge: $T0 == Hoge
+
+  (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+---Solver statistics---
+Total number of scopes explored: 1
+Maximum depth reached while exploring solutions: 1
+Time: 8.300000e-02ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T0 as Hoge @ locator@0x12c125a00 [DeclRef@main2.swift:10:16]
+
+Overload choices:
+  locator@0x12c125a00 [DeclRef@main2.swift:10:16] with main2.(file).test(hoge:).hoge@main2.swift:7:11 as hoge: Hoge
+
+
+Constraint restrictions:
+
+Trailing closure matching:
+
+Disjunction choices:
+---Type-checked expression---
+(declref_expr type='Hoge' location=main2.swift:10:16 range=[main2.swift:10:16 - line:10:16] decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+---Constraint solving at [main2.swift:12:20 - line:12:20]---
+---Initial constraints for the given expression---
+(string_literal_expr type='$T0' location=main2.swift:12:20 range=[main2.swift:12:20 - line:12:20] encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**)
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: String
+Type Variables:
+  $T0 [noescape allowed] bindings={(subtypes of) String} @ locator@0x12c125a00 [StringLiteral@main2.swift:12:20]
+
+Active Constraints:
+
+Inactive Constraints:
+  $T0 literal conforms to ExpressibleByStringLiteral [[locator@0x12c125a00 [StringLiteral@main2.swift:12:20]]];
+  $T0 conv String [[locator@0x12c125ab8 [StringLiteral@main2.swift:12:20 -> contextual type]]];
+  ($T0 bindings={(subtypes of) String})
+  Initial bindings: $T0 := String
+  (attempting type variable $T0 := String
+    (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+  )
+---Solver statistics---
+Total number of scopes explored: 2
+Maximum depth reached while exploring solutions: 2
+Time: 1.210000e-01ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T0 as String @ locator@0x12c125a00 [StringLiteral@main2.swift:12:20]
+
+Overload choices:
+
+Constraint restrictions:
+
+Trailing closure matching:
+
+Disjunction choices:
+---Type-checked expression---
+(string_literal_expr type='String' location=main2.swift:12:20 range=[main2.swift:12:20 - line:12:20] encoding=utf8 value="test" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)
+---Constraint solving at [main2.swift:14:20 - line:14:20]---
+---Initial constraints for the given expression---
+(string_literal_expr type='$T0' location=main2.swift:14:20 range=[main2.swift:14:20 - line:14:20] encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: String
+Type Variables:
+  $T0 [noescape allowed] bindings={(subtypes of) String} @ locator@0x12c125a00 [StringLiteral@main2.swift:14:20]
+
+Active Constraints:
+
+Inactive Constraints:
+  $T0 literal conforms to ExpressibleByStringLiteral [[locator@0x12c125a00 [StringLiteral@main2.swift:14:20]]];
+  $T0 conv String [[locator@0x12c125ab8 [StringLiteral@main2.swift:14:20 -> contextual type]]];
+  ($T0 bindings={(subtypes of) String})
+  Initial bindings: $T0 := String
+  (attempting type variable $T0 := String
+    (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+  )
+---Solver statistics---
+Total number of scopes explored: 2
+Maximum depth reached while exploring solutions: 2
+Time: 1.130000e-01ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T0 as String @ locator@0x12c125a00 [StringLiteral@main2.swift:14:20]
+
+Overload choices:
+
+Constraint restrictions:
+
+Trailing closure matching:
+
+Disjunction choices:
+---Type-checked expression---
+(string_literal_expr type='String' location=main2.swift:14:20 range=[main2.swift:14:20 - line:14:20] encoding=utf8 value="test2" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)
+---Constraint solving at [main2.swift:18:12 - line:18:12]---
+  (overload set choice binding $T0 := String)
+---Initial constraints for the given expression---
+(declref_expr type='String' location=main2.swift:18:12 range=[main2.swift:18:12 - line:18:12] decl=main2.(file).test(hoge:).str@main2.swift:9:9 function_ref=unapplied)
+Score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Contextual Type: String
+Type Variables:
+  $T0 [lvalue allowed] [noescape allowed] as String @ locator@0x12c121e00 [DeclRef@main2.swift:18:12]
+
+Active Constraints:
+
+Inactive Constraints:
+Resolved overloads:
+  selected overload set choice str: $T0 == String
+
+  (found solution 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+---Solver statistics---
+Total number of scopes explored: 1
+Maximum depth reached while exploring solutions: 1
+Time: 8.500000e-02ms
+---Solution---
+Fixed score: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Type variables:
+  $T0 as String @ locator@0x12c121e00 [DeclRef@main2.swift:18:12]
+
+Overload choices:
+  locator@0x12c121e00 [DeclRef@main2.swift:18:12] with main2.(file).test(hoge:).str@main2.swift:9:9 as str: String
+
+
+Constraint restrictions:
+
+Trailing closure matching:
+
+Disjunction choices:
+---Type-checked expression---
+(declref_expr type='String' location=main2.swift:18:12 range=[main2.swift:18:12 - line:18:12] decl=main2.(file).test(hoge:).str@main2.swift:9:9 function_ref=unapplied)
+main2.swift:13:26: warning: immutable value 'message' was never used; consider replacing with '_' or removing it
+        case .test2((let message, let message2), let isError):
+                     ~~~~^~~~~~~
+                     _
+main2.swift:13:39: warning: immutable value 'message2' was never used; consider replacing with '_' or removing it
+        case .test2((let message, let message2), let isError):
+                                  ~~~~^~~~~~~~
+                                  _
+main2.swift:13:54: warning: immutable value 'isError' was never used; consider replacing with '_' or removing it
+        case .test2((let message, let message2), let isError):
