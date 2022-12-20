@@ -1,0 +1,972 @@
+/*
+
+enum Hoge {
+    case test
+    case test2(message: String, message2: String)
+}
+
+func test(hoge: Hoge) -> String {
+    
+    let str: String = {
+        switch hoge {
+        case .test:
+            return "test"
+        case .test2(let message, let message2):
+            return "test2"
+        }
+    }()
+    
+    return str
+}
+*/
+
+$ ~/me/takeshi-1000/swift-project/build/Ninja-RelWithDebInfoAssert/swift-macosx-arm64/bin/swiftc main2.swift -c -Xfrontend -debug-constraints
+---Constraint solving at [main2.swift:9:23 - line:16:7]---
+---Initial constraints for the given expression---
+(call_expr type='$T2' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:7]
+  (closure_expr type='$T0' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:5] discriminator=0
+    (parameter_list range=[main2.swift:9:23 - line:9:23])
+    (brace_stmt range=[main2.swift:9:23 - line:16:5]
+      (switch_stmt range=[main2.swift:10:9 - line:15:9]
+        (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+        (case_stmt range=[main2.swift:11:9 - line:12:20]
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_expr
+            (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+          (brace_stmt implicit range=[main2.swift:12:13 - line:12:20]
+            (return_stmt range=[main2.swift:12:13 - line:12:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+        (case_stmt range=[main2.swift:13:9 - line:14:20]
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+          )
+          (case_label_item
+          (pattern_expr
+            (call_expr type='<null>'
+              (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+              (argument_list
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'message'))))
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'message2'))))))))
+          (brace_stmt implicit range=[main2.swift:14:13 - line:14:20]
+            (return_stmt range=[main2.swift:14:13 - line:14:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+  (argument_list))
+
+Score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+Contextual Type: String at [main2.swift:9:14 - line:9:14]
+Type Variables:
+  $T0 [with possible bindings: <empty>] [defaults: () -> $T1] @ locator@0x1230ad000 [Closure@main2.swift:9:23]
+  $T1 [with possible bindings: <empty>] @ locator@0x1230ad050 [Closure@main2.swift:9:23 -> closure result]
+  $T2 [attributes: delayed] [with possible bindings: (subtypes of) String] @ locator@0x1230ad158 [Call@main2.swift:9:23 -> function result]
+  $T3 [with possible bindings: (subtypes of) String] @ locator@0x1230ad290 [NamedPattern@main2.swift:9:9 -> named pattern decl]
+Inactive Constraints:
+  $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+  () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+  $T3 conv String [[locator@0x1230ad2f0 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+  $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+
+solveImpl
+    ---Constraint graph---
+    $T0:
+      Constraints:
+        $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+        () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+
+    $T1:
+      Constraints:
+        $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+
+    $T2:
+      Constraints:
+        () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+        $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+
+    $T3:
+      Constraints:
+        $T3 conv String [[locator@0x1230ad2f0 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+
+  ---Connected components---
+    0: $T0 $T1 $T2
+    1: $T3
+  (solving component #1
+    Type variables in scope = [$T3]
+    (Potential Binding(s): 
+      ($T3 [with possible bindings: (subtypes of) String])
+    )
+    (attempting type variable $T3 := String
+      (considering -> $T3 conv String [[locator@0x1230ad2f0 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+        (simplification result:
+          (removed constraint: $T3 conv String [[locator@0x1230ad2f0 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];)
+        )
+        (outcome: simplified)
+      )
+      (Changes:
+        (Newly Bound: 
+          > $T3 := String
+        )
+        (Removed Constraint: 
+          > $T3 conv String [[locator@0x1230ad2f0 [Call@main2.swift:9:23 -> contextual type -> pattern match]]];
+        )
+      )
+      (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+    )
+  finished component #1)
+  (solving component #0
+    Type variables in scope = [$T0, $T1, $T2]
+    (Potential Binding(s): 
+      ($T0 [with possible bindings: <empty>] [defaults: () -> $T1])
+      ($T2 [attributes: delayed] [with possible bindings: (subtypes of) String])
+    )
+    (attempting type variable $T0 := () -> $T1
+          (added constraint: conjunction (isolated) [[locator@0x1230ad000 [Closure@main2.swift:9:23]]]:
+            >             syntactic element 
+          (switch_stmt
+            (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+            (case_stmt
+              (case_body_variables
+              )
+              (case_label_item
+              (pattern_expr
+                (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+            (case_stmt
+              (case_body_variables
+                (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+              )
+              (case_label_item
+              (pattern_expr
+                (call_expr type='<null>'
+                  (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                  (argument_list
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message'))))
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message2'))))))))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))))))
+      (considering -> $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+        (simplification result:
+          (removed constraint: $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];)
+        )
+        (outcome: simplified)
+      )
+      (considering -> () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+        (simplification result:
+          (removed constraint: () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];)
+        )
+        (outcome: simplified)
+      )
+      (considering -> $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+        (simplification result:
+        )
+        (outcome: unsolved)
+      )
+      (considering -> conjunction (isolated) [[locator@0x1230ad000 [Closure@main2.swift:9:23]]]:
+        >             syntactic element 
+      (switch_stmt
+        (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+        (case_stmt
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_expr
+            (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+          (brace_stmt implicit
+            (return_stmt
+              (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+        (case_stmt
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+          )
+          (case_label_item
+          (pattern_expr
+            (call_expr type='<null>'
+              (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+              (argument_list
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'message'))))
+                (argument
+                  (unresolved_pattern_expr type='<null>'
+                    (pattern_let
+                      (pattern_named 'message2'))))))))
+          (brace_stmt implicit
+            (return_stmt
+              (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))
+        (outcome: unsolved)
+      )
+      (Changes:
+        (Newly Bound: 
+          > $T0 := () -> $T1
+        )
+        (New Equivalence: 
+          > $T1
+        )
+        (Added Constraint: 
+          > conjunction (isolated) [[locator@0x1230ad000 [Closure@main2.swift:9:23]]]:
+              >             syntactic element 
+            (switch_stmt
+              (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+              (case_stmt
+                (case_body_variables
+                )
+                (case_label_item
+                (pattern_expr
+                  (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+              (case_stmt
+                (case_body_variables
+                  (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                  (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+                )
+                (case_label_item
+                (pattern_expr
+                  (call_expr type='<null>'
+                    (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                    (argument_list
+                      (argument
+                        (unresolved_pattern_expr type='<null>'
+                          (pattern_let
+                            (pattern_named 'message'))))
+                      (argument
+                        (unresolved_pattern_expr type='<null>'
+                          (pattern_let
+                            (pattern_named 'message2'))))))))
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))
+        )
+        (Removed Constraints: 
+          > $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+          > () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+        )
+      )
+      (Potential Binding(s): 
+        ($T1 [with possible bindings: (subtypes of) String])
+      )
+      (attempting type variable $T1 := String
+        (considering -> $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+          (simplification result:
+            (removed constraint: $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];)
+          )
+          (outcome: simplified)
+        )
+        (considering -> conjunction (isolated) [[locator@0x1230ad000 [Closure@main2.swift:9:23]]]:
+          >             syntactic element 
+        (switch_stmt
+          (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+          (case_stmt
+            (case_body_variables
+            )
+            (case_label_item
+            (pattern_expr
+              (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+            (brace_stmt implicit
+              (return_stmt
+                (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+          (case_stmt
+            (case_body_variables
+              (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+              (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+            )
+            (case_label_item
+            (pattern_expr
+              (call_expr type='<null>'
+                (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                (argument_list
+                  (argument
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message'))))
+                  (argument
+                    (unresolved_pattern_expr type='<null>'
+                      (pattern_let
+                        (pattern_named 'message2'))))))))
+            (brace_stmt implicit
+              (return_stmt
+                (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))
+          (outcome: unsolved)
+        )
+        (Changes:
+          (Newly Bound: 
+            > $T1 := String
+          )
+          (Removed Constraint: 
+            > $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+          )
+        )
+        (attempting conjunction element syntactic element 
+          (switch_stmt
+            (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+            (case_stmt
+              (case_body_variables
+              )
+              (case_label_item
+              (pattern_expr
+                (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+            (case_stmt
+              (case_body_variables
+                (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+              )
+              (case_label_item
+              (pattern_expr
+                (call_expr type='<null>'
+                  (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                  (argument_list
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message'))))
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message2'))))))))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))
+              (added constraint: conjunction [[locator@0x1230ad578 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element]]]:
+                >             syntactic element 
+              (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+                >             syntactic element 
+              (case_stmt
+                (case_body_variables
+                )
+                (case_label_item
+                (pattern_expr
+                  (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+                >             syntactic element 
+              (case_stmt
+                (case_body_variables
+                  (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                  (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+                )
+                (case_label_item
+                (pattern_expr
+                  (call_expr type='<null>'
+                    (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                    (argument_list
+                      (argument
+                        (unresolved_pattern_expr type='<null>'
+                          (pattern_let
+                            (pattern_named 'message'))))
+                      (argument
+                        (unresolved_pattern_expr type='<null>'
+                          (pattern_let
+                            (pattern_named 'message2'))))))))
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))
+          (Changes:
+            (Added Constraint: 
+              > conjunction [[locator@0x1230ad578 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element]]]:
+                  >             syntactic element 
+                (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+                  >             syntactic element 
+                (case_stmt
+                  (case_body_variables
+                  )
+                  (case_label_item
+                  (pattern_expr
+                    (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+                  (brace_stmt implicit
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+                  >             syntactic element 
+                (case_stmt
+                  (case_body_variables
+                    (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                    (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+                  )
+                  (case_label_item
+                  (pattern_expr
+                    (call_expr type='<null>'
+                      (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                      (argument_list
+                        (argument
+                          (unresolved_pattern_expr type='<null>'
+                            (pattern_let
+                              (pattern_named 'message'))))
+                        (argument
+                          (unresolved_pattern_expr type='<null>'
+                            (pattern_let
+                              (pattern_named 'message2'))))))))
+                  (brace_stmt implicit
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))))
+            )
+          )
+          (attempting conjunction element syntactic element 
+            (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+            (overload set choice binding $T4 := Hoge)
+---Initial constraints for the given expression---
+            (declref_expr type='Hoge' location=main2.swift:10:16 range=[main2.swift:10:16 - line:10:16] decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+
+            Score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+            Contextual Type: String at [main2.swift:9:14 - line:9:14]
+            Type Variables:
+              $T4 [allows bindings to: lvalue, noescape] as Hoge @ locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+            Retired Constraints:
+              $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+              () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+              $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+            Resolved overloads:
+  selected overload set choice hoge: $T4 == Hoge for locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+
+            (Changes:
+              (Newly Bound: 
+                > $T4 := Hoge
+              )
+              (New Type Variable: 
+                > $T4
+              )
+            )
+            (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+          )
+          (attempting conjunction element syntactic element 
+            (case_stmt
+              (case_body_variables
+              )
+              (case_label_item
+              (pattern_expr
+                (unresolved_member_expr type='<null>' name='test' function_ref=unapplied)))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+                (added constraint: conjunction [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                  >             syntactic element 
+                (case label item)
+                  >             syntactic element 
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+            (Changes:
+              (New Type Variable: 
+                > $T4
+              )
+              (Added Constraint: 
+                > conjunction [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                    >             syntactic element 
+                  (case label item)
+                    >             syntactic element 
+                  (brace_stmt implicit
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**)))
+              )
+            )
+            (attempting conjunction element syntactic element 
+              (case label item)
+                  (added constraint: Hoge conv $T5 [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];)
+              (Changes:
+                (New Type Variables: 
+                  > $T5
+                  > $T6
+                )
+                (Added Constraints: 
+                  > $T5.Type[(implicit) .test: value] == $T6 [[locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  > Hoge conv $T5 [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                )
+              )
+              (Potential Binding(s): 
+                ($T5 [with possible bindings: (supertypes of) Hoge])
+              )
+              (attempting type variable $T5 := Hoge
+                (considering -> $T5.Type[(implicit) .test: value] == $T6 [[locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  (simplification result:
+                (overload set choice binding $T6 := Hoge)
+                    (removed constraint: $T5.Type[(implicit) .test: value] == $T6 [[locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (considering -> Hoge conv $T5 [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                  (simplification result:
+                    (removed constraint: Hoge conv $T5 [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (Changes:
+                  (Newly Bound: 
+                    > $T5 := Hoge
+                    > $T6 := Hoge
+                  )
+                  (Removed Constraints: 
+                    > $T5.Type[(implicit) .test: value] == $T6 [[locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                    > Hoge conv $T5 [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                  )
+                )
+                (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+              )
+            )
+            (attempting conjunction element syntactic element 
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**)))
+                  (added constraint: conjunction [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                    >             syntactic element 
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**)))
+              (Changes:
+                (New Type Variables: 
+                  > $T6
+                  > $T5
+                )
+                (Added Constraint: 
+                  > conjunction [[locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                      >             syntactic element 
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))
+                )
+              )
+              (attempting conjunction element syntactic element 
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))
+                    (added constraint: $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];)
+---Initial constraints for the given expression---
+                (string_literal_expr type='$T7' location=main2.swift:12:20 range=[main2.swift:12:20 - line:12:20] encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**)
+
+                Score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+                Contextual Type: String at [main2.swift:9:14 - line:9:14]
+                Type Variables:
+                  $T1 as String @ locator@0x1230ad050 [Closure@main2.swift:9:23 -> closure result]
+                  $T4 [allows bindings to: lvalue, noescape] as Hoge @ locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+                  $T5 [allows bindings to: noescape] as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T6 [allows bindings to: lvalue, noescape] as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T7 [with possible bindings: (subtypes of) String] @ locator@0x1230adc40 [StringLiteral@main2.swift:12:20]
+                Inactive Constraints:
+                  $T7 literal conforms to ExpressibleByStringLiteral [[locator@0x1230adc40 [StringLiteral@main2.swift:12:20]]];
+                  $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];
+                Retired Constraints:
+                  $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+                  () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+                  $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+                Resolved overloads:
+  selected overload set choice hoge: $T4 == Hoge for locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+  selected overload set choice Hoge.Type.test: $T6 == Hoge for locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]
+
+                (Changes:
+                  (New Type Variable: 
+                    > $T7
+                  )
+                  (Added Constraints: 
+                    > $T7 literal conforms to ExpressibleByStringLiteral [[locator@0x1230adc40 [StringLiteral@main2.swift:12:20]]];
+                    > $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];
+                  )
+                )
+                (Potential Binding(s): 
+                  ($T7 [with possible bindings: (subtypes of) String])
+                )
+                (attempting type variable $T7 := String
+                  (considering -> $T7 literal conforms to ExpressibleByStringLiteral [[locator@0x1230adc40 [StringLiteral@main2.swift:12:20]]];
+                    (simplification result:
+                      (removed constraint: $T7 literal conforms to ExpressibleByStringLiteral [[locator@0x1230adc40 [StringLiteral@main2.swift:12:20]]];)
+                    )
+                    (outcome: simplified)
+                  )
+                  (considering -> $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];
+                    (simplification result:
+                      (removed constraint: $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];)
+                    )
+                    (outcome: simplified)
+                  )
+                  (Changes:
+                    (Newly Bound: 
+                      > $T7 := String
+                    )
+                    (Removed Constraints: 
+                      > $T7 literal conforms to ExpressibleByStringLiteral [[locator@0x1230adc40 [StringLiteral@main2.swift:12:20]]];
+                      > $T7 conv String [[locator@0x1230adcf8 [StringLiteral@main2.swift:12:20 -> contextual type]]];
+                    )
+                  )
+                  (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+                )
+              )
+            )
+          )
+          (attempting conjunction element syntactic element 
+            (case_stmt
+              (case_body_variables
+                (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+                (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+              )
+              (case_label_item
+              (pattern_expr
+                (call_expr type='<null>'
+                  (unresolved_member_expr type='<null>' name='test2' function_ref=unapplied)
+                  (argument_list
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message'))))
+                    (argument
+                      (unresolved_pattern_expr type='<null>'
+                        (pattern_let
+                          (pattern_named 'message2'))))))))
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))))
+                (added constraint: conjunction [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                  >             syntactic element 
+                (case label item)
+                  >             syntactic element 
+                (brace_stmt implicit
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))))
+            (Changes:
+              (New Type Variables: 
+                > $T4
+                > $T7
+                > $T6
+                > $T5
+              )
+              (Added Constraint: 
+                > conjunction [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                    >             syntactic element 
+                  (case label item)
+                    >             syntactic element 
+                  (brace_stmt implicit
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))
+              )
+            )
+            (attempting conjunction element syntactic element 
+              (case label item)
+                  (added constraint: Hoge conv $T8 [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];)
+              (Changes:
+                (New Type Variables: 
+                  > $T8
+                  > $T9
+                  > $T10
+                  > $T11
+                  > $T12
+                )
+                (Added Constraints: 
+                  > $T8.Type[(implicit) .test2: value] == $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  > ($T10, $T11) -> $T12 equal $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  > $T12 conv $T8 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  > Hoge conv $T8 [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                )
+              )
+              (Potential Binding(s): 
+                ($T8 [involves_type_vars: $T12] [with possible bindings: (supertypes of) Hoge])
+                ($T9 [attributes: delayed] [involves_type_vars: $T10, $T11, $T12] [with possible bindings: (supertypes of) ($T10, $T11) -> $T12])
+              )
+              (attempting type variable $T8 := Hoge
+                (considering -> $T8.Type[(implicit) .test2: value] == $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  (simplification result:
+                (overload set choice binding $T9 := (String, String) -> Hoge)
+                    (removed constraint: $T8.Type[(implicit) .test2: value] == $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (considering -> $T12 conv $T8 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  (simplification result:
+                  )
+                  (outcome: unsolved)
+                )
+                (considering -> Hoge conv $T8 [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                  (simplification result:
+                    (removed constraint: Hoge conv $T8 [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (considering -> ($T10, $T11) -> $T12 equal $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  (simplification result:
+                    (removed constraint: ($T10, $T11) -> $T12 equal $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (considering -> $T12 conv $T8 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                  (simplification result:
+                    (removed constraint: $T12 conv $T8 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];)
+                  )
+                  (outcome: simplified)
+                )
+                (Changes:
+                  (Newly Bound: 
+                    > $T8 := Hoge
+                    > $T9 := (String, String) -> Hoge
+                    > $T10 := String
+                    > $T11 := String
+                    > $T12 := Hoge
+                  )
+                  (Removed Constraints: 
+                    > $T8.Type[(implicit) .test2: value] == $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                    > ($T10, $T11) -> $T12 equal $T9 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                    > $T12 conv $T8 [[locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]]];
+                    > Hoge conv $T8 [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]];
+                  )
+                )
+                (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+              )
+            )
+            (attempting conjunction element syntactic element 
+              (brace_stmt implicit
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))
+                  (added constraint: conjunction [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                    >             syntactic element 
+                  (return_stmt
+                    (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))
+              (Changes:
+                (New Type Variables: 
+                  > $T9
+                  > $T8
+                  > $T12
+                  > $T11
+                  > $T10
+                )
+                (Added Constraint: 
+                  > conjunction [[locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]]]:
+                      >             syntactic element 
+                    (return_stmt
+                      (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))
+                )
+              )
+              (attempting conjunction element syntactic element 
+                (return_stmt
+                  (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**))
+                    (added constraint: $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];)
+---Initial constraints for the given expression---
+                (string_literal_expr type='$T13' location=main2.swift:14:20 range=[main2.swift:14:20 - line:14:20] encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)
+
+                Score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+                Contextual Type: String at [main2.swift:9:14 - line:9:14]
+                Contextual Type: $T1
+                Type Variables:
+                  $T1 as String @ locator@0x1230ad050 [Closure@main2.swift:9:23 -> closure result]
+                  $T4 [allows bindings to: lvalue, noescape] as Hoge @ locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+                  $T5 [allows bindings to: noescape] as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T6 [allows bindings to: lvalue, noescape] as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T7 [allows bindings to: noescape] as String @ locator@0x1230adc40 [StringLiteral@main2.swift:12:20]
+                  $T8 [allows bindings to: noescape] as Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T9 [allows bindings to: lvalue, noescape] as (String, String) -> Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T10 [allows bindings to: noescape, hole] as String @ locator@0x123946870 [NamedPattern@main2.swift:13:25 -> named pattern decl]
+                  $T11 [allows bindings to: noescape, hole] as String @ locator@0x1239468d0 [NamedPattern@main2.swift:13:38 -> named pattern decl]
+                  $T12 [allows bindings to: noescape] as Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+                  $T13 [with possible bindings: (subtypes of) String] @ locator@0x123946ce0 [StringLiteral@main2.swift:14:20]
+                Inactive Constraints:
+                  $T13 literal conforms to ExpressibleByStringLiteral [[locator@0x123946ce0 [StringLiteral@main2.swift:14:20]]];
+                  $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];
+                Retired Constraints:
+                  $T2 conv String [[locator@0x1230ad268 [Call@main2.swift:9:23 -> contextual type]]];
+                  () -> $T2 applicable fn $T0 [[locator@0x1230ad1d0 [Call@main2.swift:9:23 -> apply function]]];
+                  $T0 closure can default to () -> $T1 [[locator@0x1230ad000 [Closure@main2.swift:9:23]]];
+                Resolved overloads:
+  selected overload set choice hoge: $T4 == Hoge for locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+  selected overload set choice Hoge.Type.test: $T6 == Hoge for locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]
+  selected overload set choice Hoge.Type.test2: $T9 == (String, String) -> Hoge for locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match]
+
+                (Changes:
+                  (New Type Variable: 
+                    > $T13
+                  )
+                  (Added Constraints: 
+                    > $T13 literal conforms to ExpressibleByStringLiteral [[locator@0x123946ce0 [StringLiteral@main2.swift:14:20]]];
+                    > $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];
+                  )
+                )
+                (Potential Binding(s): 
+                  ($T13 [with possible bindings: (subtypes of) String])
+                )
+                (attempting type variable $T13 := String
+                  (considering -> $T13 literal conforms to ExpressibleByStringLiteral [[locator@0x123946ce0 [StringLiteral@main2.swift:14:20]]];
+                    (simplification result:
+                      (removed constraint: $T13 literal conforms to ExpressibleByStringLiteral [[locator@0x123946ce0 [StringLiteral@main2.swift:14:20]]];)
+                    )
+                    (outcome: simplified)
+                  )
+                  (considering -> $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];
+                    (simplification result:
+                      (removed constraint: $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];)
+                    )
+                    (outcome: simplified)
+                  )
+                  (Changes:
+                    (Newly Bound: 
+                      > $T13 := String
+                    )
+                    (Removed Constraints: 
+                      > $T13 literal conforms to ExpressibleByStringLiteral [[locator@0x123946ce0 [StringLiteral@main2.swift:14:20]]];
+                      > $T13 conv String [[locator@0x123946d98 [StringLiteral@main2.swift:14:20 -> contextual type]]];
+                    )
+                  )
+                  (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+                )
+              )
+            )
+          )
+        )
+        (applying conjunction result to outer context
+          (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+        )
+      )
+    )
+  finished component #0)
+    (composed solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+
+---Solver statistics---
+Total number of scopes explored: 22
+Maximum depth reached while exploring solutions: 9
+Time: 5.300000e-02ms
+
+---Solution---
+Fixed score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+Type variables:
+  $T0 as () -> String @ locator@0x1230ad000 [Closure@main2.swift:9:23]
+  $T1 as String @ locator@0x1230ad050 [Closure@main2.swift:9:23 -> closure result]
+  $T2 as String @ locator@0x1230ad158 [Call@main2.swift:9:23 -> function result]
+  $T3 as String @ locator@0x1230ad290 [NamedPattern@main2.swift:9:9 -> named pattern decl]
+  $T4 as Hoge @ locator@0x1230ad748 [DeclRef@main2.swift:10:16]
+  $T5 as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+  $T6 as Hoge @ locator@0x1230ad790 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+  $T7 as String @ locator@0x1230adc40 [StringLiteral@main2.swift:12:20]
+  $T8 as Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+  $T9 as (String, String) -> Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+  $T10 as String @ locator@0x123946870 [NamedPattern@main2.swift:13:25 -> named pattern decl]
+  $T11 as String @ locator@0x1239468d0 [NamedPattern@main2.swift:13:38 -> named pattern decl]
+  $T12 as Hoge @ locator@0x1230addb0 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element]
+  $T13 as String @ locator@0x123946ce0 [StringLiteral@main2.swift:14:20]
+
+Overload choices:
+  locator@0x1230adfa8 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match] with main2.(file).Hoge.test2(message:message2:)@main2.swift:4:10 as Hoge.Type.test2: (String, String) -> Hoge
+  locator@0x1230ad748 [DeclRef@main2.swift:10:16] with main2.(file).test(hoge:).hoge@main2.swift:7:11 as hoge: Hoge
+  locator@0x1230ad988 [Closure@main2.swift:9:23 -> syntactic element -> syntactic element -> syntactic element -> pattern match] with main2.(file).Hoge.test@main2.swift:3:10 as Hoge.Type.test: Hoge
+Trailing closure matching:
+  locator@0x1230ad4f0 [Call@main2.swift:9:23 -> apply argument]: forward
+
+---Partially type-checked expression---
+(call_expr type='String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:7]
+  (closure_expr type='() -> String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:5] discriminator=0
+    (parameter_list range=[main2.swift:9:23 - line:9:23])
+    (brace_stmt range=[main2.swift:9:23 - line:16:5]
+      (switch_stmt range=[main2.swift:10:9 - line:15:9]
+        (declref_expr type='<null>' decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+        (case_stmt range=[main2.swift:11:9 - line:12:20]
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_enum_element <null>.test))
+          (brace_stmt implicit range=[main2.swift:12:13 - line:12:20]
+            (return_stmt range=[main2.swift:12:13 - line:12:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test" builtin_initializer=**NULL** initializer=**NULL**))))
+        (case_stmt range=[main2.swift:13:9 - line:14:20]
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='<null type>' let)
+            (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='<null type>' let)
+          )
+          (case_label_item
+          (pattern_enum_element <null>.test2
+            (pattern_tuple names='',''
+              (pattern_let
+                (pattern_named 'message'))
+              (pattern_let
+                (pattern_named 'message2')))))
+          (brace_stmt implicit range=[main2.swift:14:13 - line:14:20]
+            (return_stmt range=[main2.swift:14:13 - line:14:20]
+              (string_literal_expr type='<null>' encoding=utf8 value="test2" builtin_initializer=**NULL** initializer=**NULL**)))))))
+  (argument_list))
+
+---Type-checked expression---
+(declref_expr type='Hoge' location=main2.swift:10:16 range=[main2.swift:10:16 - line:10:16] decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+
+---Type-checked expression---
+(string_literal_expr type='String' location=main2.swift:12:20 range=[main2.swift:12:20 - line:12:20] encoding=utf8 value="test" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)
+
+---Type-checked expression---
+(string_literal_expr type='String' location=main2.swift:14:20 range=[main2.swift:14:20 - line:14:20] encoding=utf8 value="test2" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)
+
+---Fully type-checked target---
+(call_expr type='String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:7]
+  (closure_expr type='() -> String' location=main2.swift:9:23 range=[main2.swift:9:23 - line:16:5] discriminator=0
+    (parameter_list range=[main2.swift:9:23 - line:9:23])
+    (brace_stmt range=[main2.swift:9:23 - line:16:5]
+      (switch_stmt range=[main2.swift:10:9 - line:15:9]
+        (declref_expr type='Hoge' location=main2.swift:10:16 range=[main2.swift:10:16 - line:10:16] decl=main2.(file).test(hoge:).hoge@main2.swift:7:11 function_ref=unapplied)
+        (case_stmt range=[main2.swift:11:9 - line:12:20]
+          (case_body_variables
+          )
+          (case_label_item
+          (pattern_enum_element type='Hoge' Hoge.test))
+          (brace_stmt implicit range=[main2.swift:12:13 - line:12:20]
+            (return_stmt range=[main2.swift:12:13 - line:12:20]
+              (string_literal_expr type='String' location=main2.swift:12:20 range=[main2.swift:12:20 - line:12:20] encoding=utf8 value="test" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**))))
+        (case_stmt range=[main2.swift:13:9 - line:14:20]
+          (case_body_variables
+            (var_decl implicit range=[main2.swift:13:25 - line:13:25] "message" type='String' interface type='String' let readImpl=stored immutable)
+            (var_decl implicit range=[main2.swift:13:38 - line:13:38] "message2" type='String' interface type='String' let readImpl=stored immutable)
+          )
+          (case_label_item
+          (pattern_enum_element type='Hoge' Hoge.test2
+            (pattern_tuple type='(message: String, message2: String)' names='',''
+              (pattern_let type='String'
+                (pattern_named type='String' 'message'))
+              (pattern_let type='String'
+                (pattern_named type='String' 'message2')))))
+          (brace_stmt implicit range=[main2.swift:14:13 - line:14:20]
+            (return_stmt range=[main2.swift:14:13 - line:14:20]
+              (string_literal_expr type='String' location=main2.swift:14:20 range=[main2.swift:14:20 - line:14:20] encoding=utf8 value="test2" builtin_initializer=Swift.(file).String extension.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:) initializer=**NULL**)))))))
+  (argument_list))
+---Constraint solving at [main2.swift:18:12 - line:18:12]---
+  (overload set choice binding $T0 := String)
+---Initial constraints for the given expression---
+(declref_expr type='String' location=main2.swift:18:12 range=[main2.swift:18:12 - line:18:12] decl=main2.(file).test(hoge:).str@main2.swift:9:9 function_ref=unapplied)
+
+Score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+Contextual Type: String
+Type Variables:
+  $T0 [allows bindings to: lvalue, noescape] as String @ locator@0x1230ad000 [DeclRef@main2.swift:18:12]
+Resolved overloads:
+  selected overload set choice str: $T0 == String for locator@0x1230ad000 [DeclRef@main2.swift:18:12]
+
+solveImpl
+  (found solution: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>)
+
+---Solver statistics---
+Total number of scopes explored: 1
+Maximum depth reached while exploring solutions: 1
+Time: 1.470000e-01ms
+
+---Solution---
+Fixed score: <default 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+Type variables:
+  $T0 as String @ locator@0x1230ad000 [DeclRef@main2.swift:18:12]
+
+Overload choices:
+  locator@0x1230ad000 [DeclRef@main2.swift:18:12] with main2.(file).test(hoge:).str@main2.swift:9:9 as str: String
+
+---Type-checked expression---
+(declref_expr type='String' location=main2.swift:18:12 range=[main2.swift:18:12 - line:18:12] decl=main2.(file).test(hoge:).str@main2.swift:9:9 function_ref=unapplied)
+main2.swift:13:25: warning: immutable value 'message' was never used; consider replacing with '_' or removing it
+        case .test2(let message, let message2):
+                    ~~~~^~~~~~~
+                    _
+main2.swift:13:38: warning: immutable value 'message2' was never used; consider replacing with '_' or removing it
+        case .test2(let message, let message2):
+                                 ~~~~^~~~~~~~
