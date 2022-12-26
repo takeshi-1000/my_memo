@@ -1,4 +1,4 @@
-ローカルでビルドしたswiftコンパイラ(swiftc)を使うには、下記を参考にするとよさそう
+ローカルでビルドしたswiftコンパイラ(swiftc)を、任意のXcodeプロジェクトのコンパイラとして使うには、下記を参考にするとよさそう
 
 https://github.com/apple/swift/blob/7123d2614b5f222d03b3762cb110d27a9dd98e24/docs/HowToGuides/FAQ.md#how-do-i-use-a-locally-built-compiler-to-build-x
 
