@@ -30,3 +30,4 @@ https://kateinoigakukun.hatenablog.com/entry/2019/12/13/140059 一時情報あ�
 - 実行時の型システム
 - 動的キャスト
 
+ランタイムライブラリの実装はこの辺? https://github.com/apple/swift/tree/main/stdlib/public/runtime
