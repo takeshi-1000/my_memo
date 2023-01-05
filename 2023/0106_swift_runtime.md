@@ -31,3 +31,9 @@ https://kateinoigakukun.hatenablog.com/entry/2019/12/13/140059 一時情報あ�
 - 動的キャスト
 
 ランタイムライブラリの実装はこの辺? https://github.com/apple/swift/tree/main/stdlib/public/runtime
+
+objective-c runtime https://scrapbox.io/tasuwo-ios/Objective-C_Runtime
+
+> 従って、Objective-C で書かれたコードの実行のためには、[/ コンパイラ] のみでなく、コンパイルされたコードを実行するための専用のランタイムシステムが必要となる。このようなランタイムシステムは、ちょうど Objective-C 言語のための OS のように動作する。このランタイムシステムが Objective-C Runtime となる。
+
+この記述なるほどなという感じ
