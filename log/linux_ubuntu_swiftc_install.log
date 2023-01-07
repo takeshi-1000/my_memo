@@ -1,0 +1,1602 @@
+関係ないところもコピペしてる
+
+binaryanalysis@ubuntu:~$ swift --version
+
+Command 'swift' not found, but can be installed with:
+
+sudo snap install openstackclients     # version xena, or
+sudo apt  install python-swiftclient 
+sudo apt  install python3-swiftclient
+
+See 'snap info openstackclients' for additional versions.
+
+binaryanalysis@ubuntu:~$ sudo apt get
+[sudo] binaryanalysis のパスワード: 
+E: 不正な操作 get
+binaryanalysis@ubuntu:~$ sudo apt update
+ヒット:1 http://archive.ubuntulinux.jp/ubuntu bionic InRelease
+ヒット:2 http://archive.ubuntulinux.jp/ubuntu-ja-non-free bionic InRelease
+取得:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]                          
+取得:4 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [1,296 kB]              
+ヒット:5 http://us.archive.ubuntu.com/ubuntu bionic InRelease                                      
+取得:6 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]                      
+取得:7 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [83.3 kB]             
+取得:8 http://us.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [1,589 kB]               
+取得:9 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2,518 kB]               
+取得:10 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [436 kB]                
+取得:11 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [76.8 kB]        
+取得:12 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 48x48 Icons [31.1 kB]           
+取得:13 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 64x64 Icons [67.9 kB]           
+取得:14 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1,053 kB]        
+取得:15 http://security.ubuntu.com/ubuntu bionic-security/restricted i386 Packages [31.9 kB]          
+取得:16 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [146 kB]          
+取得:17 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1,253 kB]          
+取得:18 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2,852 kB]             
+取得:19 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [1,047 kB]           
+取得:20 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [290 kB]            
+取得:21 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [61.0 kB]    
+取得:22 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [31.3 kB]       
+取得:23 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [147 kB]        
+取得:24 http://security.ubuntu.com/ubuntu bionic-security/multiverse i386 Packages [6,008 B]          
+取得:25 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.1 kB]         
+取得:26 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3,908 B]         
+取得:27 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]  
+取得:28 http://us.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [523 kB]               
+取得:29 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [297 kB]        
+取得:30 http://us.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [83.0 kB]          
+取得:31 http://us.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [154 kB]           
+取得:32 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [38.6 kB]         
+取得:33 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1,083 kB]       
+取得:34 http://us.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [150 kB]         
+取得:35 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,866 kB]         
+取得:36 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,635 kB]          
+取得:37 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [404 kB]           
+取得:38 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [302 kB]    
+取得:39 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [232 kB]       
+取得:40 http://us.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [516 kB]       
+取得:41 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.7 kB]        
+取得:42 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [11.2 kB]         
+取得:43 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6,088 B]        
+取得:44 http://us.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B] 
+取得:45 http://us.archive.ubuntu.com/ubuntu bionic-backports/main i386 Packages [53.3 kB]             
+取得:46 http://us.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB]            
+取得:47 http://us.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB]            
+取得:48 http://us.archive.ubuntu.com/ubuntu bionic-backports/main amd64 DEP-11 Metadata [8,124 B]     
+取得:49 http://us.archive.ubuntu.com/ubuntu bionic-backports/main DEP-11 48x48 Icons [6,984 B]        
+取得:50 http://us.archive.ubuntu.com/ubuntu bionic-backports/main DEP-11 64x64 Icons [10.5 kB]        
+取得:51 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages [18.1 kB]         
+取得:52 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.1 kB]        
+取得:53 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8,668 B]        
+取得:54 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [10.0 kB] 
+取得:55 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe DEP-11 48x48 Icons [4,959 B]    
+取得:56 http://us.archive.ubuntu.com/ubuntu bionic-backports/universe DEP-11 64x64 Icons [6,750 B]    
+20.8 MB を 15秒 で取得しました (1,359 kB/s)                                                           
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています       
+状態情報を読み取っています... 完了
+アップグレードできるパッケージが 375 個あります。表示するには 'apt list --upgradable' を実行してください。
+binaryanalysis@ubuntu:~$ 
+binaryanalysis@ubuntu:~$ sudo apt-get install \
+>           binutils \
+>           git \
+>           gnupg2 \
+>           libc6-dev \
+>           libcurl4 \
+>           libedit2 \
+>           libgcc-9-dev \
+>           libpython2.7 \
+>           libsqlite3-0 \
+>           libstdc++-9-dev \
+>           libxml2 \
+>           libz3-dev \
+>           pkg-config \
+>           tzdata \
+>           zlib1g-dev
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+E: パッケージ libgcc-9-dev が見つかりません
+E: パッケージ libstdc++-9-dev が見つかりません
+E: 正規表現 'libstdc++-9-dev' ではパッケージは見つかりませんでした
+binaryanalysis@ubuntu:~$ 
+
+
+
+
+
+
+
+
+
+binaryanalysis@ubuntu:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.2 LTS
+Release:	18.04
+Codename:	bionic
+binaryanalysis@ubuntu:~$ ls
+9cc_practice  Documents  Music     Public     Videos           examples.desktop  nasm-2.14.02
+Desktop       Downloads  Pictures  Templates  binary_analysis  me                peda
+binaryanalysis@ubuntu:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+binaryanalysis@ubuntu:~$ cd Desktop/
+binaryanalysis@ubuntu:~/Desktop$ mkdir swift && cd swift
+binaryanalysis@ubuntu:~/Desktop/swift$ wget https://swift.org/builds/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+--2023-01-07 13:53:52--  https://swift.org/builds/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+swift.org (swift.org) をDNSに問いあわせています... 17.253.144.12
+swift.org (swift.org)|17.253.144.12|:443 に接続しています... 接続しました。
+HTTP による接続要求を送信しました、応答を待っています... 302 Redirect
+場所: https://www.swift.org/builds/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz [続く]
+--2023-01-07 13:53:53--  https://www.swift.org/builds/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+www.swift.org (www.swift.org) をDNSに問いあわせています... 17.253.71.205, 17.253.71.202, 2403:300:a0c:f100::2, ...
+www.swift.org (www.swift.org)|17.253.71.205|:443 に接続しています... 接続しました。
+HTTP による接続要求を送信しました、応答を待っています... 302 Found
+場所: https://download.swift.org/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz [続く]
+--2023-01-07 13:53:53--  https://download.swift.org/swift-5.7.2-release/ubuntu1804/swift-5.7.2-RELEASE/swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+download.swift.org (download.swift.org) をDNSに問いあわせています... 17.253.71.205, 17.253.71.202, 2403:300:a0c:f100::4, ...
+download.swift.org (download.swift.org)|17.253.71.205|:443 に接続しています... 接続しました。
+HTTP による接続要求を送信しました、応答を待っています... 200 OK
+長さ: 531301213 (507M) [application/octet-stream]
+`swift-5.7.2-RELEASE-ubuntu18.04.tar.gz' に保存中
+
+swift-5.7.2-RELEASE-ubunt 100%[====================================>] 506.69M  5.23MB/s    時間 1m 40s
+
+2023-01-07 13:55:33 (5.08 MB/s) - `swift-5.7.2-RELEASE-ubuntu18.04.tar.gz' へ保存完了 [531301213/531301213]
+
+binaryanalysis@ubuntu:~/Desktop/swift$ ls
+swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+binaryanalysis@ubuntu:~/Desktop/swift$ 
+binaryanalysis@ubuntu:~/Desktop/swift$ tar xvf swift-5.7.2-ubuntu18.04.tar.gz
+tar: swift-5.7.2-ubuntu18.04.tar.gz: open 不能: そのようなファイルやディレクトリはありません
+tar: Error is not recoverable: exiting now
+binaryanalysis@ubuntu:~/Desktop/swift$ tar xvf swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+swift-5.7.2-RELEASE-ubuntu18.04/usr/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clang
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clang++
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clang-13
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clang-cl
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clang-cpp
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/clangd
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/docc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/ld.lld
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/ld64.lld
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/lld
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/lld-link
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/lldb
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/lldb-argdumper
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/lldb-server
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/llvm-cov
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/llvm-profdata
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/plutil
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/repl_swift
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/create-module-lists.sh
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-appletvos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-common.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-iosmac.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-iphoneos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-macosx.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-clang-modules-watchos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-appletvos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-common.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-iosmac.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-iphoneos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-macosx.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/fixed-swift-modules-watchos.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sdk-module-lists/infer-imports.py
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/sourcekit-lsp
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-api-checker.py
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-api-digester
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-api-extract
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-autolink-extract
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-build
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-build-sdk-interfaces
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-build-tool
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-demangle
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-driver
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-frontend
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-help
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-package
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-package-collection
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-package-registry
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-run
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-symbolgraph-extract
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swift-test
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/swiftc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/bin/wasm-ld
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/llvm-c/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/llvm-c/lto.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/SourceKit/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/SourceKit/sourcekitd.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/alphaindex.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/appendable.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/basictz.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/brkiter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/bytestream.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/bytestrie.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/bytestriebuilder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/calendar.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/caniter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/casemap.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/char16ptr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/chariter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/choicfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/coleitr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/coll.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/compactdecimalformat.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/curramt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/currpinf.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/currunit.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/datefmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dbbi.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dcfmtsym.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/decimfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/docmain.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtfmtsym.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtintrv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtitvfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtitvinf.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtptngen.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/dtrule.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/edits.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/enumset.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/errorcode.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/fieldpos.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/filteredbrk.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/fmtable.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/format.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/formattedvalue.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/fpositer.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/gender.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/gregocal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/icudataver.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/icuplug.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/idna.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/listformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/localebuilder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/localematcher.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/localpointer.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/locdspnm.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/locid.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/measfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/measunit.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/measure.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/messagepattern.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/msgfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/normalizer2.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/normlzr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/nounit.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/numberformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/numberrangeformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/numfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/numsys.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/parseerr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/parsepos.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/platform.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/plurfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/plurrule.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ptypes.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/putil.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/rbbi.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/rbnf.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/rbtz.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/regex.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/region.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/reldatefmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/rep.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/resbund.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/schriter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/scientificnumberformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/search.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/selfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/simpleformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/simpletz.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/smpdtfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/sortkey.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/std_string.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/strenum.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/stringoptions.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/stringpiece.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/stringtriebuilder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/stsearch.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/symtable.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tblcoll.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/timezone.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tmunit.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tmutamt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tmutfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/translit.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tzfmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tznames.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tzrule.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/tztrans.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ubidi.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ubiditransform.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ubrk.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucasemap.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucat.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uchar.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucharstrie.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucharstriebuilder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uchriter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uclean.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucnv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucnv_cb.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucnv_err.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucnvsel.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucol.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucoleitr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uconfig.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucpmap.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucptrie.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucsdet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ucurr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/udat.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/udata.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/udateintervalformat.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/udatpg.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/udisplaycontext.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uenum.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ufieldpositer.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uformattable.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uformattedvalue.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ugender.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uidna.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uiter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uldnames.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ulistformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uloc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ulocdata.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/umachine.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/umisc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/umsg.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/umutablecptrie.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unifilt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unifunct.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unimatch.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unirepl.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uniset.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unistr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unorm.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unorm2.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unum.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unumberformatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/unumsys.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uobject.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/upluralrules.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uregex.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uregion.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ureldatefmt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/urename.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/urep.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ures.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uscript.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/usearch.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uset.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/usetiter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ushape.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uspoof.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/usprep.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ustring.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/ustringtrie.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utext.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utf.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utf16.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utf32.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utf8.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utf_old.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utmscale.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utrace.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utrans.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/utypes.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uvernum.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/uversion.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/include/unicode/vtzone.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/bin/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/bin/hwasan_symbolize
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_builtin_vars.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_cmath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_complex_builtins.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_device_functions.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_intrinsics.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_libdevice_declares.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_math.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_math_forward_declares.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_runtime_wrapper.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_cuda_texture_intrinsics.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_hip_cmath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_hip_libdevice_declares.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_hip_math.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__clang_hip_runtime_wrapper.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__stddef_max_align_t.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__wmmintrin_aes.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/__wmmintrin_pclmul.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/adxintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/altivec.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ammintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/amxintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm64intr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_acle.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_bf16.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_cde.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_cmse.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_fp16.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_mve.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_neon.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/arm_sve.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/armintr.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx2intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512bf16intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512bitalgintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512bwintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512cdintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512dqintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512erintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512fintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512fp16intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512ifmaintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512ifmavlintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512pfintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vbmi2intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vbmiintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vbmivlintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlbf16intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlbitalgintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlbwintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlcdintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vldqintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlfp16intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlvbmi2intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlvnniintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vlvp2intersectintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vnniintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vp2intersectintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vpopcntdqintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avx512vpopcntdqvlintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avxintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/avxvnniintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/bmi2intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/bmiintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/builtins.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cetintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cldemoteintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/clflushoptintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/clwbintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/clzerointrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cpuid.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/crc32intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cuda_wrappers/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cuda_wrappers/algorithm
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cuda_wrappers/complex
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/cuda_wrappers/new
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/emmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/enqcmdintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/f16cintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/float.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/fma4intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/fmaintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/fuzzer/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/fuzzer/FuzzedDataProvider.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/fxsrintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/gfniintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/hexagon_circ_brev_intrinsics.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/hexagon_protos.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/hexagon_types.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/hresetintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/htmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/htmxlintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/hvx_hexagon_protos.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ia32intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/immintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/inttypes.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/invpcidintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/iso646.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/keylockerintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/limits.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/lwpintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/lzcntintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/mm3dnow.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/mm_malloc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/mmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/movdirintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/msa.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/mwaitxintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/nmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/opencl-c-base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/opencl-c.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/__clang_openmp_device_functions.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/cmath
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/complex
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/complex.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/complex_cmath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/math.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/openmp_wrappers/new
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/pconfigintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/pkuintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/pmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/popcntintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/emmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/mm_malloc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/mmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/pmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/smmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/tmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ppc_wrappers/xmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/prfchwintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/profile/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/profile/InstrProfData.inc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ptrauth.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/ptwriteintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/rdseedintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/rtmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/s390intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/allocator_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/asan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/common_interface_defs.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/coverage_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/dfsan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/hwasan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/linux_syscall_hooks.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/lsan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/msan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/netbsd_syscall_hooks.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/scudo_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/tsan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/tsan_interface_atomic.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sanitizer/ubsan_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/serializeintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/sgxintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/shaintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/smmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdalign.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdarg.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdatomic.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdbool.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stddef.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdint.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/stdnoreturn.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/tbmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/tgmath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/tmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/tsxldtrkintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/uintrintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/unwind.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/vadefs.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/vaesintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/varargs.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/vecintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/vpclmulqdqintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/waitpkgintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/wasm_simd128.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/wbnoinvdintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/wmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/x86gprintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/x86intrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xmmintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xopintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xray/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xray/xray_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xray/xray_log_interface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xray/xray_records.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xsavecintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xsaveintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xsaveoptintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xsavesintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/include/xtestintrin.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/clang_rt.crtbegin-x86_64.o
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/clang_rt.crtend-x86_64.o
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan-preinit-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.builtins-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.cfi-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.cfi_diag-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.dd-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.dfsan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.dfsan-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.dyndd-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.fuzzer-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.fuzzer_interceptors-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.fuzzer_no_main-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.gwp_asan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_aliases-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_aliases_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_aliases_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.hwasan_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.lsan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-preinit-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.memprof_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.msan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.msan-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.msan_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.msan_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.orc-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.profile-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.safestack-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_cxx_minimal-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_minimal-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_minimal-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_standalone-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_standalone-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.scudo_standalone_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.stats-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.stats_client-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.tsan-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.tsan-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.tsan_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.tsan_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a.syms
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.xray-basic-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.xray-fdr-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.xray-profiling-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/lib/linux/libclang_rt.xray-x86_64.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/asan_ignorelist.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/cfi_ignorelist.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/dfsan_abilist.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/hwasan_ignorelist.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/clang/13.0.0/share/msan_ignorelist.txt
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libIndexStore.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libIndexStore.so.13git
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/liblldb.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/liblldb.so.13.0.0git
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/liblldb.so.13git
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libLTO.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libLTO.so.13git
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libsourcekitdInProc.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/libswiftDemangle.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftScan/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftScan/DependencyScan.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftScan/DependencyScanMacros.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftScan/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftStaticMirror/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftStaticMirror/BinaryScan.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftStaticMirror/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftStaticMirror/StaticMirrorMacros.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftSyntaxParser/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftSyntaxParser/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftSyntaxParser/SwiftSyntaxCDataTypes.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/_InternalSwiftSyntaxParser/SwiftSyntaxParser.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/Block/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/Block/Block.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFURLSessionInterface/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFURLSessionInterface/CFURLSessionInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFURLSessionInterface/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFXMLInterface/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFXMLInterface/CFXMLInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CFXMLInterface/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/clang
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFArray.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFAttributedString.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFAvailability.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBag.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBase.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBinaryHeap.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBitVector.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBundle.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFBundlePriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFByteOrder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFCalendar.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFCalendar_Internal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFCharacterSet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFCharacterSetPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFData.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDate.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDateComponents.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDateFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDateInterval.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDateIntervalFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFDictionary.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFError.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFKnownLocations.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFLocale.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFLocaleInternal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFLocking.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFLogUtilities.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFMachPort.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFMessagePort.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFNotificationCenter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFNumber.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFNumberFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFPlugIn.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFPlugInCOM.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFPreferences.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFPropertyList.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFRegularExpression.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFRunArray.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFRunLoop.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFRuntime.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFSet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFSocket.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFStream.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFStreamPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFString.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFStringEncodingConverter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFStringEncodingConverterExt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFStringEncodingExt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFTimeZone.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFTree.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFURL.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFURLAccess.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFURLComponents.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFURLPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFURLSessionInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFUserNotification.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFUtilities.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CFUUID.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/CoreFoundation.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/ForFoundationOnly.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/ForSwiftFoundationOnly.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/CoreFoundation/TargetConditionals.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/block.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/data.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/dispatch.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/group.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/introspection.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/io.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/object.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/once.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/queue.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/semaphore.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/source.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/dispatch/time.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/_Concurrency/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/_Concurrency/ABI/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/_Concurrency/ABI/macos.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/nil.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/README
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/Swift/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/Swift/ABI/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/Swift/ABI/macos.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/Swift/API/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/FrameworkABIBaseline/Swift/API/macos.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Concurrency.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Differentiation.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_RegexParser.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_StringProcessing.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Distributed.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Glibc.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/lib_InternalSwiftScan.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/lib_InternalSwiftStaticMirror.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/lib_InternalSwiftSyntaxParser.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libBlocksRuntime.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libdispatch.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libFoundation.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libFoundationNetworking.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libFoundationXML.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicudataswift.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicudataswift.so.65
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicudataswift.so.65.1
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicui18nswift.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicui18nswift.so.65
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicui18nswift.so.65.1
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicuucswift.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicuucswift.so.65
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libicuucswift.so.65.1
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswift_Concurrency.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswift_Differentiation.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswift_RegexParser.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswift_StringProcessing.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftCore.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftDispatch.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftDistributed.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftGlibc.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftRegexBuilder.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftRemoteMirror.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libswiftSwiftOnoneSupport.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/libXCTest.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/RegexBuilder.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Swift.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/SwiftOnoneSupport.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Dispatch.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Foundation.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/FoundationNetworking.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/FoundationNetworking.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/FoundationXML.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/FoundationXML.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftGlibc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/swiftrt.o
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/XCTest.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/XCTest.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/ios4.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/ios42.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/macos4.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/macos42.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/overlay4.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/overlay42.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/tvos4.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/tvos42.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/watchos4.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/migrator/watchos42.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/os/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/os/generic_unix_base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/os/generic_win_base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/os/object.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/llbuild/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/llbuild/libllbuild.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/llbuild/libllbuildSwift.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/ManifestAPI/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/ManifestAPI/libPackageDescription.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/ManifestAPI/PackageDescription.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/ManifestAPI/PackageDescription.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/PluginAPI/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/PluginAPI/libPackagePlugin.so
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/PluginAPI/PackagePlugin.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/pm/PluginAPI/PackagePlugin.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/_SwiftConcurrency.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/_SwiftDistributed.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/AssertionReporting.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/CoreFoundationShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/FoundationShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/GlobalObjects.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/HeapObject.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/KeyPath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/LibcOverlayShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/LibcShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/MetadataSections.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/Random.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/RefCount.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/Reflection.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/RuntimeShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/RuntimeStubs.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/SwiftStdbool.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/SwiftStddef.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/SwiftStdint.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/System.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/Target.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/ThreadLocalStorage.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/UnicodeData.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift/shims/Visibility.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/Block/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/Block/Block.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFURLSessionInterface/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFURLSessionInterface/CFURLSessionInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFURLSessionInterface/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFXMLInterface/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFXMLInterface/CFXMLInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CFXMLInterface/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/clang
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFArray.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFAttributedString.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFAvailability.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBag.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBase.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBinaryHeap.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBitVector.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBundle.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFBundlePriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFByteOrder.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFCalendar.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFCalendar_Internal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFCharacterSet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFCharacterSetPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFData.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDate.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDateComponents.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDateFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDateInterval.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDateIntervalFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFDictionary.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFError.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFKnownLocations.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFLocale.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFLocaleInternal.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFLocking.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFLogUtilities.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFMachPort.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFMessagePort.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFNotificationCenter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFNumber.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFNumberFormatter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFPlugIn.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFPlugInCOM.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFPreferences.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFPropertyList.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFRegularExpression.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFRunArray.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFRunLoop.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFRuntime.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFSet.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFSocket.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFStream.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFStreamPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFString.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFStringEncodingConverter.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFStringEncodingConverterExt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFStringEncodingExt.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFTimeZone.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFTree.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFURL.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFURLAccess.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFURLComponents.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFURLPriv.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFURLSessionInterface.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFUserNotification.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFUtilities.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CFUUID.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/CoreFoundation.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/ForFoundationOnly.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/ForSwiftFoundationOnly.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/module.map
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/CoreFoundation/TargetConditionals.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/block.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/data.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/dispatch.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/group.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/introspection.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/io.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/object.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/once.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/queue.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/semaphore.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/source.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/dispatch/time.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Concurrency.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Concurrency.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Differentiation.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_Differentiation.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_RegexParser.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_RegexParser.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_StringProcessing.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/_StringProcessing.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Distributed.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Distributed.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Glibc.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Glibc.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libBlocksRuntime.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libCFURLSessionInterface.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libCFXMLInterface.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libCoreFoundation.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libdispatch.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libDispatchStubs.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libFoundation.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libFoundationNetworking.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libFoundationXML.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libicudataswift.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libicui18nswift.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libicuucswift.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswift_Concurrency.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswift_Differentiation.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswift_RegexParser.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswift_StringProcessing.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftCore.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftDispatch.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftDistributed.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftGlibc.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftRegexBuilder.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libswiftSwiftOnoneSupport.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/libuuid.a
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/RegexBuilder.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/RegexBuilder.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/static-executable-args.lnk
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/static-stdlib-args.lnk
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Swift.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/Swift.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/SwiftOnoneSupport.swiftmodule/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftinterface
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/SwiftOnoneSupport.swiftmodule/x86_64-unknown-linux-gnu.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/Dispatch.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/Dispatch.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/Foundation.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/Foundation.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/FoundationNetworking.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/FoundationNetworking.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/FoundationXML.swiftdoc
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/FoundationXML.swiftmodule
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/glibc.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/SwiftGlibc.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/linux/x86_64/swiftrt.o
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/os/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/os/generic_unix_base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/os/generic_win_base.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/os/object.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/_SwiftConcurrency.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/_SwiftDistributed.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/AssertionReporting.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/CoreFoundationShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/FoundationShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/GlobalObjects.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/HeapObject.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/KeyPath.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/LibcOverlayShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/LibcShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/MetadataSections.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/module.modulemap
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/Random.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/RefCount.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/Reflection.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/RuntimeShims.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/RuntimeStubs.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/SwiftStdbool.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/SwiftStddef.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/SwiftStdint.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/System.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/Target.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/ThreadLocalStorage.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/UnicodeData.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/lib/swift_static/shims/Visibility.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/local/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/local/include/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/local/include/indexstore/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/local/include/indexstore/indexstore.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/local/include/indexstore/IndexStoreCXX.h
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/clang/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/clang/features.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/complex-closure-inference.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/dynamic-callable-requirements.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/existential-member-access-limitations.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/multiple-inheritance.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/nominal-types.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/opaque-type-inference.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/property-wrapper-requirements.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/protocol-type-non-conformance.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/result-builder-methods.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/string-interpolation-conformance.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/temporary-pointers.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/doc/swift/diagnostics/trailing-closure-matching.md
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/documentation-topic.3bca6578.css
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/documentation-topic~topic~tutorials-overview.82acfe22.css
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/index.12bb178a.css
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/topic.ee15af52.css
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/css/tutorials-overview.06e8bcf7.css
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/developer-og-twitter.jpg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/developer-og.jpg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/favicon.ico
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/favicon.svg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/img/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/img/added-icon.d6f7e47d.svg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/img/deprecated-icon.015b4f17.svg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/img/modified-icon.f496e73d.svg
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/img/no-image@2x.df2a0a50.png
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/index-template.html
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/index.html
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/chunk-2d0d3105.cd72cc8e.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/chunk-vendors.b24b7aaa.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/documentation-topic.a59a8520.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/documentation-topic~topic~tutorials-overview.0b91f3e9.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-bash.1b52852f.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-c.d1db3f17.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-cpp.eaddddbe.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-css.75eab1fe.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-custom-markdown.7cffc4b3.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-custom-swift.5cda5c20.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-diff.62d66733.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-http.163e45b6.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-java.8326d9d8.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-javascript.acb8a8eb.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-json.471128d2.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-llvm.6100b125.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-markdown.90077643.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-objectivec.bcdf5156.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-perl.757d7b6f.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-php.cc8d6c27.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-python.c214ed92.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-ruby.f889d392.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-scss.62ee18da.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-shell.dd7f411f.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-swift.84f3e88c.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/highlight-js-xml.9c3688c7.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/index.82342c41.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/topic.df9c01b3.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/js/tutorials-overview.94d94e26.js
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/docc/render/theme-settings.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/config/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/config/mh-linux
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/install-sh
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/LICENSE
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/icuswift/65.1/mkinstalldirs
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/man/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/man/man1/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/man/man1/swift.1
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/diagnostics/
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/diagnostics/en.db
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/diagnostics/en.yaml
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/features.json
+swift-5.7.2-RELEASE-ubuntu18.04/usr/share/swift/LICENSE.txt
+binaryanalysis@ubuntu:~/Desktop/swift$ 
+binaryanalysis@ubuntu:~/Desktop/swift$ ls
+swift-5.7.2-RELEASE-ubuntu18.04  swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+binaryanalysis@ubuntu:~/Desktop/swift$ mv swift-5.7.2-RELEASE-ubuntu18.04/usr/ $HOME
+binaryanalysis@ubuntu:~/Desktop/swift$ ls
+swift-5.7.2-RELEASE-ubuntu18.04  swift-5.7.2-RELEASE-ubuntu18.04.tar.gz
+binaryanalysis@ubuntu:~/Desktop/swift$ cd swift-5.7.2-RELEASE-ubuntu18.04/
+binaryanalysis@ubuntu:~/Desktop/swift/swift-5.7.2-RELEASE-ubuntu18.04$ ls
+binaryanalysis@ubuntu:~/Desktop/swift/swift-5.7.2-RELEASE-ubuntu18.04$ cd ..
+binaryanalysis@ubuntu:~/Desktop/swift$ cd $HOME
+binaryanalysis@ubuntu:~$ ls
+9cc_practice  Documents  Music     Public     Videos           examples.desktop  nasm-2.14.02  usr
+Desktop       Downloads  Pictures  Templates  binary_analysis  me                peda
+binaryanalysis@ubuntu:~$ ls -a
+.              .local                       .viminfo      Templates
+..             .mozilla                     .vimrc        Videos
+.ICEauthority  .pam_environment             .wget-hsts    binary_analysis
+.bash_history  .profile                     .xinputrc     examples.desktop
+.bash_logout   .pwntools-cache              9cc_practice  me
+.bashrc        .ssh                         Desktop       nasm-2.14.02
+.cache         .sudo_as_admin_successful    Documents     peda
+.config        .vboxclient-clipboard.pid    Downloads     usr
+.gdb_history   .vboxclient-display.pid      Music
+.gdbinit       .vboxclient-draganddrop.pid  Pictures
+.gnupg         .vboxclient-seamless.pid     Public
+binaryanalysis@ubuntu:~$ vi .bashrc
+binaryanalysis@ubuntu:~$ $ source $HOME/.bashrc
+$: コマンドが見つかりません
+binaryanalysis@ubuntu:~$ 
+
+
+
+
+binaryanalysis@ubuntu:~$ source $HOME/.bashrc
+binaryanalysis@ubuntu:~$ cd ~/Desktop/                                                                
+binaryanalysis@ubuntu:~/Desktop$ ls
+swift
+binaryanalysis@ubuntu:~/Desktop$ swift --version
+Swift version 5.7.2 (swift-5.7.2-RELEASE)
+Target: x86_64-unknown-linux-gnu
+binaryanalysis@ubuntu:~/Desktop$ swiftc -help
+OVERVIEW: Swift compiler
+
+USAGE: swiftc
+
+MODES:
+  -dump-ast               Parse and type-check input file(s) and dump AST(s)
+  -dump-parse             Parse input file(s) and dump AST(s)
+  -dump-pcm               Dump debugging information about a precompiled Clang module
+  -dump-scope-maps <expanded-or-list-of-line:column>
+                          Parse and type-check input file(s) and dump the scope map(s)
+  -dump-type-info         Output YAML dump of fixed-size types from all imported modules
+  -dump-type-refinement-contexts
+                          Type-check input file(s) and dump type refinement contexts(s)
+  -emit-assembly          Emit assembly file(s) (-S)
+  -emit-bc                Emit LLVM BC file(s)
+  -emit-executable        Emit a linked executable
+  -emit-imported-modules  Emit a list of the imported modules
+  -emit-irgen             Emit LLVM IR file(s) before LLVM optimizations
+  -emit-ir                Emit LLVM IR file(s) after LLVM optimizations
+  -emit-library           Emit a linked library
+  -emit-object            Emit object file(s) (-c)
+  -emit-pcm               Emit a precompiled Clang module from a module map
+  -emit-sibgen            Emit serialized AST + raw SIL file(s)
+  -emit-sib               Emit serialized AST + canonical SIL file(s)
+  -emit-silgen            Emit raw SIL file(s)
+  -emit-sil               Emit canonical SIL file(s)
+  -emit-supported-features
+                          Emit a JSON file including all supported compiler features
+  -index-file             Produce index data for a source file
+  -parse                  Parse input file(s)
+  -print-ast-decl         Parse and type-check input file(s) and pretty print declarations from AST(s)
+  -print-ast              Parse and type-check input file(s) and pretty print AST(s)
+  -resolve-imports        Parse and resolve imports in input file(s)
+  -scan-dependencies      Scan dependencies of the given Swift sources
+  -typecheck              Parse and type-check input file(s)
+
+OPTIONS:
+  -access-notes-path <value>
+                          Specify YAML file to override attributes on Swift declarations in this module
+  -api-diff-data-dir <path>
+                          Load platform and version specific API migration data files from <path>. Ignored if -api-diff-data-file is specified.
+  -api-diff-data-file <path>
+                          API migration data is from <path>
+  -application-extension  Restrict code to those available for App Extensions
+  -assert-config <value>  Specify the assert_configuration replacement. Possible values are Debug, Release, Unchecked, DisableReplacement.
+  -async-main             Resolve main function as if it were called from an asynchronous context
+  -avoid-emit-module-source-info
+                          don't emit Swift source info file
+  -clang-target <value>   Separately set the target we should use for internal Clang instance
+  -color-diagnostics      Print diagnostics in color
+  -continue-building-after-errors
+                          Continue building, even after errors are encountered
+  -coverage-prefix-map <prefix=replacement>
+                          Remap source paths in coverage info
+  -debug-info-format=<value>
+                          Specify the debug info format type to either 'dwarf' or 'codeview'
+  -debug-info-store-invocation
+                          Emit the compiler invocation in the debug info.
+  -debug-prefix-map <prefix=replacement>
+                          Remap source paths in debug info
+  -define-availability <macro>
+                          Define an availability macro in the format 'macroName : iOS 13.0, macOS 10.15'
+  -diagnostic-style <style>
+                          The formatting style used when printing diagnostics ('swift' or 'llvm')
+  -disable-actor-data-race-checks
+                          Disable runtime checks for actor data races
+  -disable-autolinking-runtime-compatibility-concurrency
+                          Do not use autolinking for the concurrency runtime compatibility library
+  -disable-autolinking-runtime-compatibility-dynamic-replacements
+                          Do not use autolinking for the dynamic replacement runtime compatibility library
+  -disable-autolinking-runtime-compatibility
+                          Do not use autolinking for runtime compatibility libraries
+  -disable-clang-target   Disable a separately specified target triple for Clang instance to use
+  -disable-incremental-imports
+                          Disable cross-module incremental build metadata and driver scheduling for Swift modules
+  -disable-migrator-fixits
+                          Disable the Migrator phase which automatically applies fix-its
+  -disable-only-one-dependency-file
+                          Disables incremental build optimization that only produces one dependencies file
+  -disallow-use-new-driver
+                          Disable using new swift-driver
+  -driver-time-compilation
+                          Prints the total time it took to execute all compilation tasks
+  -dump-migration-states-dir <path>
+                          Dump the input text, output text, and states for migration to <path>
+  -dump-usr               Dump USR for each declaration reference
+  -D <value>              Marks a conditional compilation flag as true
+  -embed-bitcode-marker   Embed placeholder LLVM IR data as a marker
+  -embed-bitcode          Embed LLVM IR bitcode as data
+  -embed-tbd-for-module <value>
+                          Embed symbols from the module in the emitted tbd file
+  -emit-dependencies      Emit basic Make-compatible dependencies files
+  -emit-loaded-module-trace-path <path>
+                          Emit the loaded module trace JSON to <path>
+  -emit-loaded-module-trace
+                          Emit a JSON file containing information about what modules were loaded
+  -emit-module-interface-path <path>
+                          Output module interface file to <path>
+  -emit-module-interface  Output module interface file
+  -emit-module-path <path>
+                          Emit an importable module to <path>
+  -emit-module-source-info-path <path>
+                          Output module source info file to <path>
+  -emit-module-summary-path <path>
+                          Output module summary file to <path>
+  -emit-module-summary    Output module summary file
+  -emit-module            Emit an importable module
+  -emit-objc-header-path <path>
+                          Emit an Objective-C header file to <path>
+  -emit-objc-header       Emit an Objective-C header file
+  -emit-tbd-path <path>   Emit the TBD file to <path>
+  -emit-tbd               Emit a TBD file
+  -enable-actor-data-race-checks
+                          Emit runtime checks for actor data races
+  -enable-bare-slash-regex
+                          Enable the use of forward slash regular-expression literal syntax
+  -enable-experimental-additive-arithmetic-derivation
+                          Enable experimental 'AdditiveArithmetic' derived conformances
+  -enable-experimental-concise-pound-file
+                          Enable experimental concise '#file' identifier
+  -enable-experimental-cxx-interop
+                          Allow importing C++ modules into Swift (experimental feature)
+  -enable-experimental-forward-mode-differentiation
+                          Enable experimental forward mode differentiation
+  -enable-incremental-imports
+                          Enable cross-module incremental build metadata and driver scheduling for Swift modules
+  -enable-library-evolution
+                          Build the module to allow binary-compatible library evolution
+  -enable-only-one-dependency-file
+                          Enables incremental build optimization that only produces one dependencies file
+  -enforce-exclusivity=<enforcement>
+                          Enforce law of exclusivity
+  -experimental-cxx-stdlib <value>
+                          C++ standard library to use; forwarded to Clang's -stdlib flag
+  -file-compilation-dir <path>
+                          The compilation directory to embed in the debug info. Coverage mapping is not supported yet.
+  -file-prefix-map <prefix=replacement>
+                          Remap source paths in debug, coverage, and index info
+  -fixit-all              Apply all fixits from diagnostics without any filtering
+  -framework <value>      Specifies a framework which should be linked against
+  -Fsystem <value>        Add directory to system framework search path
+  -F <value>              Add directory to framework search path
+  -gdwarf-types           Emit full DWARF type info.
+  -gline-tables-only      Emit minimal debug info for backtraces only
+  -gnone                  Don't emit debug info
+  -g                      Emit debug info. This is the preferred setting for debugging with LLDB.
+  -help                   Display available options
+  -import-underlying-module
+                          Implicitly imports the Objective-C half of a module
+  -index-file-path <path> Produce index data for file <path>
+  -index-ignore-clang-modules
+                          Avoid indexing clang modules (pcms)
+  -index-ignore-system-modules
+                          Avoid indexing system modules
+  -index-store-path <path>
+                          Store indexing data to <path>
+  -index-unit-output-path <path>
+                          Use <path> as the output path in the produced index data.
+  -I <value>              Add directory to the import search path
+  -j <n>                  Number of commands to execute in parallel
+  -libc <value>           libc runtime library to use
+  -locale <locale-code>   Choose a language for diagnostic messages
+  -localization-path <path>
+                          Path to localized diagnostic messages directory
+  -lto-library <lto-library>
+                          Perform LTO with <lto-library>
+  -lto=<value>            Specify the LTO type to either 'llvm-thin' or 'llvm-full'
+  -L <value>              Add directory to library link search path
+  -l <value>              Specifies a library which should be linked against
+  -migrate-keep-objc-visibility
+                          When migrating, add '@objc' to declarations that would've been implicitly visible in Swift 3
+  -migrator-update-sdk    Does nothing. Temporary compatibility flag for Xcode.
+  -migrator-update-swift  Does nothing. Temporary compatibility flag for Xcode.
+  -module-abi-name <value>
+                          ABI name to use for the contents of this module
+  -module-alias <alias_name=underlying_name>
+                          If a source file imports or references module <alias_name>, the <underlying_name> is used for the contents of the file
+  -module-cache-path <value>
+                          Specifies the Clang module cache path
+  -module-link-name <value>
+                          Library to link against when using this module
+  -module-name <value>    Name of the module to build
+  -no-color-diagnostics   Do not print diagnostics in color
+  -no-verify-emitted-module-interface
+                          Don't check that module interfaces emitted during compilation typecheck
+  -no-warnings-as-errors  Don't treat warnings as errors
+  -no-whole-module-optimization
+                          Disable optimizing input files together instead of individually
+  -nostdimport            Don't search the standard library import path for modules
+  -num-threads <n>        Enable multi-threading and specify number of threads
+  -Onone                  Compile without any optimization
+  -Osize                  Compile with optimizations and target small code size
+  -Ounchecked             Compile with optimizations and remove runtime safety checks
+  -output-file-map <path> A file which specifies the location of outputs
+  -O                      Compile with optimizations
+  -o <file>               Write output to <file>
+  -parse-as-library       Parse the input file(s) as libraries, not scripts
+  -parse-sil              Parse the input file as SIL code, not Swift source
+  -parseable-output       Emit textual output in a parseable format
+  -prefix-serialized-debugging-options
+                          Apply debug prefix mappings to serialized debug info in Swiftmodule files
+  -pretty-print           Pretty-print the output JSON
+  -print-educational-notes
+                          Include educational notes in printed diagnostic output, if available
+  -print-target-info      Print target information for the given target <triple>, such as x86_64-apple-macos10.9
+  -profile-coverage-mapping
+                          Generate coverage data for use with profiled execution counts
+  -profile-generate       Generate instrumented code to collect execution counts
+  -profile-use=<profdata> Supply a profdata file to enable profile-guided optimization
+  -Rcross-import          Emit a remark if a cross-import of a module is triggered.
+  -remove-runtime-asserts Remove runtime safety checks.
+  -require-explicit-availability-target <target>
+                          Suggest fix-its adding @available(<target>, *) to public declarations without availability
+  -require-explicit-availability
+                          Require explicit availability on public declarations
+  -require-explicit-sendable
+                          Require explicit Sendable annotations on public declarations
+  -requirement-machine-abstract-signatures=<value>
+                          Control usage of experimental generic signature minimization: 'on', 'off', 'verify' or 'check'
+  -requirement-machine-inferred-signatures=<value>
+                          Control usage of experimental generic signature minimization: 'on', 'off', 'verify' or 'check'
+  -requirement-machine-protocol-signatures=<value>
+                          Control usage of experimental protocol requirement signature minimization: 'on', 'off', 'verify' or 'check'
+  -Rmodule-loading        Emit a remark and file path of each loaded module
+  -Rpass-missed=<value>   Report missed transformations by optimization passes whose name matches the given POSIX regular expression
+  -Rpass=<value>          Report performed transformations by optimization passes whose name matches the given POSIX regular expression
+  -runtime-compatibility-version <value>
+                          Link compatibility library for Swift runtime version, or 'none'
+  -sanitize-coverage=<type>
+                          Specify the type of coverage instrumentation for Sanitizers and additional options separated by commas
+  -sanitize-recover=<check>
+                          Specify which sanitizer runtime checks (see -sanitize=) will generate instrumentation that allows error recovery. Listed checks should be comma separated. Default behavior is to not allow error recovery.
+  -sanitize=<check>       Turn on runtime checks for erroneous behavior.
+  -save-optimization-record-passes <regex>
+                          Only include passes which match a specified regular expression in the generated optimization record (by default, include all passes)
+  -save-optimization-record-path <value>
+                          Specify the file name of any generated optimization record
+  -save-optimization-record=<format>
+                          Generate an optimization record file in a specific format (default: YAML)
+  -save-optimization-record
+                          Generate a YAML optimization record file
+  -save-temps             Save intermediate compilation results
+  -sdk <sdk>              Compile against <sdk>
+  -serialize-diagnostics  Serialize diagnostics in a binary format
+  -static-executable      Statically link the executable
+  -static-stdlib          Statically link the Swift standard library
+  -static                 Make this module statically linkable and make the output of -emit-library a static library.
+  -strict-concurrency=<value>
+                          Specify the how strict concurrency checking will be. The value may be 'minimal' (most 'Sendable' checking is disabled), 'targeted' ('Sendable' checking is enabled in code that uses the concurrency model, or 'complete' ('Sendable' and other checking is enabled for all code in the module)
+  -suppress-warnings      Suppress all warnings
+  -swift-version <vers>   Interpret input according to a specific Swift language version number
+  -target-cpu <value>     Generate code for a particular CPU variant
+  -target-min-inlining-version <value>
+                          Require inlinable code with no '@available' attribute to back-deploy to this version of the '-target' OS
+  -target-variant <value> Generate 'zippered' code for macCatalyst that can run on the specified variant target triple in addition to the main -target triple
+  -target <triple>        Generate code for the given target <triple>, such as x86_64-apple-macos10.9
+  -tools-directory <directory>
+                          Look for external executables (ld, clang, binutils) in <directory>
+  -track-system-dependencies
+                          Track system dependencies while emitting Make-style dependencies
+  -use-ld=<value>         Specifies the linker to be used
+  -user-module-version <vers>
+                          Module version specified from Swift module authors
+  -verify-debug-info      Verify the binary representation of debug output.
+  -verify-emitted-module-interface
+                          Check that module interfaces emitted during compilation typecheck
+  -version                Print version information and exit
+  -vfsoverlay <value>     Add directory to VFS overlay file
+  -v                      Show commands to run and use verbose output
+  -warn-concurrency       Warn about code that is unsafe according to the Swift Concurrency model and will become ill-formed in a future language version
+  -warn-implicit-overrides
+                          Warn about implicit overrides of protocol members
+  -warn-swift3-objc-inference-complete
+                          Warn about deprecated @objc inference in Swift 3 for every declaration that will no longer be inferred as @objc in Swift 4
+  -warn-swift3-objc-inference-minimal
+                          Warn about deprecated @objc inference in Swift 3 based on direct uses of the Objective-C entrypoint
+  -warnings-as-errors     Treat warnings as errors
+  -whole-module-optimization
+                          Optimize input files together instead of individually
+  -working-directory <path>
+                          Resolve file paths relative to the specified directory
+  -Xcc <arg>              Pass <arg> to the C/C++/Objective-C compiler
+  -Xlinker <value>        Specifies an option which should be passed to the linker
+  -emit-digester-baseline Emit a baseline file for the module using the API digester
+  -emit-digester-baseline-path <path>
+                          Emit a baseline file for the module to <path> using the API digester
+  -compare-to-baseline-path <path>
+                          Compare the built module to the baseline at <path> and diagnose breaking changes using the API digester
+  -serialize-breaking-changes-path <path>
+                          Serialize breaking changes found by the API digester to <path>
+  -digester-breakage-allowlist-path <path>
+                          The path to a list of permitted breaking changes the API digester should ignore
+  -digester-mode <api|abi>
+                          Whether the API digester should run in API or ABI mode (defaults to API checking)
+binaryanalysis@ubuntu:~/Desktop$ 
+binaryanalysis@ubuntu:~/Desktop$ vi test.swift
+binaryanalysis@ubuntu:~/Desktop$ swiftc -c test.swift -v
+Swift version 5.7.2 (swift-5.7.2-RELEASE)
+Target: x86_64-unknown-linux-gnu
+/home/binaryanalysis/usr/bin/swift-frontend -frontend -c -primary-file test.swift -target x86_64-unknown-linux-gnu -disable-objc-interop -color-diagnostics -new-driver-path /home/binaryanalysis/usr/bin/swift-driver -empty-abi-descriptor -resource-dir /home/binaryanalysis/usr/lib/swift -module-name test -o test.o
+/home/binaryanalysis/usr/bin/swift-autolink-extract test.o -o /tmp/TemporaryDirectory.hi329I/test-1.autolink
+binaryanalysis@ubuntu:~/Desktop$ swiftc test.o -v
+Swift version 5.7.2 (swift-5.7.2-RELEASE)
+Target: x86_64-unknown-linux-gnu
+/home/binaryanalysis/usr/bin/swift-autolink-extract test.o -o /tmp/TemporaryDirectory.zA7XNz/test-1.autolink
+/home/binaryanalysis/usr/bin/clang -fuse-ld=gold -pie -Xlinker -rpath -Xlinker /home/binaryanalysis/usr/lib/swift/linux /home/binaryanalysis/usr/lib/swift/linux/x86_64/swiftrt.o test.o @/tmp/TemporaryDirectory.zA7XNz/test-1.autolink -L /home/binaryanalysis/usr/lib/swift/linux -lswiftCore --target=x86_64-unknown-linux-gnu -v -o test
+clang version 13.0.0 (https://github.com/apple/llvm-project.git c41f13252ed4b49f246729b4d91ff521d5a6bf9d)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/binaryanalysis/usr/bin
+Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/8
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Candidate multilib: x32;@mx32
+Selected multilib: .;@m64
+ "/usr/bin/ld.gold" -pie -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o test /usr/lib/x86_64-linux-gnu/Scrt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbeginS.o -L/home/binaryanalysis/usr/lib/swift/linux -L/usr/lib/gcc/x86_64-linux-gnu/7.5.0 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/home/binaryanalysis/usr/bin/../lib -L/lib -L/usr/lib -rpath /home/binaryanalysis/usr/lib/swift/linux /home/binaryanalysis/usr/lib/swift/linux/x86_64/swiftrt.o test.o -lswift_StringProcessing -lswift_Concurrency -lswiftCore -lswiftSwiftOnoneSupport -lswiftCore -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtendS.o /usr/lib/x86_64-linux-gnu/crtn.o
+binaryanalysis@ubuntu:~/Desktop$ ls
+swift  test  test.o  test.swift
+binaryanalysis@ubuntu:~/Desktop$ 
