@@ -147,3 +147,13 @@ llvmがいい感じになってくれてそう
 https://github.com/llvm/llvm-project/tree/main/llvm/include/llvm/BinaryFormat/ELFRelocs
 
 ランタイムはどうなるのか、swiftをもとにもう少し概念整理したい
+
+llvmとランタイム云々の話は、自分の中で整理がついた。
+
+<img width="882" alt="スクリーンショット 2023-01-08 17 47 28" src="https://user-images.githubusercontent.com/16571394/211187829-e801b834-bdbb-4dcb-ad91-aa2eeec17789.png">
+
+- llvmは単純にバイナリを出力させるための基盤にしかすぎないこと
+- ランタイムはコンパイラにソースで埋め込むこともできそうであるが、`libswiftCore.dylib`として切り分け、実行時に共有ライブラリとしてリンクする。
+  - dylibを出力する際にllvmを使っているかもしれない。（キャプチャの赤枠の部分）
+
+やりたいこと: ランタイムライブラリのソースコードをビルドしてリンクすることは可能か
