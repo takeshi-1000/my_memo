@@ -143,4 +143,7 @@ https://github.com/takeshi-1000/my_memo/blob/main/2023/0107_llvm%E3%81%AB%E3%81%
 単純にバイナリフォーマットにおける差分をどこでカーバーしているか(llvmなのか)を確認すると良さそう 
 wikipediaによると https://ja.wikipedia.org/wiki/LLVM 実行時の最適化も行ってくれるということで、Operating systemの差分も吸収してくれる、すなわちバイナリフォーマットにおける差分も面倒見てくれているのではないかと推測している
 
+llvmがいい感じになってくれてそう
+https://github.com/llvm/llvm-project/tree/main/llvm/include/llvm/BinaryFormat/ELFRelocs
 
+ランタイムはどうなるのか、swiftをもとにもう少し概念整理したい
