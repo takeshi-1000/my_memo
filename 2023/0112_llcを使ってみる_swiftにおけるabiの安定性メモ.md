@@ -33,3 +33,16 @@ Target: arm64-apple-macosx12.0
 ```
 
 ※2の時にアセンブリファイルを作成したい場合は、`llc test.bc --filetype=asm` という感じに、アセンブリファイルであることを示すオプションをつける
+
+### swiftにおけるabiの安定性周りのメモ
+
+https://www.swift.org/blog/abi-stability-and-apple/
+https://www.youtube.com/watch?v=3AXNKO932vo
+
+- abiが安定するまでは、アプリにランタイム、標準ライブラリなどバンドルする必要があった
+- abi安定以降は、OS内にdylibが搭載されるので、アプリバンドルに含むことなく、システムに搭載されたdylibとリンクすることが可能で、ストレージの削減につながる
+- abi安定してないもので実行しているアプリは、継続してアプリにバンドルされたdylibを参照して実行することが可能みたい
+
+> However, as a result of this, the Swift runtime is now a component of the user’s target operating system rather than part of the developer’s toolchain. As a consequence, in the future, for a Swift project to adopt new Swift runtime and standard library functionality, it may also have to require new OS versions that include an updated Swift runtime supporting the added features. This tradeoff between adopting new language features and frameworks or maintaining compatibility with older OS versions has always existed for Objective-C and Apple system frameworks, and will now be a factor for Swift as well.
+
+- ABI安定化はメリットあるものの、ランタイムがよりOS依存(ABI依存)になったので、ABIの制約を受けることになる
