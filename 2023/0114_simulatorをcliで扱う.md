@@ -42,6 +42,29 @@ https://user-images.githubusercontent.com/16571394/212432663-b2bab8ab-4089-4919-
 
 <img src="https://user-images.githubusercontent.com/16571394/212432686-390c2461-f823-4c68-9186-0b88e57dcb38.png" width="240">
 
+### makefileで試してみる
+
+参考: https://github.com/takeshi-1000/my_memo/blob/e9c24d31cf7c6f06e0805231952b2a9f65101519/2022/0517.md#%E6%A5%AD%E5%8B%99%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%B7%A5%E5%A4%AB
+
+```
+screenshot:
+	xcrun simctl launch E36D7DEC-9BED-4267-9A78-3D72F681377F tk.testSimulatorCli
+	xcrun simctl io booted screenshot ~/Desktop/screenshot.png
+```
+
+```
+$ make screenshot
+xcrun simctl launch E36D7DEC-9BED-4267-9A78-3D72F681377F tk.testSimulatorCli
+tk.testSimulatorCli: 9511
+xcrun simctl io booted screenshot ~/Desktop/screenshot.png
+Detected file type 'PNG' from extension
+Wrote screenshot to: /Users/takeshikomori/Desktop/screenshot.png
+```
+
+見切れなくなった
+
+<img src="https://user-images.githubusercontent.com/16571394/212433900-0a642436-3385-4780-b2d5-75b94d4e883a.png" width="240">
+
 ## デバイス一覧取得
 
 ```
