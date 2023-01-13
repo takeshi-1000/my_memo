@@ -30,6 +30,18 @@ https://user-images.githubusercontent.com/16571394/212430700-6aecb665-490f-4ed4-
 
 https://user-images.githubusercontent.com/16571394/212431238-46b6de33-73d6-4ef8-ac23-eb9d8f187a8c.mov
 
+## アプリを起動し、スクリーンショットを撮影
+
+ちょっと見切れた感じ
+
+`xcrun simctl launch <device-identifier> <app.identifier> && xcrun simctl io booted screenshot <image-path>`
+
+https://user-images.githubusercontent.com/16571394/212432663-b2bab8ab-4089-4919-9dd2-8ef34bc8ee6d.mov
+
+### 撮影した写真
+
+<img src="https://user-images.githubusercontent.com/16571394/212432686-390c2461-f823-4c68-9186-0b88e57dcb38.png" width="240">
+
 ## デバイス一覧取得
 
 ```
