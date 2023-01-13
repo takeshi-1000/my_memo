@@ -1,5 +1,35 @@
 参考: https://qiita.com/tamaki/items/02eb43253193b950b08
 
+## シミュレータ起動
+
+`xcrun simctl boot <device-identifier>`
+
+https://user-images.githubusercontent.com/16571394/212431666-612a15a9-1908-4bcf-9c4a-a07576ff952a.mov
+
+## アプリインストール
+
+`xcrun simctl install <device-identifier> <app-path>`
+
+https://user-images.githubusercontent.com/16571394/212430163-98a840f3-b716-4aa5-845f-4685b2719ac4.mov
+
+## アプリアンインストール
+
+`xcrun simctl uninstall <device-identifier> <app.identifier>`
+
+https://user-images.githubusercontent.com/16571394/212430394-03b8aa7b-9486-4da6-a0ad-2eefb3e928a9.mov
+
+## アプリ起動
+
+`xcrun simctl launch <device-identifier> <app.identifier>`
+
+https://user-images.githubusercontent.com/16571394/212430700-6aecb665-490f-4ed4-b667-7e3335751d99.mov
+
+## スクリーンショット撮影
+
+`xcrun simctl io booted screenshot <image-path>`
+
+https://user-images.githubusercontent.com/16571394/212431238-46b6de33-73d6-4ef8-ac23-eb9d8f187a8c.mov
+
 ## デバイス一覧取得
 
 ```
