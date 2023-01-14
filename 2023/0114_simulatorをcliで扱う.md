@@ -65,6 +65,26 @@ Wrote screenshot to: /Users/takeshikomori/Desktop/screenshot.png
 
 <img src="https://user-images.githubusercontent.com/16571394/212433900-0a642436-3385-4780-b2d5-75b94d4e883a.png" width="240">
 
+### shellファイルでも良さそう
+
+```
+test.sh
+
+xcrun simctl launch E36D7DEC-9BED-4267-9A78-3D72F681377F tk.testSimulatorCli TestArg=HogeView
+sleep 1s
+xcrun simctl io booted screenshot ~/Desktop/screenshot.png
+```
+
+```
+$ sh test.sh
+tk.testSimulatorCli: 12332
+usage: sleep seconds
+Detected file type 'PNG' from extension
+Wrote screenshot to: /Users/takeshikomori/Desktop/screenshot.png
+```
+
+※見切れる場合があったので1秒くらい待った後に撮影した方が良さそう?
+
 ## 起動時に引数を渡す
 
 `xcrun simctl launch booted tk.testSimulatorCliForUIKit TestArg Hoges`
