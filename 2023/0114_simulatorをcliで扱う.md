@@ -65,6 +65,28 @@ Wrote screenshot to: /Users/takeshikomori/Desktop/screenshot.png
 
 <img src="https://user-images.githubusercontent.com/16571394/212433900-0a642436-3385-4780-b2d5-75b94d4e883a.png" width="240">
 
+## 起動時に引数を渡す
+
+`xcrun simctl launch booted tk.testSimulatorCliForUIKit TestArg Hoges`
+
+```
+DispatchQueue.main.asyncAfter(deadline: .now()) {
+ let envVal = ProcessInfo.processInfo.arguments.joined(separator: "\n")
+ UIApplication.shared.keyWindow?.rootViewController?
+             .present(UIAlertController(title: "test",
+                      message: envVal,
+                      preferredStyle: .alert), 
+		      animated: false)
+}
+```
+
+<img src="https://user-images.githubusercontent.com/16571394/212470739-bbafbae1-f09e-4593-ad71-0ef45fd9304b.png" width="240">
+
+参考
+
+- https://nshipster.com/launch-arguments-and-environment-variables/
+- https://suelan.github.io/2020/02/05/iOS-Simulator-from-the-Command-Line/
+
 ## デバイス一覧取得
 
 ```
