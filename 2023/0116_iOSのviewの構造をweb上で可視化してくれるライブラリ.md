@@ -29,4 +29,9 @@ https://github.com/damian-kolakowski/iOS-Hierarchy-Viewer
 
 ### 実際のブラウザ上での確認
 
-<img width="1307" alt="スクリーンショット 2023-01-16 7 45 59" src="https://user-images.githubusercontent.com/16571394/212571267-da1215b8-6892-4df9-a0df-1b5f9c8d41c5.png">
+<img width="1334" alt="スクリーンショット 2023-01-16 8 28 00" src="https://user-images.githubusercontent.com/16571394/212573381-1fb5b3c8-1786-4e8f-a42f-81d768ac4f90.png">
+
+#### simulatorでの見え方
+
+<img width="386" alt="スクリーンショット 2023-01-16 8 29 01" src="https://user-images.githubusercontent.com/16571394/212573391-9b586328-6ef7-4747-a95e-2e34958c58da.png">
+
