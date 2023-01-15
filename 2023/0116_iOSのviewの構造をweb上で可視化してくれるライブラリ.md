@@ -15,6 +15,8 @@ https://github.com/damian-kolakowski/iOS-Hierarchy-Viewer
 6. ビルド
 7. ログにurlが出るのでそれにアクセス (添付では `http://127.0.0.1:9449`)するとbrowser上で確認できた
 
+※ https://github.com/takeshi-1000/testViewerViewHierarchy で一旦組み込んでみたもの作成
+
 ### 1についての画像
 
 <img width="975" alt="スクリーンショット 2023-01-16 7 39 30" src="https://user-images.githubusercontent.com/16571394/212570984-a73be2d5-a605-4e2b-a544-9ea92937784a.png">
