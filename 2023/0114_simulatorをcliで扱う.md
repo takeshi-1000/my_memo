@@ -71,7 +71,7 @@ Wrote screenshot to: /Users/takeshikomori/Desktop/screenshot.png
 test.sh
 
 xcrun simctl launch E36D7DEC-9BED-4267-9A78-3D72F681377F tk.testSimulatorCli TestArg=HogeView
-sleep 1s
+sleep 4
 xcrun simctl io booted screenshot ~/Desktop/screenshot.png
 ```
 
