@@ -27,7 +27,7 @@ https://github.com/damian-kolakowski/iOS-Hierarchy-Viewer
 
 ### 7についての画像
 
-<img width="754" alt="スクリーンショット 2023-01-16 7 44 37" src="https://user-images.githubusercontent.com/16571394/212571165-fb397529-f81f-416a-80f4-3b91ba3a87a6.png">
+<img width="754" alt="スクリーンショット 2023-01-16 7 44 37" src="https://user-images.githubusercontent.com/16571394/212579022-65f90f61-fcdf-462f-a06d-56e8bfb98d71.png">
 
 ### 実際のブラウザ上での確認
 
