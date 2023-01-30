@@ -1,0 +1,51 @@
+$ periphery scan --setup 
+Welcome to Periphery!
+This guided setup will help you select the appropriate configuration for your project.
+
+* Inspecting project...
+
+Select build targets to analyze:
+? Delimit choices with a single space, e.g: 1 2 3, or 'all' to select all options
+1 testAppWithPeriphery
+2 testAppWithPeripheryTests
+3 testAppWithPeripheryUITests
+> 1
+
+Select the schemes necessary to build your chosen targets:
+? Delimit choices with a single space, e.g: 1 2 3
+1 testAppWithPeriphery
+> 1
+
+Assume Objective-C accessible declarations are in use?
+? Declarations exposed to the Objective-C runtime explicitly with @objc, or implicitly by inheriting NSObject will be assumed to be in use. You may want to choose 'Yes' here if your project contains a mix of Swift & Objective-C.
+(Y)es/(N)o > Y
+
+Assume all 'public' declarations are in use?
+? You should choose 'Yes' here if your public interfaces are not used by any selected build target, as may be the case for a framework/library project.
+(Y)es/(N)o > Y
+
+Save configuration to .periphery.yml?
+(Y)es/(N)o > N
+
+* Executing command:
+periphery scan \
+  --project "testAppWithPeriphery.xcodeproj" \
+  --schemes "testAppWithPeriphery" \
+  --targets "testAppWithPeriphery" \
+  --retain-objc-accessible \
+  --retain-public
+
+* Inspecting project...
+* Building testAppWithPeriphery...
+* Indexing...
+* Analyzing...
+
+/Users/takeshikomori/me/takeshi-1000/testAppWithPeriphery/testAppWithPeriphery/ViewController.swift:17:10: warning: Function 'testHoge()' is unused
+
+* Seeing false positives?
+ - Periphery only analyzes files that are members of the targets you specify.
+   References to declarations identified as unused may reside in files that are members of other targets, e.g test targets.
+ - By default, Periphery does not assume that all public declarations are in use. 
+   You can instruct it to do so with the --retain-public option.
+ - Periphery is a very precise tool, false positives often turn out to be correct after further investigation.
+ - If it really is a false positive, please report it - https://github.com/peripheryapp/periphery/issues.
