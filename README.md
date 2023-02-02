@@ -10,7 +10,8 @@
 
 ※特に深い調査をしたわけではないです
 
-# フォーマット
+# 注意
 
-[TEMPLATE.md](https://github.com/takeshi-1000/my_memo/blob/main/TEMPLATE.md) で管理中
+- 話し言葉でかいていたり、誤字脱字が多いです
+- 単純なメモ書きなので、内容の妥当性でないものもあると思われます
 
