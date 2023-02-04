@@ -66,6 +66,7 @@ mutating func test() { // 暗黙のinout self が入っている
 }
 ```
 
+参考: https://heart-of-swift.github.io/value-semantics/how-to-use-value-types#:~:text=%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82-,mutating%20func,-consumePoints%20%E3%82%92%E9%96%A2%E6%95%B0
 
 ## [swift] generics
 
