@@ -19,7 +19,7 @@ let test2 = test
 test2.value = 20
 ```
 
-test,test2はそれぞれ下記の値となり
+test2.value = 20実行後の、test,test2はそれぞれ下記の値となり
 
 - test.value -> 5
 - test2.value -> 20
@@ -46,7 +46,7 @@ let test2 = test
 test2.value = 20
 ```
 
-test,test2はそれぞれ下記の値となり
+test2.value = 20実行後の、test,test2はそれぞれ下記の値となり
 
 - test.value -> 20
 - test2.value -> 20
