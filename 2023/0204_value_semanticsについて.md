@@ -1,5 +1,7 @@
 ## swiftにおけるvalue semantics について
 
+Swift における Value Semantics の定義は、ある型が Value Semantics を持つとき、その型の値が変更に対して独立であるということらしい。
+
 下記のようなstructを考えたとき
 
 ```
