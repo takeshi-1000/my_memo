@@ -20,6 +20,53 @@ func swapTwoInts(_ a: inout Int, _ b: inout Int) {
 
 ```
 
+### mutating 修飾子との関係性
+
+ある値型インスタンスのミュータブルなメンバに対しての変更を、メソッドとして定義する場合、下記のようになる。
+
+```
+struct Hoge {
+  var testVal: String = ""
+  
+  mutating func test() { // 暗黙のself
+    testVal = "called"
+  }
+}
+```
+
+呼び出し方は、下記のような感じ
+
+```
+var hoge = Hoge()
+hoge.test()
+```
+
+関数として定義する場合は以下の感じ（呼び出し方も併記）
+
+```
+struct Hoge {
+  var testVal: String = ""
+}
+
+func test(hoge: inout Hoge) {
+    hoge.testVal = "called"
+}
+
+==
+
+var hoge = Hoge()
+test(hoge: &hoge)
+```
+
+上記から、mutating 修飾子は、暗黙の引数 self に inout を付けることに対応している
+
+```
+mutating func test() { // 暗黙のinout self が入っている
+    testVal = "called"
+}
+```
+
+
 ## [swift] generics
 
 ### 関数
