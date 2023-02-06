@@ -102,4 +102,4 @@ class FooVM: ObservableObject {
 
 <img width="1092" alt="スクリーンショット 2023-02-06 9 57 52" src="https://user-images.githubusercontent.com/16571394/216859504-e84c56bd-5404-4182-bc16-40de65917ca4.png">
 
-<img width="1092" alt="スクリーンショット 2023-02-06 9 57 52" src="https://user-images.githubusercontent.com/16571394/216859540-c82b6a6f-c39f-459d-aa05-2f05a1c9eef6.png">
+<img width="1084" alt="スクリーンショット 2023-02-06 10 10 16" src="https://user-images.githubusercontent.com/16571394/216859612-f4f906da-9d48-4a64-84bf-62a9cb13f553.png">
