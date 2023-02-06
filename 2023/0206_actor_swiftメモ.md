@@ -70,7 +70,7 @@ class FugaVM: ObservableObject {
     }
 }
 
-@MyActor
+@MyActor // 多分やめといた方がいい？
 class FooVM: ObservableObject {
     
     func foo() {
