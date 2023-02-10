@@ -21,8 +21,13 @@ swiftlint rules の内容を確認してみる
 - analyzer:
 - uses sourcekit: 
 - configuration: どういうエラーを表出させるかの設定?
-  - warning: 警告でるが、コンパイルエラーにはならない
+  - warning: 警告でるが、~コンパイル~ Lintフェーズのエラーにはならない
   - warning以外のもの: Lintフェーズのエラーとしてコンパイルが進まない
+
+※swiftlintのエラーは、コンパイルの前段階の静的な解析におけるエラーでしかないので、コンパイルエラーとは切り分けて考えた方が良さそう。
+ただどうやってそれをエラーとしてみなしているのか、気になった
+
+<img width="988" alt="スクリーンショット 2023-02-10 9 30 41" src="https://user-images.githubusercontent.com/16571394/217970158-ca601409-49c3-45bc-a915-4f5868a02ea2.png">
 
 ### ruleを無効化するメモ
 
