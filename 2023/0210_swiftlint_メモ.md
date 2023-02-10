@@ -27,6 +27,8 @@ swiftlint rules の内容を確認してみる
 - 一番最初の状態からルールを無効化するには `opt-in==false && enabled in your config==true` のルールを、yml上で`enabled in your config = false` にするのが良いかも
 - コード上でルールを無効化させたい場合は https://github.com/realm/SwiftLint#disable-rules-in-code に従うのが良いかも
 
+### swiftlint rules ログ
+
 ```
 $ swiftlint --version
 0.50.3
