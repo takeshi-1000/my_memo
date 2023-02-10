@@ -27,6 +27,7 @@ swiftlint rules の内容を確認してみる
 ### ruleを無効化するメモ
 
 - 一番最初の状態からルールを無効化するには `opt-in==false && enabled in your config==true` のルールを、yml上で`enabled in your config = false` にするのが良いかも
+  - [ここ](https://qiita.com/shtnkgm/items/6dd756aa14926736c6f5#:~:text=%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%AA%E3%83%97%E3%83%88%E3%82%A4%E3%83%B3%E3%83%AB%E3%83%BC%E3%83%AB%E3%82%92%E5%85%A8%E6%8A%BD%E5%87%BA%E3%81%99%E3%82%8B%E3%83%AF%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89,-%24%20swiftlint%20rules)ら辺参考にすれば、効率よく設定できるかも
 - コード上でルールを無効化させたい場合は https://github.com/realm/SwiftLint#disable-rules-in-code に従うのが良いかも
 
 ### swiftlint rules ログ
