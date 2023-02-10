@@ -20,7 +20,9 @@ swiftlint rules の内容を確認してみる
   - performance
 - analyzer:
 - uses sourcekit: 
-- configuration:
+- configuration: どういうエラーを表出させるかの設定?
+  - warning: 警告でるが、コンパイルエラーにはならない
+  - warning以外のもの: Lintフェーズのエラーとしてコンパイルが進まない
 
 ### ruleを無効化するメモ
 
