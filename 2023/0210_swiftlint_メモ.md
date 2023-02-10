@@ -11,7 +11,7 @@ swiftlint rules の内容を確認してみる
 - correctable:
 - enabled in your config: 設定で有効になっているかどうか
   - true: yml上でtrueとして設定している or あらかじめルールとして有効になるようにswiftlintプログラム内で制御されているパターン
-  - false: yml上でfalseとして設定している or あらかじめルールとして無効になるようにswiftlintプログラム内で制御されているパターン（例えばopt-in=yesのものの場合、デフォルトではopt-inが設定されていることはないので、この値はfalseになっている）
+  - false: yml上でfalseとして設定している or あらかじめルールとして無効になるようにswiftlintプログラム内で制御されているパターン（例えばopt-in=yesのルールの場合、デフォルトではopt-inのルールが設定されていることはないので、この値はfalseになっている）
 - kind: ruleがどういった種類のものかをカテゴリ分けしているっぽい。下記の種類
   - style
   - lint
@@ -21,6 +21,11 @@ swiftlint rules の内容を確認してみる
 - analyzer:
 - uses sourcekit: 
 - configuration:
+
+### ruleを無効化するメモ
+
+- 一番最初の状態からルールを無効化するには `opt-in==false && enabled in your config==true` のルールを、yml上で`enabled in your config = false` にするのが良いかも
+- コード上でルールを無効化させたい場合は https://github.com/realm/SwiftLint#disable-rules-in-code に従うのが良いかも
 
 ```
 $ swiftlint --version
