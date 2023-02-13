@@ -9,6 +9,7 @@ swiftlint rules の内容を確認してみる
   - true: ルールをyml側に明示しないと現れない
   - false: ルールをymlに書かなくても、 `enabled in your config==true` の場合、設定が適用される
 - correctable:
+  - 元々swiftlint autocorrect的なコマンドを打つと、swiftlintプログラム自身でソースコードを手直ししてくれるっぽくて、それを適用させるかどうかのflagっぽい。ただ、swiftlint autocorrectは現在使えなそう? あまり深く調べられてないが、あまり気にしない方がいいのかも（ https://zenn.dev/muhiro12/scraps/ad831bd44a83c3 https://diamantidis.github.io/2018/12/23/a-guide-to-swiftlint#:~:text=a%20column%20named-,correctable,-.%20This%20means%20that ）
 - enabled in your config: 設定で有効になっているかどうか
   - true: yml上でtrueとして設定している or あらかじめルールとして有効になるようにswiftlintプログラム内で制御されているパターン
   - false: yml上でfalseとして設定している or あらかじめルールとして無効になるようにswiftlintプログラム内で制御されているパターン（例えばopt-in=yesのルールの場合、デフォルトではopt-inのルールが設定されていることはないので、この値はfalseになっている）
@@ -37,8 +38,12 @@ swiftlint rules の内容を確認してみる
 
 ### 知りたいこと
 
-- あるルールを適用した場合に、どのくらいの数の警告が出るかのトータル数の算出。コマンド用意されているか確認したい
-  - 例えばコマンドを打って、どのくらいのエラーが検出されるかのレポートが出てくれたら、それに従ってswiftlintを進めていく、向き合い方が変わってくるので、そういうのないか確認
+- ~あるルールを適用した場合に、どのくらいの数の警告が出るかのトータル数の算出。コマンド用意されているか確認したい~
+  - ~例えばコマンドを打って、どのくらいのエラーが検出されるかのレポートが出てくれたら、それに従ってswiftlintを進めていく、向き合い方が変わってくるので、そういうのないか確認~ 
+  - 普通にあった。 swiftlintコマンドを打てば良いだけ
+
+<img width="1274" alt="スクリーンショット 2023-02-13 9 34 57" src="https://user-images.githubusercontent.com/16571394/218347089-fd80ca74-2b23-4db2-b1c3-0e07aaaf65a6.png">
+
 
 ### swiftlint rules ログ
 
