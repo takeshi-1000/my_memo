@@ -1,6 +1,6 @@
 ## swiftlint適用ルールメモ
 
-- コマンドを打ったディレクトリ内に.ymlファイルがないと、デフォルトのruleが採用されそう
+- lintコマンド(`$ swiftlint`)を打ったディレクトリ内に.ymlファイルがないと、デフォルトのruleが採用されそう
 
 下記のようなディレクトリがあった場合に、 `testBitriseApp` 直下でswiftlintを実行すると、親の `.swiftlint.yml` が適用されるわけではなかった。 (version `0.50.3`)
 
