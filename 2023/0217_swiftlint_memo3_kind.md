@@ -44,4 +44,17 @@ opt_in_rules:
 
 https://realm.github.io/SwiftLint/closure_end_indentation.html にサンプルある
 
+### lintの例
+
+※　https://realm.github.io/SwiftLint のサンプル見ればわかりそうなものがあったことに気付いたので、それで賄えるものはそれで賄ってます
+
+#### `anyobject_protocol`
+
+https://realm.github.io/SwiftLint/anyobject_protocol.html
+
+#### `array_init`
+
+https://realm.github.io/SwiftLint/array_init.html
+
+### idiomaticの例
 
