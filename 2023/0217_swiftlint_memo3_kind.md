@@ -1,14 +1,19 @@
-## swiftlint rules で表示される `kind` について深ぼってみる
+# swiftlint rules で表示される `kind` について深ぼってみる
 
-https://github.com/takeshi-1000/my_memo/blob/main/2023/0210_swiftlint_%E3%83%A1%E3%83%A2.md でも書いたが、下記の種類がありそう
+## 一次ソース
+
+https://github.com/realm/SwiftLint/blob/e0f23fa8e9dc784ac5c0d8aa641949c4d972ad66/Source/SwiftLintFramework/Models/RuleKind.swift
+<br>https://realm.github.io/SwiftLint/Enums/RuleKind.html
 
 - kind
-  - style
-  - lint
-  - idiomatic
-  - metrics
-  - performance
+  - style: Describes rules that validate stylistic choices.(文体の選択を検証するルールを記述しています。)
+  - lint: Describes rules that validate Swift source conventions. (Swiftのソース規約を検証するルールを記述しています。)
+  - idiomatic: Describes rules that validate common practices in the Swift community.(Swiftコミュニティにおける一般的な慣習を検証するためのルールを記述します。)
+  - metrics: Describes rules that validate magnitudes or measurements of Swift source.(Swiftソースのマグニチュードや測定値を検証するルールを記述します。)
+  - performance: Describes rules that validate that code patterns with poor performance are avoided.(性能の悪いコードパターンを回避することを検証するルールを記述する。)
 
+
+## 色々調べてみる
 
 ### styleの例
 
