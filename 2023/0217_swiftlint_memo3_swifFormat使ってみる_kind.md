@@ -97,3 +97,13 @@ https://realm.github.io/SwiftLint/contains_over_filter_count.html
 `myArray == []` で比較の算出するよりかは isEmptyを使おう
 
 https://realm.github.io/SwiftLint/empty_collection_literal.html
+
+# SwiftFormat使ってみる
+
+https://github.com/nicklockwood/SwiftFormat
+
+- インストール:`$ brew install swiftformat`
+- 使ってみる`: フォーマットしたいディレクトリから $ swiftformat .` を実行
+
+https://user-images.githubusercontent.com/16571394/219522001-2696ef83-5692-47b1-821f-136213e23ea8.mov
+
