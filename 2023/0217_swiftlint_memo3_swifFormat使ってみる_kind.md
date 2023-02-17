@@ -107,3 +107,98 @@ https://github.com/nicklockwood/SwiftFormat
 
 https://user-images.githubusercontent.com/16571394/219522001-2696ef83-5692-47b1-821f-136213e23ea8.mov
 
+Ruleはこの辺: https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
+
+```
+$ swiftformat -rules
+
+ acronyms (disabled)
+ andOperator
+ anyObjectProtocol
+ assertionFailures
+ blankLineAfterImports (disabled)
+ blankLinesAroundMark
+ blankLinesAtEndOfScope
+ blankLinesAtStartOfScope
+ blankLinesBetweenImports (disabled)
+ blankLinesBetweenScopes
+ blockComments (disabled)
+ braces
+ consecutiveBlankLines
+ consecutiveSpaces
+ docComments (disabled)
+ duplicateImports
+ elseOnSameLine
+ emptyBraces
+ enumNamespaces
+ extensionAccessControl
+ fileHeader
+ genericExtensions
+ hoistPatternLet
+ indent
+ initCoderUnavailable
+ isEmpty (disabled)
+ leadingDelimiters
+ linebreakAtEndOfFile
+ linebreaks
+ markTypes (disabled)
+ modifierOrder
+ numberFormatting
+ opaqueGenericParameters
+ organizeDeclarations (disabled)
+ preferDouble (disabled)
+ preferKeyPath
+ redundantBackticks
+ redundantBreak
+ redundantClosure
+ redundantExtensionACL
+ redundantFileprivate
+ redundantGet
+ redundantInit
+ redundantLet
+ redundantLetError
+ redundantNilInit
+ redundantObjc
+ redundantOptionalBinding
+ redundantParens
+ redundantPattern
+ redundantRawValues
+ redundantReturn
+ redundantSelf
+ redundantType
+ redundantVoidReturnType
+ semicolons
+ sortDeclarations
+ sortedImports
+ sortedSwitchCases (disabled)
+ spaceAroundBraces
+ spaceAroundBrackets
+ spaceAroundComments
+ spaceAroundGenerics
+ spaceAroundOperators
+ spaceAroundParens
+ spaceInsideBraces
+ spaceInsideBrackets
+ spaceInsideComments
+ spaceInsideGenerics
+ spaceInsideParens
+ specifiers (deprecated)
+ strongOutlets
+ strongifiedSelf
+ todos
+ trailingClosures
+ trailingCommas
+ trailingSpace
+ typeSugar
+ unusedArguments
+ void
+ wrap
+ wrapArguments
+ wrapAttributes
+ wrapConditionalBodies (disabled)
+ wrapEnumCases (disabled)
+ wrapMultilineStatementBraces
+ wrapSingleLineComments
+ wrapSwitchCases (disabled)
+ yodaConditions
+```
