@@ -13,11 +13,9 @@ https://github.com/realm/SwiftLint/blob/e0f23fa8e9dc784ac5c0d8aa641949c4d972ad66
   - `performance`: Describes rules that validate that code patterns with poor performance are avoided.(性能の悪いコードパターンを回避することを検証するルールを記述する。)
 
 
-## 色々調べてみる
+## (1)styleの例
 
-### (1)styleの例
-
-#### `closing_blace`
+### `closing_blace`
 
 https://github.com/realm/SwiftLint/blob/325d0ee1e44a87fc82afeb874b83ceb82f6728cf/Source/SwiftLintFramework/Rules/Style/ClosingBraceRule.swift#L11
 
@@ -26,7 +24,7 @@ https://github.com/realm/SwiftLint/blob/325d0ee1e44a87fc82afeb874b83ceb82f6728cf
 
 <img width="1017" alt="スクリーンショット 2023-02-17 8 28 11" src="https://user-images.githubusercontent.com/16571394/219511061-c2e996ac-0f8b-424b-afc2-a282905faae6.png">
 
-#### `closure_end_indentation`
+### `closure_end_indentation`
 
 https://github.com/realm/SwiftLint/blob/74dbd52adda90eee0313654d876fdf88c8325552/Source/SwiftLintFramework/Rules/Style/ClosureEndIndentationRule.swift#L12
 
@@ -44,21 +42,21 @@ opt_in_rules:
 
 https://realm.github.io/SwiftLint/closure_end_indentation.html にサンプルある
 
-### (2)lintの例
+## (2)lintの例
 
 ※　https://realm.github.io/SwiftLint のサンプル見ればわかりそうなものがあったことに気付いたので、それで賄えるものはそれで賄ってます
 
-#### `anyobject_protocol`
+### `anyobject_protocol`
 
 https://realm.github.io/SwiftLint/anyobject_protocol.html
 
-#### `array_init`
+### `array_init`
 
 https://realm.github.io/SwiftLint/array_init.html
 
-### (3)idiomaticの例
+## (3)idiomaticの例
 
-#### `anonymous_argument_in_multiline_closure`
+### `anonymous_argument_in_multiline_closure`
 
 https://realm.github.io/SwiftLint/anonymous_argument_in_multiline_closure.html
 
@@ -66,22 +64,36 @@ https://realm.github.io/SwiftLint/anonymous_argument_in_multiline_closure.html
 
 2行目にクロージャの引数を持ってくる場合には、引数名を明示する方が好むらしい
 
-#### `duplicate_imports`
+### `duplicate_imports`
 
 https://realm.github.io/SwiftLint/duplicate_imports.html
 
 これはなんでコンパイルエラーにならないんだろう
 
-### (4)metricsの例
+## (4)metricsの例
 
-#### `enum_case_associated_values_count`
+### `enum_case_associated_values_count`
 
 https://realm.github.io/SwiftLint/enum_case_associated_values_count.html
 
 enumの引数の数は多すぎてはダメ
 
-#### `file_length`
+### `file_length`
 
 fileの行数を少なくしよう
 
 https://realm.github.io/SwiftLint/file_length.html
+
+## (5)performanceの例
+
+### `contains_over_filter_count`
+
+ある条件をfilterして、それが一つ以上あるか、を検証するのではなく、ある条件のものが含まれているかを検証しよう
+
+https://realm.github.io/SwiftLint/contains_over_filter_count.html
+
+### `empty_collection_literal`
+
+`myArray == []` で比較の算出するよりかは isEmptyを使おう
+
+https://realm.github.io/SwiftLint/empty_collection_literal.html
