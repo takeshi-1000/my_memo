@@ -15,7 +15,7 @@ https://github.com/realm/SwiftLint/blob/e0f23fa8e9dc784ac5c0d8aa641949c4d972ad66
 
 ## 色々調べてみる
 
-### styleの例
+### (1)styleの例
 
 #### `closing_blace`
 
@@ -44,7 +44,7 @@ opt_in_rules:
 
 https://realm.github.io/SwiftLint/closure_end_indentation.html にサンプルある
 
-### lintの例
+### (2)lintの例
 
 ※　https://realm.github.io/SwiftLint のサンプル見ればわかりそうなものがあったことに気付いたので、それで賄えるものはそれで賄ってます
 
@@ -56,7 +56,7 @@ https://realm.github.io/SwiftLint/anyobject_protocol.html
 
 https://realm.github.io/SwiftLint/array_init.html
 
-### idiomaticの例
+### (3)idiomaticの例
 
 #### `anonymous_argument_in_multiline_closure`
 
@@ -71,3 +71,17 @@ https://realm.github.io/SwiftLint/anonymous_argument_in_multiline_closure.html
 https://realm.github.io/SwiftLint/duplicate_imports.html
 
 これはなんでコンパイルエラーにならないんだろう
+
+### (4)metricsの例
+
+#### `enum_case_associated_values_count`
+
+https://realm.github.io/SwiftLint/enum_case_associated_values_count.html
+
+enumの引数の数は多すぎてはダメ
+
+#### `file_length`
+
+fileの行数を少なくしよう
+
+https://realm.github.io/SwiftLint/file_length.html
