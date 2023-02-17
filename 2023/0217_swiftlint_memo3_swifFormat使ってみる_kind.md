@@ -107,6 +107,8 @@ https://github.com/nicklockwood/SwiftFormat
 
 https://user-images.githubusercontent.com/16571394/219522001-2696ef83-5692-47b1-821f-136213e23ea8.mov
 
+## Rule
+
 Ruleはこの辺: https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
 
 ```
@@ -202,3 +204,7 @@ $ swiftformat -rules
  wrapSwitchCases (disabled)
  yodaConditions
 ```
+
+`$ swiftformat --ruleinfo` 
+
+https://github.com/takeshi-1000/my_memo/blob/main/log/2023/0217_swiftformat_ruleinfo
