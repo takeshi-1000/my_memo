@@ -58,3 +58,16 @@ https://realm.github.io/SwiftLint/array_init.html
 
 ### idiomaticの例
 
+#### `anonymous_argument_in_multiline_closure`
+
+https://realm.github.io/SwiftLint/anonymous_argument_in_multiline_closure.html
+
+<img width="493" alt="スクリーンショット 2023-02-17 8 58 47" src="https://user-images.githubusercontent.com/16571394/219514900-33a1b11e-29b8-4dbe-bb86-b2efe6264d77.png">
+
+2行目にクロージャの引数を持ってくる場合には、引数名を明示する方が好むらしい
+
+#### `duplicate_imports`
+
+https://realm.github.io/SwiftLint/duplicate_imports.html
+
+これはなんでコンパイルエラーにならないんだろう
