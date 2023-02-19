@@ -96,3 +96,58 @@ $ swift-format dump-configuration
   "version" : 1
 }
 ```
+
+```
+$ swift-format help format
+OVERVIEW: Format Swift source code
+
+When no files are specified, it expects the source from standard input.
+
+USAGE: swift-format format [--in-place] [--configuration <configuration>] [--assume-filename <assume-filename>] [--recursive] [--ignore-unparsable-files] [--parallel] [--color-diagnostics] [--no-color-diagnostics] [<paths> ...]
+
+ARGUMENTS:
+  <paths>                 Zero or more input filenames.
+
+OPTIONS:
+  -i, --in-place          Overwrite the current file when formatting.
+  --configuration <configuration>
+                          The path to a JSON file containing the configuration of the linter/formatter.
+  --assume-filename <assume-filename>
+                          When using standard input, the filename of the source to include in diagnostics.
+  -r, --recursive         Recursively run on '.swift' files in any provided directories.
+  --ignore-unparsable-files
+                          Ignores unparsable files, disabling all diagnostics and formatting for files that contain invalid syntax.
+  -p, --parallel          Process files in parallel, simultaneously across multiple cores.
+  --color-diagnostics/--no-color-diagnostics
+                          Enables or disables color diagnostics when printing to standard error. The default behavior if this flag is omitted is to use colors if standard error
+                          is connected to a terminal, and to not use colors otherwise.
+  -h, --help              Show help information.
+
+```
+
+```
+$ swift-format help lint  
+OVERVIEW: Diagnose style issues in Swift source code
+
+When no files are specified, it expects the source from standard input.
+
+USAGE: swift-format lint [--configuration <configuration>] [--assume-filename <assume-filename>] [--recursive] [--ignore-unparsable-files] [--parallel] [--color-diagnostics] [--no-color-diagnostics] [<paths> ...] [--strict]
+
+ARGUMENTS:
+  <paths>                 Zero or more input filenames.
+
+OPTIONS:
+  --configuration <configuration>
+                          The path to a JSON file containing the configuration of the linter/formatter.
+  --assume-filename <assume-filename>
+                          When using standard input, the filename of the source to include in diagnostics.
+  -r, --recursive         Recursively run on '.swift' files in any provided directories.
+  --ignore-unparsable-files
+                          Ignores unparsable files, disabling all diagnostics and formatting for files that contain invalid syntax.
+  -p, --parallel          Process files in parallel, simultaneously across multiple cores.
+  --color-diagnostics/--no-color-diagnostics
+                          Enables or disables color diagnostics when printing to standard error. The default behavior if this flag is omitted is to use colors if standard error
+                          is connected to a terminal, and to not use colors otherwise.
+  -s, --strict            Fail on warnings.
+  -h, --help              Show help information.
+```
