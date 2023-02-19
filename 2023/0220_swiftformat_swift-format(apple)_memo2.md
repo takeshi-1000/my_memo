@@ -1,3 +1,5 @@
+# nicklockwoodさんのSwiftFormatの続き
+
 ## swiftfomatをconfigファイルを作成して使用してみる
 
 - swiftformatの設定ファイルは、swiftformatのcliでも設定できそうなコマンドラインオプションをあらかじめ書いておく感じっぽい
@@ -12,4 +14,26 @@
 
 <img width="635" alt="スクリーンショット 2023-02-20 7 47 24" src="https://user-images.githubusercontent.com/16571394/219979932-30840e21-7021-4714-baea-423ce47c4933.png">
 
+# appleのswift-format調べてみる
+
+- install: https://github.com/takeshi-1000/my_memo/blob/main/log/2023/0220_swift-fomat-install
+  - 参考: https://zenn.dev/usk2000/articles/b07d0ac3bc016a#homebrew
+
+```
+$ swift-format -h   
+OVERVIEW: Format or lint Swift source code
+
+USAGE: swift-format [--version] <subcommand>
+
+OPTIONS:
+  -v, --version           Print the version and exit
+  -h, --help              Show help information.
+
+SUBCOMMANDS:
+  dump-configuration      Dump the default configuration in JSON format to standard output
+  format (default)        Format Swift source code
+  lint                    Diagnose style issues in Swift source code
+
+  See 'swift-format help <subcommand>' for detailed help.
+```
 
