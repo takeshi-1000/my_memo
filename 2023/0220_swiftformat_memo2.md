@@ -2,7 +2,7 @@
 
 - swiftformatの設定ファイルは、swiftformatのcliでも設定できそうなコマンドラインオプションをあらかじめ書いておく感じっぽい
 - swiftlintで言うところのrulesの出力の仕方が違くて多少アレってなる https://github.com/nicklockwood/SwiftFormat/issues/159#issuecomment-318696395 
-  - あらかじめコマンドライン引数をセットしておき、特段メモリ上では管理しないという考え方で、 swiftformat --rules で出力される内容はここの内容と連動しないことに注意
+  - あらかじめコマンドライン引数をセットしておき、特段メモリ上では管理しないという考え方で、 swiftformat --rules で出力される内容はコンフィグファイルと連動しないことに注意。確かにcatコマンドで出力すればdisableしているのが何かみたいなことは理解できる
 
 ## swiftformat rules, options の違い
 
