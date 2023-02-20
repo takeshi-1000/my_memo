@@ -152,7 +152,9 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-`indentation` -> `spaces` を変えてみる例
+## swift-formatをちょっと使ってみる
+
+### `indentation` -> `spaces` を変えてみる例
 
 `swift-format dump-configuration` のデフォルトの `indentation` -> `spaces` がXcodeの設定と連動してない
 
@@ -164,6 +166,4 @@ https://user-images.githubusercontent.com/16571394/219982688-a0ff6a8b-9fc0-4628-
 <img width="821" alt="スクリーンショット 2023-02-20 8 56 46" src="https://user-images.githubusercontent.com/16571394/219983268-8197ee2e-0a3f-46f0-a22c-0915c44c1820.png">
 
 https://user-images.githubusercontent.com/16571394/219983277-a736bc57-0c58-41bd-bd83-1d6d03fed52b.mov
-
-
 
