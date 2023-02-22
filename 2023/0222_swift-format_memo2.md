@@ -41,3 +41,7 @@ testBitriseApp/ContentView.swift:26:37: warning: [RemoveLine] remove line break
 testBitriseApp/ContentView.swift:27:22: warning: [RemoveLine] remove line break
 testBitriseApp/ContentView.swift:28:6: warning: [RemoveLine] remove line break
 ```
+
+## swift api 設計ガイドライン
+
+https://www.swift.org/documentation/api-design-guidelines/
