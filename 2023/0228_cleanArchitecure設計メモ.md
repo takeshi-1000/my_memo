@@ -112,7 +112,7 @@ class ProcessMemoryRepository {
     private var _hoge: Hoge = .init()
 }
 
-extension ProcessMemoryRepository: ProcessMemoryRepositoryDoorInput {
+extension ProcessMemoryRepository: ProcessMemoryRepositoryHogeInput {
 
     func getHoge() -> Hoge {
         _shared._hoge
