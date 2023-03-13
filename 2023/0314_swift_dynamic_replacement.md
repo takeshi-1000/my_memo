@@ -116,15 +116,9 @@ struct ContentView: View {
         .onAppear {
             Hoge().testHoge()
             Hoge().testA()
-            Hoge().onAppear() // geho3,geho3
+            let _ = Hoge().onAppear()
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
 
@@ -137,8 +131,9 @@ struct Hoge: ProtocolTest {
         print("hoge,hoge")
     }
     
-    dynamic func onAppear(perform action: (() -> Void)? = nil) {
+    dynamic func onAppear(perform action: (() -> Void)? = nil) -> any View {
         print("hoge3,hoge3")
+        return EmptyView()
     }
 }
 
@@ -154,8 +149,9 @@ extension Hoge {
     }
     
     @_dynamicReplacement(for: onAppear(perform:))
-    func testOnAppear(perform action: (() -> Void)? = nil) {
+    func testOnAppear(perform action: (() -> Void)? = nil) -> any View {
         print("geho3,geho3")
+        return EmptyView()
     }
 }
 
