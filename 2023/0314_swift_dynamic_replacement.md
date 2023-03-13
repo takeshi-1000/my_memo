@@ -39,3 +39,61 @@ extension Hoge {
     }
 }
 ```
+
+1. protocol定義
+2. そのprotocolを上記のHogeにかます
+3. Hogeのextensionでdynamic replacement をしてみる
+4. できそう
+
+```
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+        .onAppear {
+            Hoge().testHoge()
+            Hoge().testA()
+        }
+        .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct Hoge: ProtocolTest {
+    dynamic func testA() {
+        print("hoge2,hoge2")
+    }
+    
+    dynamic func testHoge() {
+        print("hoge,hoge")
+    }
+}
+
+extension Hoge {
+    @_dynamicReplacement(for: testHoge())
+    func gehoGeho() {
+        print("geho,geho")
+    }
+    
+    @_dynamicReplacement(for: testA())
+    func gehoGeho2() {
+        print("geho2,geho2")
+    }
+}
+
+protocol ProtocolTest {
+    func testA()
+}
+```
+
