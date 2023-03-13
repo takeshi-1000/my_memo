@@ -98,4 +98,68 @@ protocol ProtocolTest {
     func testA()
 }
 ```
+====
 
+protocol View の onAppearのmethod swizzlingしようとした時にコンパイラエラーが止まらなかったので、その前段として自作onAppearでやってみたやつ
+
+```
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+        .onAppear {
+            Hoge().testHoge()
+            Hoge().testA()
+            Hoge().onAppear() // geho3,geho3
+        }
+        .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct Hoge: ProtocolTest {
+    dynamic func testA() {
+        print("hoge2,hoge2")
+    }
+    
+    dynamic func testHoge() {
+        print("hoge,hoge")
+    }
+    
+    dynamic func onAppear(perform action: (() -> Void)? = nil) {
+        print("hoge3,hoge3")
+    }
+}
+
+extension Hoge {
+    @_dynamicReplacement(for: testHoge())
+    func gehoGeho() {
+        print("geho,geho")
+    }
+    
+    @_dynamicReplacement(for: testA())
+    func gehoGeho2() {
+        print("geho2,geho2")
+    }
+    
+    @_dynamicReplacement(for: onAppear(perform:))
+    func testOnAppear(perform action: (() -> Void)? = nil) {
+        print("geho3,geho3")
+    }
+}
+
+protocol ProtocolTest {
+    func testA()
+}
+```
