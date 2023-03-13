@@ -60,7 +60,7 @@ struct ContentView: View {
         }
         .onAppear {
             Hoge().testHoge()
-            Hoge().testA()
+            Hoge().testA() // geho2,geho2
         }
         .padding()
     }
