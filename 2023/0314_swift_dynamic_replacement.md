@@ -40,6 +40,8 @@ extension Hoge {
 }
 ```
 
+==============
+
 1. protocol定義
 2. そのprotocolを上記のHogeにかます
 3. Hogeのextensionでdynamic replacement をしてみる
