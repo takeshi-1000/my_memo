@@ -1,6 +1,9 @@
 swift native の method swizzling
 
-参考: https://github.com/apple/swift/commit/1e82ef8df778cc6f2fb02c498806082cf7a079b1#diff-43341e47555a12f90ec675c97d3172066a26a1571894cdbb933ba748398b0c4c
+参考: 
+
+- https://github.com/apple/swift/commit/1e82ef8df778cc6f2fb02c498806082cf7a079b1#diff-43341e47555a12f90ec675c97d3172066a26a1571894cdbb933ba748398b0c4c
+- https://gist.github.com/keith/da9e0c1eabab309ba924c8901abb0c00
 
 ```
 import SwiftUI
