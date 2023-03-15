@@ -1,0 +1,492 @@
+
+
+$ nm ~/Library/Developer/Xcode/DerivedData/testSwizzlingSwift-fjcqrnliqltcuaglvfqkwxceomkf/Build/Products/Debug-iphonesimulator/testSwizzlingSwift.app/testSwizzlingSwift 
+0000000100004734 t _$s10Foundation4DataV15_RepresentationOWOe
+                 U _$s10Foundation4DataV19base64EncodedString7optionsSSSo27NSDataBase64EncodingOptionsV_tF
+000000010000469c t _$s10Foundation4DataV19base64EncodedString7optionsSSSo27NSDataBase64EncodingOptionsV_tFfA_
+                 U _$s10Foundation4DataV36_unconditionallyBridgeFromObjectiveCyACSo6NSDataCSgFZ
+                 U _$s10ObjectiveC22_convertBoolToObjCBoolyAA0eF0VSbF
+                 U _$s15_ObjectiveCTypes01_A11CBridgeablePTl
+00000001000066a0 S _$s16ProtocolTestView18testSwizzlingSwift0aB0PTl
+0000000100002640 T _$s18testSwizzlingSwift0A6MethodyyF
+0000000100002bc0 T _$s18testSwizzlingSwift0A8OnAppear7performQryycSg_tF
+0000000100006814 s _$s18testSwizzlingSwift0A8OnAppear7performQryycSg_tFMXX
+0000000100006820 S _$s18testSwizzlingSwift0A8OnAppear7performQryycSg_tFQOMQ
+00000001000048bc t _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AA4BodyAdEP_AD5ScenePWT
+0000000100006d40 s _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AAMA
+0000000100006990 S _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AAMc
+000000010000d1e0 b _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AAMcMK
+0000000100004230 t _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AadEP4body4BodyQzvgTW
+0000000100004244 t _$s18testSwizzlingSwift0abC3AppV0C2UI0D0AadEPxycfCTW
+0000000100003c44 T _$s18testSwizzlingSwift0abC3AppV11appDelegateAA0dF0Cvg
+00000001000069d0 S _$s18testSwizzlingSwift0abC3AppV11appDelegateAA0dF0CvpMV
+00000001000041ec T _$s18testSwizzlingSwift0abC3AppV11appDelegateAC0C2UI013UIApplicationF7AdaptorVyAA0dF0CG_tcfC
+00000001000041b8 T _$s18testSwizzlingSwift0abC3AppV11appDelegateAC0C2UI013UIApplicationF7AdaptorVyAA0dF0CG_tcfcfA_
+0000000100003d2c T _$s18testSwizzlingSwift0abC3AppV12_appDelegate33_5195E408B80F40A3D9F2C2502E33A2CDLL0C2UI013UIApplicationF7AdaptorVyAA0dF0CGvpfi
+0000000100003d80 T _$s18testSwizzlingSwift0abC3AppV4bodyQrvg
+0000000100003efc t _$s18testSwizzlingSwift0abC3AppV4bodyQrvgAA11ContentViewVyXEfU_
+00000001000069d0 S _$s18testSwizzlingSwift0abC3AppV4bodyQrvpMV
+0000000100006a8c s _$s18testSwizzlingSwift0abC3AppV4bodyQrvpMXX
+0000000100006a98 S _$s18testSwizzlingSwift0abC3AppV4bodyQrvpQOMQ
+0000000100003ffc T _$s18testSwizzlingSwift0abC3AppV5$mainyyFZ
+000000010000cf70 d _$s18testSwizzlingSwift0abC3AppVAC0C2UI0D0AAWL
+000000010000408c t _$s18testSwizzlingSwift0abC3AppVAC0C2UI0D0AAWl
+00000001000040f4 T _$s18testSwizzlingSwift0abC3AppVACycfC
+0000000100006dc8 s _$s18testSwizzlingSwift0abC3AppVMF
+0000000100004030 T _$s18testSwizzlingSwift0abC3AppVMa
+000000010000cfe0 d _$s18testSwizzlingSwift0abC3AppVMf
+000000010000d260 b _$s18testSwizzlingSwift0abC3AppVMl
+00000001000069f8 S _$s18testSwizzlingSwift0abC3AppVMn
+0000000100004b44 t _$s18testSwizzlingSwift0abC3AppVMr
+000000010000cfe8 D _$s18testSwizzlingSwift0abC3AppVN
+0000000100004170 t _$s18testSwizzlingSwift0abC3AppVWOb
+000000010000cf80 d _$s18testSwizzlingSwift0abC3AppVWV
+00000001000048e0 t _$s18testSwizzlingSwift0abC3AppVwCP
+00000001000049a8 t _$s18testSwizzlingSwift0abC3AppVwca
+0000000100004960 t _$s18testSwizzlingSwift0abC3AppVwcp
+0000000100004a80 t _$s18testSwizzlingSwift0abC3AppVwet
+0000000100004ae0 t _$s18testSwizzlingSwift0abC3AppVwst
+0000000100004a38 t _$s18testSwizzlingSwift0abC3AppVwta
+00000001000049f0 t _$s18testSwizzlingSwift0abC3AppVwtk
+0000000100004924 t _$s18testSwizzlingSwift0abC3AppVwxx
+0000000100004258 T _$s18testSwizzlingSwift11AppDelegateC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0l6LaunchK3KeyaypGSgtF
+00000001000043b8 t _$s18testSwizzlingSwift11AppDelegateC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0l6LaunchK3KeyaypGSgtFTo
+00000001000045b0 T _$s18testSwizzlingSwift11AppDelegateC11application_48didRegisterForRemoteNotificationsWithDeviceTokenySo13UIApplicationC_10Foundation4DataVtF
+00000001000046a4 t _$s18testSwizzlingSwift11AppDelegateC11application_48didRegisterForRemoteNotificationsWithDeviceTokenySo13UIApplicationC_10Foundation4DataVtFTo
+00000001000047b4 T _$s18testSwizzlingSwift11AppDelegateCACycfC
+00000001000047d8 T _$s18testSwizzlingSwift11AppDelegateCACycfc
+000000010000483c t _$s18testSwizzlingSwift11AppDelegateCACycfcTo
+0000000100006de4 s _$s18testSwizzlingSwift11AppDelegateCMF
+0000000100003d60 T _$s18testSwizzlingSwift11AppDelegateCMa
+000000010000c500 s _$s18testSwizzlingSwift11AppDelegateCMf
+0000000100006a2c S _$s18testSwizzlingSwift11AppDelegateCMn
+000000010000c510 S _$s18testSwizzlingSwift11AppDelegateCN
+000000010000485c T _$s18testSwizzlingSwift11AppDelegateCfD
+00000001000031e8 t _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AA4BodyAdEP_AGWT
+0000000100006cf8 s _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AAMA
+0000000100006518 S _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AAMc
+000000010000d060 b _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AAMcMK
+00000001000025ec t _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AadEP05_makeE04view6inputsAD01_E7OutputsVAD11_GraphValueVyxG_AD01_E6InputsVtFZTW
+0000000100002600 t _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AadEP05_makeE4List4view6inputsAD01_eH7OutputsVAD11_GraphValueVyxG_AD01_eH6InputsVtFZTW
+0000000100002614 t _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AadEP14_viewListCount6inputsSiSgAD01_ehI6InputsV_tFZTW
+000000010000262c t _$s18testSwizzlingSwift11ContentViewV0C2UI0E0AadEP4body4BodyQzvgTW
+0000000100001290 T _$s18testSwizzlingSwift11ContentViewV4bodyQrvg
+0000000100001508 t _$s18testSwizzlingSwift11ContentViewV4bodyQrvg0C2UI05TupleE0VyAE0E0PAEE15foregroundColoryQrAE0J0VSgFQOyAiEE10imageScaleyQrAE5ImageV0L0OFQOyAP_Qo__Qo__AE4TextVtGyXEfU_
+0000000100001ac8 t _$s18testSwizzlingSwift11ContentViewV4bodyQrvgyycfU0_
+00000001000065d4 S _$s18testSwizzlingSwift11ContentViewV4bodyQrvpMV
+0000000100006720 s _$s18testSwizzlingSwift11ContentViewV4bodyQrvpMXX
+000000010000672c S _$s18testSwizzlingSwift11ContentViewV4bodyQrvpQOMQ
+000000010000cf60 d _$s18testSwizzlingSwift11ContentViewVAC0C2UI0E0AAWL
+0000000100003f34 t _$s18testSwizzlingSwift11ContentViewVAC0C2UI0E0AAWl
+00000001000025e8 T _$s18testSwizzlingSwift11ContentViewVACycfC
+0000000100006d88 s _$s18testSwizzlingSwift11ContentViewVMF
+00000001000032c0 T _$s18testSwizzlingSwift11ContentViewVMa
+0000000100008350 s _$s18testSwizzlingSwift11ContentViewVMf
+000000010000660c S _$s18testSwizzlingSwift11ContentViewVMn
+0000000100008358 S _$s18testSwizzlingSwift11ContentViewVN
+0000000100006674 S _$s18testSwizzlingSwift12ProtocolTestMp
+0000000100006698 S _$s18testSwizzlingSwift12ProtocolTestP0dE4ViewAC_0C2UI0F0Tn
+0000000100006690 S _$s18testSwizzlingSwift12ProtocolTestTL
+0000000100006da8 s _$s18testSwizzlingSwift12ProtocolTest_pMF
+0000000100003248 t _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AA4BodyAdEP_AD0E0PWT
+0000000100006d28 s _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AAMA
+0000000100006584 S _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AAMc
+000000010000d160 b _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AAMcMK
+000000010000326c t _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AadEP05_makeE08modifier6inputs4bodyAD01_E7OutputsVAD11_GraphValueVyxG_AD01_E6InputsVAlD01_M0V_AQtctFZTW
+0000000100003280 t _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AadEP05_makeE4List8modifier6inputs4bodyAD01_eI7OutputsVAD11_GraphValueVyxG_AD01_eI6InputsVAlD01_N0V_AQtctFZTW
+0000000100003294 t _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AadEP14_viewListCount6inputs4bodySiSgAD01_eiJ6InputsV_AjLXEtFZTW
+00000001000032ac t _$s18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AadEP4body7content4BodyQzAD01_eF8_ContentVyxG_tFTW
+0000000100002ca8 T _$s18testSwizzlingSwift16HogeViewModifierV4body7contentQr0C2UI01_eF8_ContentVyACG_tF
+0000000100006954 s _$s18testSwizzlingSwift16HogeViewModifierV4body7contentQr0C2UI01_eF8_ContentVyACG_tFMXX
+0000000100006960 S _$s18testSwizzlingSwift16HogeViewModifierV4body7contentQr0C2UI01_eF8_ContentVyACG_tFQOMQ
+0000000100002e00 t _$s18testSwizzlingSwift16HogeViewModifierV4body7contentQr0C2UI01_eF8_ContentVyACG_tFyycfU_
+000000010000ce98 d _$s18testSwizzlingSwift16HogeViewModifierVAC0C2UI0eF0AAWL
+000000010000229c t _$s18testSwizzlingSwift16HogeViewModifierVAC0C2UI0eF0AAWl
+0000000100002ca4 T _$s18testSwizzlingSwift16HogeViewModifierVACycfC
+0000000100006db8 s _$s18testSwizzlingSwift16HogeViewModifierVMF
+00000001000032e8 T _$s18testSwizzlingSwift16HogeViewModifierVMa
+0000000100008380 s _$s18testSwizzlingSwift16HogeViewModifierVMf
+00000001000066d4 S _$s18testSwizzlingSwift16HogeViewModifierVMn
+0000000100008388 S _$s18testSwizzlingSwift16HogeViewModifierVN
+00000001000027a4 T _$s18testSwizzlingSwift4HogeV0A1AyyF
+000000010000cea0 D _$s18testSwizzlingSwift4HogeV0A1AyyFTX
+0000000100006500 S _$s18testSwizzlingSwift4HogeV0A1AyyFTx
+00000001000028a4 T _$s18testSwizzlingSwift4HogeV0aD0yyF
+000000010000ceb0 D _$s18testSwizzlingSwift4HogeV0aD0yyFTX
+0000000100006508 S _$s18testSwizzlingSwift4HogeV0aD0yyFTx
+00000001000029a4 T _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tF
+0000000100006798 s _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFMXX
+00000001000067a4 S _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQOMQ
+000000010000323c T _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQOMg
+000000010000331c T _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQOMh
+00000001000067d0 S _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQOMj
+000000010000cf18 D _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQOMk
+000000010000cec0 D _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFTX
+0000000100006510 S _$s18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFTx
+0000000100002b98 t _$s18testSwizzlingSwift4HogeVAA12ProtocolTestA2aDP0A1AyyFTW
+0000000100002bac t _$s18testSwizzlingSwift4HogeVAA12ProtocolTestA2aDP8onAppear7perform0eF4ViewQzyycSg_tFTW
+000000010000320c t _$s18testSwizzlingSwift4HogeVAA12ProtocolTestAA0eF4ViewAaDP_0C2UI0G0PWT
+0000000100006d10 s _$s18testSwizzlingSwift4HogeVAA12ProtocolTestAAMA
+0000000100006568 S _$s18testSwizzlingSwift4HogeVAA12ProtocolTestAAMc
+000000010000d0e0 b _$s18testSwizzlingSwift4HogeVAA12ProtocolTestAAMcMK
+000000010000cef0 D _$s18testSwizzlingSwift4HogeVAA12ProtocolTestAAWP
+0000000100002b94 T _$s18testSwizzlingSwift4HogeVACycfC
+0000000100006d98 s _$s18testSwizzlingSwift4HogeVMF
+00000001000032d4 T _$s18testSwizzlingSwift4HogeVMa
+0000000100008368 s _$s18testSwizzlingSwift4HogeVMf
+0000000100006630 S _$s18testSwizzlingSwift4HogeVMn
+0000000100008370 S _$s18testSwizzlingSwift4HogeVN
+00000001000065f4 s _$s18testSwizzlingSwiftMXM
+                 U _$s4Body7SwiftUI12ViewModifierPTl
+                 U _$s4Body7SwiftUI3AppPTl
+                 U _$s4Body7SwiftUI4ViewPTl
+0000000100006b2c s _$s5UIKitMXM
+0000000100001908 t _$s7SwiftUI11ViewBuilderV10buildBlockyAA05TupleC0Vyx_q_tGx_q_tAA0C0RzAaHR_r0_lFZ
+00000001000021d4 t _$s7SwiftUI11ViewBuilderV10buildBlockyxxAA0C0RzlFZ
+                 U _$s7SwiftUI11WindowGroupV7contentACyxGxyXE_tcfC
+                 U _$s7SwiftUI11WindowGroupVMn
+000000010000cf68 d _$s7SwiftUI11WindowGroupVy013testSwizzlingA011ContentViewVGACyxGAA5SceneAAWL
+0000000100003f94 t _$s7SwiftUI11WindowGroupVy013testSwizzlingA011ContentViewVGACyxGAA5SceneAAWl
+000000010000cf58 d _$s7SwiftUI11WindowGroupVy013testSwizzlingA011ContentViewVGMD
+                 U _$s7SwiftUI11WindowGroupVyxGAA5SceneAAMc
+                 U _$s7SwiftUI12SceneBuilderV10buildBlockyxxAA0C0RzlFZ
+                 U _$s7SwiftUI12ViewModifierMp
+                 U _$s7SwiftUI12ViewModifierP05_makeC08modifier6inputs4bodyAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVAiA01_J0V_ANtctFZTq
+                 U _$s7SwiftUI12ViewModifierP05_makeC4List8modifier6inputs4bodyAA01_cF7OutputsVAA11_GraphValueVyxG_AA01_cF6InputsVAiA01_K0V_ANtctFZTq
+                 U _$s7SwiftUI12ViewModifierP14_viewListCount6inputs4bodySiSgAA01_cfG6InputsV_AgIXEtFZTq
+                 U _$s7SwiftUI12ViewModifierP4BodyAC_AA0C0Tn
+                 U _$s7SwiftUI12ViewModifierP4body7content4BodyQzAA01_cD8_ContentVyxG_tFTq
+                 U _$s7SwiftUI12ViewModifierPAAE05_makeC08modifier6inputs4bodyAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVAiA01_J0V_ANtctFZ
+                 U _$s7SwiftUI12ViewModifierPAAE05_makeC4List8modifier6inputs4bodyAA01_cF7OutputsVAA11_GraphValueVyxG_AA01_cF6InputsVAiA01_K0V_ANtctFZ
+                 U _$s7SwiftUI12ViewModifierPAAE14_viewListCount6inputs4bodySiSgAA01_cfG6InputsV_AgIXEtFZ
+                 U _$s7SwiftUI13_VStackLayoutVMn
+                 U _$s7SwiftUI13_VariadicViewO4TreeVMn
+000000010000ce60 d _$s7SwiftUI13_VariadicViewO4TreeVy_AA13_VStackLayoutVAA05TupleD0VyAA15ModifiedContentVyAKyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAM5ScaleOGGAOyAA5ColorVSgGG_AA4TextVtGGMD
+                 U _$s7SwiftUI15ModifiedContentVMa
+                 U _$s7SwiftUI15ModifiedContentVMn
+000000010000cee8 d _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGACyxq_GAA0E0A2aNRzAA0eF0R_rlWL
+0000000100003050 t _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGACyxq_GAA0E0A2aNRzAA0eF0R_rlWl
+000000010000ced0 d _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGMD
+000000010000316c t _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGWOb
+0000000100002f34 t _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGWOc
+00000001000030d0 t _$s7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGWOh
+000000010000cf28 d _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGACyxq_GAA4ViewA2aMRzAA0kI0R_rlWL
+00000001000033e4 t _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGACyxq_GAA4ViewA2aMRzAA0kI0R_rlWl
+000000010000ce68 d _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGMD
+00000001000034cc t _$s7SwiftUI15ModifiedContentVyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGWOh
+000000010000ce88 d _$s7SwiftUI15ModifiedContentVyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VGACyxq_GAA0G0A2AA1_RzAA0gL0R_rlWL
+0000000100001cdc t _$s7SwiftUI15ModifiedContentVyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VGACyxq_GAA0G0A2AA1_RzAA0gL0R_rlWl
+000000010000ce38 d _$s7SwiftUI15ModifiedContentVyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VGMD
+0000000100001d5c t _$s7SwiftUI15ModifiedContentVyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VGWOh
+000000010000cf38 d _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGGACyxq_GAA4ViewA2aRRzAA0lI0R_rlWL
+0000000100003688 t _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGGACyxq_GAA4ViewA2aRRzAA0lI0R_rlWl
+000000010000ce78 d _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGGMD
+0000000100003554 t _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGGWOc
+00000001000037b8 t _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGGWOh
+000000010000ce80 d _$s7SwiftUI15ModifiedContentVyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAE5ScaleOGGAGyAA5ColorVSgGG_AA4TextVtMD
+000000010000ce90 d _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGACyxq_GAA0G0A2AA5_RzAA0gL0R_rlWL
+0000000100002218 t _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGACyxq_GAA0G0A2AA5_RzAA0gL0R_rlWl
+000000010000ce40 d _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGMD
+000000010000246c t _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGWOb
+0000000100001ec8 t _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGWOc
+0000000100002300 t _$s7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGWOh
+                 U _$s7SwiftUI15ModifiedContentVyxq_GAA4ViewA2aERzAA0E8ModifierR_rlMc
+                 U _$s7SwiftUI18LocalizedStringKeyV13stringLiteralACSS_tcfC
+                 U _$s7SwiftUI19HorizontalAlignmentV6centerACvgZ
+                 U _$s7SwiftUI21_ViewModifier_ContentVMn
+000000010000cee0 d _$s7SwiftUI21_ViewModifier_ContentVy013testSwizzlingA004HogecD0VGACyxGAA0C0AAWL
+0000000100002ecc t _$s7SwiftUI21_ViewModifier_ContentVy013testSwizzlingA004HogecD0VGACyxGAA0C0AAWl
+000000010000ced8 d _$s7SwiftUI21_ViewModifier_ContentVy013testSwizzlingA004HogecD0VGMD
+                 U _$s7SwiftUI21_ViewModifier_ContentVyxGAA0C0AAMc
+                 U _$s7SwiftUI25_AppearanceActionModifierVAA04ViewE0AAWP
+                 U _$s7SwiftUI25_AppearanceActionModifierVMn
+                 U _$s7SwiftUI28UIApplicationDelegateAdaptorV12wrappedValuexvg
+                 U _$s7SwiftUI28UIApplicationDelegateAdaptorVMa
+                 U _$s7SwiftUI28UIApplicationDelegateAdaptorVMn
+000000010000cf50 d _$s7SwiftUI28UIApplicationDelegateAdaptorVy013testSwizzlingA003AppD0CGMD
+000000010000cfd8 d _$s7SwiftUI28UIApplicationDelegateAdaptorVy013testSwizzlingA003AppD0CGML
+0000000100004be4 t _$s7SwiftUI28UIApplicationDelegateAdaptorVy013testSwizzlingA003AppD0CGMa
+                 U _$s7SwiftUI28UIApplicationDelegateAdaptorVyACyxGxmcfC
+                 U _$s7SwiftUI30_EnvironmentKeyWritingModifierVMn
+000000010000cf40 d _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ColorVSgGACyxGAA04ViewF0AAWL
+000000010000370c t _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ColorVSgGACyxGAA04ViewF0AAWl
+000000010000cf48 d _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ColorVSgGMD
+000000010000cf30 d _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ImageV5ScaleOGACyxGAA04ViewF0AAWL
+0000000100003464 t _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ImageV5ScaleOGACyxGAA04ViewF0AAWl
+000000010000ce70 d _$s7SwiftUI30_EnvironmentKeyWritingModifierVyAA5ImageV5ScaleOGMD
+                 U _$s7SwiftUI30_EnvironmentKeyWritingModifierVyxGAA04ViewF0AAMc
+                 U _$s7SwiftUI3AppMp
+                 U _$s7SwiftUI3AppP4BodyAC_AA5SceneTn
+                 U _$s7SwiftUI3AppP4body4BodyQzvgTq
+                 U _$s7SwiftUI3AppPAAE4mainyyFZ
+                 U _$s7SwiftUI3AppPxycfCTq
+0000000100001c44 t _$s7SwiftUI4TextV7StorageOWOe
+0000000100002194 t _$s7SwiftUI4TextV7StorageOWOy
+                 U _$s7SwiftUI4TextVAA4ViewAAWP
+                 U _$s7SwiftUI4TextVMn
+                 U _$s7SwiftUI4TextVN
+0000000100003774 t _$s7SwiftUI4TextVWOh
+                 U _$s7SwiftUI4TextV_9tableName6bundle7commentAcA18LocalizedStringKeyV_SSSgSo8NSBundleCSgs06StaticI0VSgtcfC
+                 U _$s7SwiftUI4ViewMp
+0000000100001c84 T _$s7SwiftUI4ViewP013testSwizzlingA0E8hogeHogeQryF
+00000001000068a4 s _$s7SwiftUI4ViewP013testSwizzlingA0E8hogeHogeQryFMXX
+00000001000068c8 S _$s7SwiftUI4ViewP013testSwizzlingA0E8hogeHogeQryFQOMQ
+0000000100006848 s _$s7SwiftUI4ViewP013testSwizzlingA0EMXE
+                 U _$s7SwiftUI4ViewP05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZTq
+                 U _$s7SwiftUI4ViewP05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZTq
+                 U _$s7SwiftUI4ViewP14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZTq
+                 U _$s7SwiftUI4ViewP4BodyAC_AaBTn
+                 U _$s7SwiftUI4ViewP4body4BodyQzvgTq
+                 U _$s7SwiftUI4ViewPAAE05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZ
+                 U _$s7SwiftUI4ViewPAAE05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZ
+                 U _$s7SwiftUI4ViewPAAE10imageScaleyQrAA5ImageV0E0OF
+                 U _$s7SwiftUI4ViewPAAE14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZ
+                 U _$s7SwiftUI4ViewPAAE15foregroundColoryQrAA0E0VSgF
+                 U _$s7SwiftUI4ViewPAAE8modifieryAA15ModifiedContentVyxqd__Gqd__lF
+                 U _$s7SwiftUI4ViewPAAE8onAppear7performQryycSg_tF
+                 U _$s7SwiftUI5ColorV06accentC0ACvgZ
+                 U _$s7SwiftUI5ColorVMn
+                 U _$s7SwiftUI5ImageV10systemNameACSS_tcfC
+                 U _$s7SwiftUI5ImageV5ScaleO5largeyA2EmFWC
+                 U _$s7SwiftUI5ImageV5ScaleOMa
+                 U _$s7SwiftUI5ImageV5ScaleOMn
+                 U _$s7SwiftUI5ImageVAA4ViewAAWP
+                 U _$s7SwiftUI5ImageVMn
+                 U _$s7SwiftUI5ImageVN
+00000001000033bc t _$s7SwiftUI5ImageVWOh
+                 U _$s7SwiftUI5SceneMp
+                 U _$s7SwiftUI6VStackV9alignment7spacing7contentACyxGAA19HorizontalAlignmentV_12CoreGraphics7CGFloatVSgxyXEtcfC
+00000001000019d4 t _$s7SwiftUI6VStackV9alignment7spacing7contentACyxGAA19HorizontalAlignmentV_12CoreGraphics7CGFloatVSgxyXEtcfcfA_
+                 U _$s7SwiftUI6VStackVMn
+000000010000ce58 d _$s7SwiftUI6VStackVyAA9TupleViewVyAA15ModifiedContentVyAGyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGACyxGAA0E0AAWL
+0000000100001acc t _$s7SwiftUI6VStackVyAA9TupleViewVyAA15ModifiedContentVyAGyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGACyxGAA0E0AAWl
+000000010000ce30 d _$s7SwiftUI6VStackVyAA9TupleViewVyAA15ModifiedContentVyAGyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGMD
+0000000100001b34 t _$s7SwiftUI6VStackVyAA9TupleViewVyAA15ModifiedContentVyAGyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGWOh
+                 U _$s7SwiftUI6VStackVyxGAA4ViewAAMc
+0000000100002af8 t _$s7SwiftUI7AnyViewV7erasingACx_tcAA0D0RzlufC
+                 U _$s7SwiftUI7AnyViewVAA0D0AAWP
+                 U _$s7SwiftUI7AnyViewVMn
+                 U _$s7SwiftUI7AnyViewVyACxcAA0D0RzlufC
+                 U _$s7SwiftUI9EmptyViewVAA0D0AAWP
+                 U _$s7SwiftUI9EmptyViewVACycfC
+                 U _$s7SwiftUI9EmptyViewVMn
+                 U _$s7SwiftUI9EmptyViewVN
+                 U _$s7SwiftUI9TupleViewVMn
+000000010000ce50 d _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGACyxGAA0D0AAWL
+00000001000019f4 t _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGACyxGAA0D0AAWl
+000000010000ce48 d _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGMD
+0000000100003874 t _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGWOb
+0000000100003984 t _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGWOc
+0000000100003b48 t _$s7SwiftUI9TupleViewVyAA15ModifiedContentVyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAG5ScaleOGGAIyAA5ColorVSgGG_AA4TextVtGWOh
+                 U _$s7SwiftUI9TupleViewVyACyxGxcfC
+                 U _$s7SwiftUI9TupleViewVyxGAA0D0AAMc
+                 U _$s8RawValueSYTl
+                 U _$sBOWV
+000000010000d050 d _$sS2Ss21_ObjectiveCBridgeable10FoundationWL
+00000001000051ec t _$sS2Ss21_ObjectiveCBridgeable10FoundationWl
+                 U _$sSD10FoundationE36_unconditionallyBridgeFromObjectiveCySDyxq_GSo12NSDictionaryCSgFZ
+                 U _$sSH13_rawHashValue4seedS2i_tFTq
+                 U _$sSH4hash4intoys6HasherVz_tFTq
+                 U _$sSH9hashValueSivgTq
+                 U _$sSHMp
+                 U _$sSHSQTb
+                 U _$sSQ2eeoiySbx_xtFZTq
+                 U _$sSQMp
+                 U _$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF
+                 U _$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ
+                 U _$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC
+                 U _$sSSN
+                 U _$sSSSHsWP
+                 U _$sSSSQsWP
+                 U _$sSSs21_ObjectiveCBridgeable10FoundationMc
+                 U _$sSY8rawValue03RawB0QzvgTq
+                 U _$sSY8rawValuexSg03RawB0Qz_tcfCTq
+                 U _$sSYMp
+00000001000033b0 t _$sSa12_endMutationyyF
+                 U _$sSaMa
+0000000100004ee4 t _$sSo29UIApplicationLaunchOptionsKeya8rawValueABSS_tcfC
+0000000100004f7c t _$sSo29UIApplicationLaunchOptionsKeya8rawValueSSvg
+000000010000cf78 d _$sSo29UIApplicationLaunchOptionsKeyaABSHSCWL
+0000000100004548 t _$sSo29UIApplicationLaunchOptionsKeyaABSHSCWl
+000000010000d040 d _$sSo29UIApplicationLaunchOptionsKeyaABSQSCWL
+000000010000511c t _$sSo29UIApplicationLaunchOptionsKeyaABSQSCWl
+000000010000d030 d _$sSo29UIApplicationLaunchOptionsKeyaABSYSCWL
+0000000100005024 t _$sSo29UIApplicationLaunchOptionsKeyaABSYSCWl
+000000010000d048 d _$sSo29UIApplicationLaunchOptionsKeyaABs20_SwiftNewtypeWrapperSCWL
+0000000100005184 t _$sSo29UIApplicationLaunchOptionsKeyaABs20_SwiftNewtypeWrapperSCWl
+000000010000d038 d _$sSo29UIApplicationLaunchOptionsKeyaABs35_HasCustomAnyHashableRepresentationSCWL
+00000001000050a0 t _$sSo29UIApplicationLaunchOptionsKeyaABs35_HasCustomAnyHashableRepresentationSCWl
+0000000100007934 s _$sSo29UIApplicationLaunchOptionsKeyaMB
+0000000100006df4 s _$sSo29UIApplicationLaunchOptionsKeyaMF
+000000010000d028 d _$sSo29UIApplicationLaunchOptionsKeyaML
+00000001000044b4 t _$sSo29UIApplicationLaunchOptionsKeyaMa
+0000000100008478 s _$sSo29UIApplicationLaunchOptionsKeyaMf
+0000000100006b04 s _$sSo29UIApplicationLaunchOptionsKeyaMn
+0000000100006c4c s _$sSo29UIApplicationLaunchOptionsKeyaSHSCMc
+000000010000d4f0 b _$sSo29UIApplicationLaunchOptionsKeyaSHSCMcMK
+0000000100004d10 t _$sSo29UIApplicationLaunchOptionsKeyaSHSCSH13_rawHashValue4seedS2i_tFTW
+0000000100004ccc t _$sSo29UIApplicationLaunchOptionsKeyaSHSCSH4hash4intoys6HasherVz_tFTW
+0000000100004c90 t _$sSo29UIApplicationLaunchOptionsKeyaSHSCSH9hashValueSivgTW
+0000000100005108 t _$sSo29UIApplicationLaunchOptionsKeyaSHSCSQWb
+0000000100006bd4 s _$sSo29UIApplicationLaunchOptionsKeyaSQSCMc
+000000010000d3f0 b _$sSo29UIApplicationLaunchOptionsKeyaSQSCMcMK
+0000000100004e68 t _$sSo29UIApplicationLaunchOptionsKeyaSQSCSQ2eeoiySbx_xtFZTW
+0000000100006d58 s _$sSo29UIApplicationLaunchOptionsKeyaSYSCMA
+0000000100006b64 s _$sSo29UIApplicationLaunchOptionsKeyaSYSCMc
+000000010000d2f0 b _$sSo29UIApplicationLaunchOptionsKeyaSYSCMcMK
+0000000100004f4c t _$sSo29UIApplicationLaunchOptionsKeyaSYSCSY8rawValue03RawF0QzvgTW
+0000000100004eb0 t _$sSo29UIApplicationLaunchOptionsKeyaSYSCSY8rawValuexSg03RawF0Qz_tcfCTW
+0000000100006ba0 s _$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCMc
+000000010000d370 b _$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCMcMK
+0000000100005010 t _$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCSYWb
+000000010000508c t _$sSo29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentationPWb
+0000000100006d70 s _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCMA
+0000000100006c00 s _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCMc
+000000010000d470 b _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCMcMK
+0000000100004d8c t _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP016_forceBridgeFromE1C_6resulty01_E5CTypeQz_xSgztFZTW
+0000000100004dd4 t _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP024_conditionallyBridgeFromE1C_6resultSb01_E5CTypeQz_xSgztFZTW
+0000000100004e20 t _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP026_unconditionallyBridgeFromE1Cyx01_E5CTypeQzSgFZTW
+0000000100004d54 t _$sSo29UIApplicationLaunchOptionsKeyas21_ObjectiveCBridgeableSCsACP09_bridgeToE1C01_E5CTypeQzyFTW
+0000000100006b38 s _$sSo29UIApplicationLaunchOptionsKeyas35_HasCustomAnyHashableRepresentationSCMc
+000000010000d270 b _$sSo29UIApplicationLaunchOptionsKeyas35_HasCustomAnyHashableRepresentationSCMcMK
+0000000100004fc8 t _$sSo29UIApplicationLaunchOptionsKeyas35_HasCustomAnyHashableRepresentationSCsACP03_tofgH0s0gH0VSgyFTW
+0000000100006ac4 s _$sSoMXM
+                 U _$ss10debugPrint_9separator10terminatoryypd_S2StF
+0000000100004360 t _$ss10debugPrint_9separator10terminatoryypd_S2StFfA0_
+000000010000438c t _$ss10debugPrint_9separator10terminatoryypd_S2StFfA1_
+                 U _$ss20_SwiftNewtypeWrapperMp
+                 U _$ss20_SwiftNewtypeWrapperPSYTb
+                 U _$ss20_SwiftNewtypeWrapperPs35_HasCustomAnyHashableRepresentationTb
+                 U _$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE04hashE0Sivg
+                 U _$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE08_rawHashE04seedS2i_tF
+                 U _$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE20_toCustomAnyHashables0hI0VSgyF
+                 U _$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE4hash4intoys6HasherVz_tF
+                 U _$ss20_SwiftNewtypeWrapperPss21_ObjectiveCBridgeable8RawValueRpzrlE016_forceBridgeFromD1C_6resultyAD_01_D5CTypeQZ_xSgztFZ
+                 U _$ss20_SwiftNewtypeWrapperPss21_ObjectiveCBridgeable8RawValueRpzrlE024_conditionallyBridgeFromD1C_6resultSbAD_01_D5CTypeQZ_xSgztFZ
+                 U _$ss20_SwiftNewtypeWrapperPss21_ObjectiveCBridgeable8RawValueRpzrlE026_unconditionallyBridgeFromD1CyxAD_01_D5CTypeQZSgFZ
+                 U _$ss20_SwiftNewtypeWrapperPss21_ObjectiveCBridgeable8RawValueRpzrlE09_bridgeToD1CAD_01_D5CTypeQZyF
+                 U _$ss21_ObjectiveCBridgeableMp
+                 U _$ss21_ObjectiveCBridgeableP016_forceBridgeFromA1C_6resulty01_A5CTypeQz_xSgztFZTq
+                 U _$ss21_ObjectiveCBridgeableP024_conditionallyBridgeFromA1C_6resultSb01_A5CTypeQz_xSgztFZTq
+                 U _$ss21_ObjectiveCBridgeableP026_unconditionallyBridgeFromA1Cyx01_A5CTypeQzSgFZTq
+                 U _$ss21_ObjectiveCBridgeableP09_bridgeToA1C01_A5CTypeQzyFTq
+                 U _$ss27_allocateUninitializedArrayySayxG_BptBwlF
+000000010000270c t _$ss27_finalizeUninitializedArrayySayxGABnlF
+                 U _$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlF
+                 U _$ss35_HasCustomAnyHashableRepresentationMp
+                 U _$ss35_HasCustomAnyHashableRepresentationP03_tobcD0s0cD0VSgyFTq
+                 U _$ss5print_9separator10terminatoryypd_S2StF
+000000010000274c t _$ss5print_9separator10terminatoryypd_S2StFfA0_
+0000000100002778 t _$ss5print_9separator10terminatoryypd_S2StFfA1_
+                 U _$sypN
+                 U _$sytWV
+                 U _OBJC_CLASS_$_NSObject
+000000010000c510 S _OBJC_CLASS_$__TtC18testSwizzlingSwift11AppDelegate
+                 U _OBJC_METACLASS_$_NSObject
+000000010000d000 D _OBJC_METACLASS_$__TtC18testSwizzlingSwift11AppDelegate
+000000010000c4b8 s __DATA__TtC18testSwizzlingSwift11AppDelegate
+000000010000c070 s __METACLASS_DATA__TtC18testSwizzlingSwift11AppDelegate
+0000000100005588 s __OBJC_$_INSTANCE_METHODS__TtC18testSwizzlingSwift11AppDelegate
+000000010000c060 s __PROTOCOLS__TtC18testSwizzlingSwift11AppDelegate
+000000010000c0b8 s __PROTOCOLS__TtC18testSwizzlingSwift11AppDelegate.7
+000000010000cb98 s __PROTOCOL_INSTANCE_METHODS_NSObject
+000000010000ce10 s __PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+000000010000c560 s __PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+000000010000c3a8 s __PROTOCOL_METHOD_TYPES_NSObject
+000000010000c150 s __PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+000000010000c0c8 s __PROTOCOL_NSObject
+000000010000c360 s __PROTOCOL_PROPERTIES_NSObject
+000000010000c138 s __PROTOCOL_PROPERTIES_UIApplicationDelegate
+000000010000c128 s __PROTOCOL_PROTOCOLS_UIApplicationDelegate
+000000010000c000 s __PROTOCOL_UIApplicationDelegate
+00000001000014a4 t ___swift_instantiateConcreteTypeFromMangledName
+0000000100001a5c t ___swift_instantiateConcreteTypeFromMangledNameAbstract
+0000000100006c90 s ___swift_reflection_version
+0000000100000000 T __mh_execute_header
+                 U __objc_empty_cache
+00000001000083b0 s __swift_FORCE_LOAD_$_swiftCoreFoundation_$_testSwizzlingSwift
+00000001000083c0 s __swift_FORCE_LOAD_$_swiftCoreGraphics_$_testSwizzlingSwift
+00000001000083c8 s __swift_FORCE_LOAD_$_swiftCoreImage_$_testSwizzlingSwift
+00000001000083a0 s __swift_FORCE_LOAD_$_swiftDarwin_$_testSwizzlingSwift
+00000001000083e8 s __swift_FORCE_LOAD_$_swiftDataDetection_$_testSwizzlingSwift
+00000001000083b8 s __swift_FORCE_LOAD_$_swiftDispatch_$_testSwizzlingSwift
+00000001000083e0 s __swift_FORCE_LOAD_$_swiftFileProvider_$_testSwizzlingSwift
+00000001000083d0 s __swift_FORCE_LOAD_$_swiftMetal_$_testSwizzlingSwift
+0000000100008400 s __swift_FORCE_LOAD_$_swiftOSLog_$_testSwizzlingSwift
+00000001000083a8 s __swift_FORCE_LOAD_$_swiftObjectiveC_$_testSwizzlingSwift
+00000001000083d8 s __swift_FORCE_LOAD_$_swiftQuartzCore_$_testSwizzlingSwift
+0000000100008398 s __swift_FORCE_LOAD_$_swiftUIKit_$_testSwizzlingSwift
+00000001000083f8 s __swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers_$_testSwizzlingSwift
+00000001000083f0 s __swift_FORCE_LOAD_$_swiftos_$_testSwizzlingSwift
+00000001000058c2 s _associated conformance 18testSwizzlingSwift0abC3AppV0C2UI0D0AA4BodyAdEP_AD5Scene
+00000001000057aa s _associated conformance 18testSwizzlingSwift11ContentViewV0C2UI0E0AA4BodyAdEP_AdE
+000000010000580a s _associated conformance 18testSwizzlingSwift16HogeViewModifierV0C2UI0eF0AA4BodyAdEP_AD0E0
+00000001000057ca s _associated conformance 18testSwizzlingSwift4HogeVAA12ProtocolTestAA0eF4ViewAaDP_0C2UI0G0
+0000000100005946 s _associated conformance So29UIApplicationLaunchOptionsKeyaSHSCSQ
+000000010000591a s _associated conformance So29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCSY
+0000000100005922 s _associated conformance So29UIApplicationLaunchOptionsKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
+00000001000058f4 s _get_witness_table 7SwiftUI11WindowGroupVy013testSwizzlingA011ContentViewVGAA5SceneHPyHC.10
+000000010000588e s _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy013testSwizzlingA004HogeeF0VGAA017_AppearanceActionF0VGAA0E0HPAiaMHPyHC_AkA0eF0HPyHCHC.20
+000000010000584e s _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6VStackVyAA9TupleViewVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAI5ScaleOGGAKyAA5ColorVSgGG_AA4TextVtGGAA017_AppearanceActionL0VG013testSwizzlingA004HogegL0VGAA0G0HPA_AAA4_HPAxAA4_HPyHC_AzA0gL0HPyHCHC_A2_AAA5_HPyHCHC.12
+0000000100005886 s _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx013testSwizzlingA004HogeC8ModifierVGAaBHPxAaBHD1__AgA0cI0HPyHCHC.18
+000000010000585c s _get_witness_table 7SwiftUI7AnyViewVAA0D0HPyHC.14
+000000010000586a s _get_witness_table 7SwiftUI9EmptyViewVAA0D0HPyHC.16
+00000001000048a4 T _main
+                 U _objc_allocWithZone
+                 U _objc_msgSend
+                 U _objc_msgSendSuper2
+                 U _objc_opt_self
+                 U _objc_release
+                 U _objc_retain
+                 U _swift_bridgeObjectRelease
+                 U _swift_bridgeObjectRetain
+                 U _swift_getEnumTagSinglePayloadGeneric
+                 U _swift_getForeignTypeMetadata
+                 U _swift_getFunctionReplacement
+                 U _swift_getObjectType
+                 U _swift_getOpaqueTypeConformance
+                 U _swift_getSingletonMetadata
+                 U _swift_getTupleTypeMetadata2
+                 U _swift_getTypeByMangledNameInContext
+                 U _swift_getTypeByMangledNameInContextInMetadataState
+                 U _swift_getWitnessTable
+                 U _swift_initStructMetadata
+                 U _swift_release
+                 U _swift_retain
+                 U _swift_storeEnumTagSinglePayloadGeneric
+00000001000057e4 s _symbolic $s18testSwizzlingSwift12ProtocolTestP
+0000000100005818 s _symbolic $s7SwiftUI12ViewModifierP
+00000001000058d0 s _symbolic $s7SwiftUI3AppP
+00000001000057b8 s _symbolic $s7SwiftUI4ViewP
+0000000100005914 s _symbolic $sSY
+000000010000592a s _symbolic $ss21_ObjectiveCBridgeableP
+0000000100005832 s _symbolic 16ProtocolTestView_____Qz 18testSwizzlingSwift12ProtocolTestP
+0000000100005910 s _symbolic SS
+00000001000058e0 s _symbolic So8NSObjectC
+0000000100005902 s _symbolic So8NSStringC
+00000001000058ca s _symbolic _____ 18testSwizzlingSwift0abC3AppV
+00000001000058ee s _symbolic _____ 18testSwizzlingSwift11AppDelegateC
+00000001000057b2 s _symbolic _____ 18testSwizzlingSwift11ContentViewV
+0000000100005812 s _symbolic _____ 18testSwizzlingSwift16HogeViewModifierV
+00000001000057de s _symbolic _____ 18testSwizzlingSwift4HogeV
+0000000100005856 s _symbolic _____ 7SwiftUI7AnyViewV
+0000000100005864 s _symbolic _____ 7SwiftUI9EmptyViewV
+00000001000058fc s _symbolic _____ So29UIApplicationLaunchOptionsKeya
+000000010000572a s _symbolic _____yAAy__________y_____GGACy_____SgGG 7SwiftUI15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AE5ScaleO AA5ColorV
+0000000100005752 s _symbolic _____yAAy__________y_____GGACy_____SgGG______t 7SwiftUI15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AE5ScaleO AA5ColorV AA4TextV
+0000000100005638 s _symbolic _____yAAy_____y_____yAAyAAy__________y_____GGAEy_____SgGG______tGG_____G_____G 7SwiftUI15ModifiedContentV AA6VStackV AA9TupleViewV AA5ImageV AA30_EnvironmentKeyWritingModifierV AI5ScaleO AA5ColorV AA4TextV AA017_AppearanceActionL0V 013testSwizzlingA004HogegL0V
+00000001000057d2 s _symbolic _____y_Qo_ 18testSwizzlingSwift4HogeV8onAppear7performQryycSg_tFQO
+00000001000058b4 s _symbolic _____y_____G 7SwiftUI11WindowGroupV 013testSwizzlingA011ContentViewV
+000000010000579c s _symbolic _____y_____G 7SwiftUI21_ViewModifier_ContentV 013testSwizzlingA004HogecD0V
+00000001000058a6 s _symbolic _____y_____G 7SwiftUI28UIApplicationDelegateAdaptorV 013testSwizzlingA003AppD0C
+000000010000571c s _symbolic _____y_____G 7SwiftUI30_EnvironmentKeyWritingModifierV AA5ImageV5ScaleO
+0000000100005896 s _symbolic _____y_____SgG 7SwiftUI30_EnvironmentKeyWritingModifierV AA5ColorV
+00000001000056be s _symbolic _____y___________y_____yADy__________y_____GGAFy_____SgGG______tGG 7SwiftUI13_VariadicViewO4TreeV AA13_VStackLayoutV AA05TupleD0V AA15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AM5ScaleO AA5ColorV AA4TextV
+0000000100005702 s _symbolic _____y__________y_____GG 7SwiftUI15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AE5ScaleO
+0000000100005688 s _symbolic _____y_____yABy__________y_____GGADy_____SgGG______tG 7SwiftUI9TupleViewV AA15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AG5ScaleO AA5ColorV AA4TextV
+0000000100005782 s _symbolic _____y_____y_____G_____G 7SwiftUI15ModifiedContentV AA014_ViewModifier_D0V 013testSwizzlingA004HogeeF0V AA017_AppearanceActionF0V
+00000001000055f2 s _symbolic _____y_____y_____yAAyAAy__________y_____GGAEy_____SgGG______tGG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA9TupleViewV AA5ImageV AA30_EnvironmentKeyWritingModifierV AI5ScaleO AA5ColorV AA4TextV AA017_AppearanceActionL0V
+00000001000055b4 s _symbolic _____y_____y_____yACy__________y_____GGAEy_____SgGG______tGG 7SwiftUI6VStackV AA9TupleViewV AA15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AI5ScaleO AA5ColorV AA4TextV
+0000000100005878 s _symbolic _____yx_____G 7SwiftUI15ModifiedContentV 013testSwizzlingA016HogeViewModifierV
+0000000100005872 s _symbolic qd__
+000000010000584c s _symbolic x
