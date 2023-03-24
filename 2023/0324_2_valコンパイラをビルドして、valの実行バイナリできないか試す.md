@@ -161,4 +161,31 @@ hello:
 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.0.0)
 ```
 
+(5) 下記の複数ファイルパターンもできた
 
+## メモ
+
+- `--emit <output-type>    Emit the specified type output files. From: raw-ast, raw-ir, ir, cpp, binary (default: binary)` これを見ると、IRGenの生成後にCppを作成するフェーズがある。これを最終的にコンパイル+リンク(ビルド)している感じ?
+
+```
+$ ~/me/takeshi-1000/val/.build/release/valc -help                          
+USAGE: valc [--modules] [--import-builtin] [--no-std] [--typecheck] [--trace-inference <file:line>] [--emit <output-type>] [--cc <CXXCompiler>] [--cc-flags <CXXCompilerFlags> ...] [-o <file>] [--verbose] [<inputs> ...]
+
+ARGUMENTS:
+  <inputs>
+
+OPTIONS:
+  --modules               Compile inputs as separate modules.
+  --import-builtin        Import the built-in module.
+  --no-std                Do not include the standard library.
+  --typecheck             Type-check the input file(s).
+  --trace-inference <file:line>
+                          Enable tracing of type inference requests at the given line.
+  --emit <output-type>    Emit the specified type output files. From: raw-ast, raw-ir, ir, cpp, binary (default: binary)
+  --cc <CXXCompiler>      Select the C++ compiler used by the Val backend. From: clang, gcc, msvc (Windows only) (default: clang)
+  --cc-flags <CXXCompilerFlags>
+                          Specify flags for the CXX compiler to use
+  -o <file>               Write output to <file>.
+  -v, --verbose           Use verbose output.
+  -h, --help              Show help information.
+```
