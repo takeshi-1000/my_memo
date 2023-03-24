@@ -142,6 +142,10 @@ $ which clang
 
 下記のファイルで実行バイナリまで作成できた
 ```
+$ cat Hello.val 
+public fun main() {
+ var length = 1
+}
 $ ~/me/takeshi-1000/val/.build/release/valc Hello.val -o hello -v
 Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.h
 Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp
