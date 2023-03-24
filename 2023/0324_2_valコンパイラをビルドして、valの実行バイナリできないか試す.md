@@ -189,3 +189,26 @@ OPTIONS:
   -v, --verbose           Use verbose output.
   -h, --help              Show help information.
 ```
+
+```
+[takeshikomori@mac334-komori:~/me/takeshi-1000/testValProgram/20230324]
+$ cat Test.val 
+fun main() {
+
+}
+
+[takeshikomori@mac334-komori:~/me/takeshi-1000/testValProgram/20230324]
+$ ls
+Test.val
+
+[takeshikomori@mac334-komori:~/me/takeshi-1000/testValProgram/20230324]
+$ ~/me/takeshi-1000/val/.build/release/valc Test.val --emit cpp -v
+Writing ValCore.h -- file:///Users/takeshikomori/me/takeshi-1000/testValProgram/20230324/
+Writing ValCore.cpp -- file:///Users/takeshikomori/me/takeshi-1000/testValProgram/20230324/
+Writing Test.h -- file:///Users/takeshikomori/me/takeshi-1000/testValProgram/20230324/
+Writing Test.cpp -- file:///Users/takeshikomori/me/takeshi-1000/testValProgram/20230324/
+
+[takeshikomori@mac334-komori:~/me/takeshi-1000/testValProgram/20230324]
+$ ls                                                              
+Test.cpp	Test.h		Test.val	ValCore.cpp	ValCore.h
+```
