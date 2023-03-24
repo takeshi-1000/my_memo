@@ -63,6 +63,7 @@ Build complete! (61.43s)
 ## val実行バイナリできるか
 
 文法あまり厳密に見れてないので、すぐ直せるものもあるかも。
+<br>(4)でできた
 
 (1) https://tour.val-lang.dev/hello-world を参考に下記作成したができてなかった
 
