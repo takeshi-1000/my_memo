@@ -6,6 +6,7 @@
 
 ## 環境
 
+- macOS 13.2.1（22D68)
 - version: https://github.com/val-lang/val/commit/1a0ed4f9bcf023e01f32cb9883cce29527144720 この辺りのコミット
 - swiftバージョン 5.7.2 下記参照
 
@@ -123,4 +124,37 @@ In file included from /opt/homebrew/opt/llvm@11/bin/../include/c++/v1/cstdlib:85
               ^~~~~~~~~~
 1 error generated.
 ```
+
+(4) 下記を試すとできた
+
+どのタイミングでそうしたか覚えていないが、clangのパスが `/opt/homebrew/opt/llvm@11/bin/clang` になっていて、<br>
+rcファイルにhomebrewで引っ張ってきたclangを見るようなものがあったのでそれを取って、既に搭載されているclangでやったらできた
+
+```
+// export PATH="/opt/homebrew/opt/llvm@11/bin:$PATH"
+```
+
+上記にして、カスタムで通しているパス指定をなくして、下記のようにclangのパスを標準のものにして
+```
+$ which clang
+/usr/bin/clang
+```
+
+下記のファイルで実行バイナリまで作成できた
+```
+$ ~/me/takeshi-1000/val/.build/release/valc Hello.val -o hello -v
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Hello.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Hello.cpp
+/usr/bin/clang++ -o /Users/takeshikomori/me/takeshi-1000/testValProgram/hello -I /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Hello.cpp
+```
+
+```
+$ otool -L hello 
+hello:
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 1300.36.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.0.0)
+```
+
 
