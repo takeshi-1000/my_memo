@@ -163,6 +163,31 @@ hello:
 
 (5) 下記の複数ファイルパターンもできた
 
+```
+// Hello.val
+fun main() {
+  greet()
+}
+
+// Greet.val
+fun greet() {
+
+}
+```
+
+```
+$ ~/me/takeshi-1000/val/.build/release/valc Hello.val Greet.val -o hello -v
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Main.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Main.cpp
+/usr/bin/clang++ -o /Users/takeshikomori/me/takeshi-1000/testValProgram/hello -I /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Main.cpp
+
+[takeshikomori@mac334-komori:~/me/takeshi-1000/testValProgram]
+$ ls
+Greet.val	Hello.val	hello
+```
+
 ## メモ
 
 - `--emit <output-type>    Emit the specified type output files. From: raw-ast, raw-ir, ir, cpp, binary (default: binary)` これを見ると、IRGenの生成後にCppを作成するフェーズがある。これを最終的にコンパイル+リンク(ビルド)している感じ?
