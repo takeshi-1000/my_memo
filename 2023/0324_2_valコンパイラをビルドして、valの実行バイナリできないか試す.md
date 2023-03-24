@@ -237,3 +237,31 @@ Writing Test.cpp -- file:///Users/takeshikomori/me/takeshi-1000/testValProgram/2
 $ ls                                                              
 Test.cpp	Test.h		Test.val	ValCore.cpp	ValCore.h
 ```
+## xcodeでvalを開発する手順
+
+1. git clone https://github.com/val-lang/val.git
+2. cd val
+3. swift package generate-xcodeproj
+4. open Val.xcodeproj
+5. external build system に 添付のようなbuild環境追加
+6. スキームに5で作成したbuild system をターゲット指定できるように追加
+7. Command + Build
+
+<img width="781" alt="スクリーンショット 2023-03-24 20 04 20" src="https://user-images.githubusercontent.com/16571394/227505103-a555a760-a76b-4c0e-95a1-750759f46931.png">
+<img width="1012" alt="スクリーンショット 2023-03-24 20 04 29" src="https://user-images.githubusercontent.com/16571394/227505117-630ed0e5-88a7-4a6f-8a35-6a2d9c5533a9.png">
+
+### おまけ
+
+下記のようにソースを変えて、Command+Bで成果物出力し、できたバイナリが連動しているか確認
+
+<img width="628" alt="スクリーンショット 2023-03-24 20 06 16" src="https://user-images.githubusercontent.com/16571394/227505475-32abb542-3008-4bd2-b0b3-014eb62a17d1.png">
+
+```
+$ ~/me/takeshi-1000/val/.build/release/valc Test.val -o hello -v
+Hello
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Test.h
+Writing file:///var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Test.cpp
+/usr/bin/clang++ -o /Users/takeshikomori/me/takeshi-1000/testValProgram/20230324/hello -I /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/ValCore.cpp /var/folders/4c/0qwhzzgx3q1_455_mgl56x080000gp/T/Test.cpp
+```
