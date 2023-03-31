@@ -9,11 +9,11 @@
  下記のようなSwiftプログラムをイメージ
  
  func hogeHoge(myVariable: Int) -> Int {
-   return myVariable
+   return myVariable + 55
  }
  
  func main() -> Int {
-   return hogeHoge()
+   return hogeHoge(myVariable: {Int})
  }
  
  main()
