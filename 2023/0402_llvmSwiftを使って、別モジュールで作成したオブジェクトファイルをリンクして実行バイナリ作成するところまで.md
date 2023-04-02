@@ -126,8 +126,6 @@ $ nm test2.o
 ```
 Module
 
-import Module2
-
 func main() -> Int {
   return hogeHoge(int: 10)
 }
@@ -149,7 +147,7 @@ let hogeHogeFunctionType = FunctionType([IntType.int32], IntType.int32, variadic
 let hogeHogeFuncPtrType = PointerType(pointee: hogeHogeFunctionType)
 let builder = IRBuilder(module: module)
 
-func createHogeFunc() {
+func createHogeHogeFunc() {
     let hogeHogeFunction = module.addFunction(hogeHogeFuncName, type: hogeHogeFunctionType)
     let entryBlock = hogeHogeFunction.appendBasicBlock(named: "entry")
     builder.positionAtEnd(of: entryBlock)
@@ -172,7 +170,7 @@ func createMainFunc() {
     builder.buildRet(result)
 }
 
-createHogeFunc()
+createHogeHogeFunc()
 createMainFunc()
 module.dump()
 
