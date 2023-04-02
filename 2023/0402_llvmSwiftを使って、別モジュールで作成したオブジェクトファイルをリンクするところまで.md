@@ -6,13 +6,13 @@ Module
 import Module2
 
 func main() -> Int {
-  return hogeHoge(int Num)
+  return hogeHoge(int: 10)
 }
 
 Module2
 
 func hogeHoge(int: Num) {
-  return Num * 55
+  return Num + 55
 }
 
 ```
@@ -31,13 +31,11 @@ let hogeHogeFuncPtrType = PointerType(pointee: hogeHogeFunctionType)
 let builder = IRBuilder(module: module)
 
 func createMainFunc() {
-    // 関数定義（関数の構造、関数定義をモジュールに追加?）
     let mainFunctionType = FunctionType([],
                                         IntType.int32,
                                         variadic: false)
     let myFunction = module.addFunction("main", type: mainFunctionType)
     let hogeHogeFunction = module2.addFunction(hogeHogeFuncName, type: hogeHogeFunctionType)
-    // 関数を定義していく
     let entryBlock = myFunction.appendBasicBlock(named: "entry")
     builder.positionAtEnd(of: entryBlock)
     
@@ -70,12 +68,8 @@ do {
  let builderForModule2 = IRBuilder(module: module2)
 
  func createHogeHogeFunc() {
-     // 関数を定義していく
      let hogeHogeFunction = module2.addFunction(hogeHogeFuncName, type: hogeHogeFunctionType)
      let entryBlock = hogeHogeFunction.appendBasicBlock(named: "entry")
-     // これないと落ちる
-     // ChatGPT: positionAtEnd関数は、IRBuilderクラスの現在の基本ブロックを変更するためのものです。
-     // 基本ブロックが指定されていない場合、positionAtEnd関数を呼び出すことはできません。
      builderForModule2.positionAtEnd(of: entryBlock)
 
      let arg0 = hogeHogeFunction.firstParameter!
