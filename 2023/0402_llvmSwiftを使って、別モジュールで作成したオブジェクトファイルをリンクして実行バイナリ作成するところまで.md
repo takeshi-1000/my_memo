@@ -137,7 +137,7 @@ func hogeHoge(int: Num) {
 }
 
 ```
-
+### Module側
 
 ```
 import Foundation
@@ -160,13 +160,11 @@ func createHogeFunc() {
 }
 
 func createMainFunc() {
-    // 関数定義（関数の構造、関数定義をモジュールに追加?）
     let mainFunctionType = FunctionType([],
                                         IntType.int32,
                                         variadic: false)
     let mainFunction = module.addFunction("main", type: mainFunctionType)
     let hogeHogeFunction = module.function(named: hogeHogeFuncName)!
-    // 関数を定義していく
     let entryBlock = mainFunction.appendBasicBlock(named: "entry")
     builder.positionAtEnd(of: entryBlock)
         
