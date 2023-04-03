@@ -64,3 +64,11 @@ $ nm testProgram
 $ ./testProgram 
 Hello, World!
 ```
+
+下記のdylibのシンボル辿ればどこかしらにあると思う
+
+```
+$ otool -L testProgram 
+testProgram:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.0.0)
+```
