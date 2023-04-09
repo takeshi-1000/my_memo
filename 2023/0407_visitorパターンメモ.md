@@ -11,7 +11,7 @@ class Book: BookElement {
    var title: String
    var price: Int
   func accept(vistor: BookVisitor) {
-    visitor(self)
+    visitor.visit(self)
   }
 }
 
