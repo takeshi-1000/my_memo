@@ -1,0 +1,12 @@
+$ brew create https://github.com/takeshi-1000/y2p/releases/download/v1.0/y2p
+==> Downloading https://github.com/takeshi-1000/y2p/releases/download/v1.0/y2p
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/626769038/ba0721c7-272b-4dab-baa1-44c152740277?X-Amz-Algorit
+######################################################################## 100.0%
+Warning: Cannot verify integrity of b04d651a474aa871b0eec0aafc3220cdb77bdb6fea60d93fbbcd67adc61fc19e--y2p
+A checksum was not provided for this resource.
+For your reference the SHA-256 is: d147cede1eb653386640f5ef3a333dc9381622d0c8d6b6ab7d7ebe7b5ac3e063
+Please run `brew audit --new-formula y2p` before submitting, thanks.
+Editing /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/y2p.rb
+Warning: Using vim because no editor was set in the environment.
+This may change in the future, so we recommend setting EDITOR,
+or HOMEBREW_EDITOR to your preferred text editor.
