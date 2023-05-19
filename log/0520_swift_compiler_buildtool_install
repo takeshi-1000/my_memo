@@ -1,0 +1,90 @@
+$ brew install cmake ninja sccache
+Running `brew update --auto-update`...
+==> Auto-updated Homebrew!
+==> Updated Homebrew from 6c8030829 to 4.0.18 (c265d3d33).
+Updated 5 taps (homebrew/cask-versions, homebrew/services, takeshi-1000/y2p, homebrew/core and homebrew/cask).
+==> New Formulae
+ast-grep                        clive                           libabigail                      rojo                            yamlfmt
+==> New Casks
+llamachat                               mixxx-snapshot                          smooze-pro                              uhk-agent
+
+You have 96 outdated formulae installed.
+
+
+The 4.0.0 release notes are available on the Homebrew Blog:
+  https://brew.sh/blog/4.0.0
+The 4.0.18 changelog can be found at:
+  https://github.com/Homebrew/brew/releases/tag/4.0.18
+Warning: Treating cmake as a formula. For the cask, use homebrew/cask/cmake
+==> Fetching cmake
+==> Downloading https://ghcr.io/v2/homebrew/core/cmake/manifests/3.26.4
+####################################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:fed2e89cee2d4945288345eb98c9f04631446047f5b923f3a3d70f5289e4c73d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fed2e89cee2d4945288345eb98c9f04631446047f5b923f3a3d70f5289e4c73d?se=2023-
+####################################################################################################################################################### 100.0%
+==> Fetching ninja
+==> Downloading https://ghcr.io/v2/homebrew/core/ninja/manifests/1.11.1
+####################################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ninja/blobs/sha256:15b65736bfc5c619019cabb2c0f36f2b02a031de9a8bd6c148eba0f329e907bf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:15b65736bfc5c619019cabb2c0f36f2b02a031de9a8bd6c148eba0f329e907bf?se=2023-
+####################################################################################################################################################### 100.0%
+==> Fetching sccache
+==> Downloading https://ghcr.io/v2/homebrew/core/sccache/manifests/0.4.2
+####################################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sccache/blobs/sha256:87fdef44199409df113952eb6ff590e8498153aa23e4e21e7a0499a4554c9f91
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:87fdef44199409df113952eb6ff590e8498153aa23e4e21e7a0499a4554c9f91?se=2023-
+####################################################################################################################################################### 100.0%
+==> Pouring cmake--3.26.4.monterey.bottle.tar.gz
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall cmake
+==> Caveats
+To install the CMake documentation, run:
+  brew install cmake-docs
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> Summary
+🍺  /usr/local/Cellar/cmake/3.26.4: 3,188 files, 49.8MB
+==> Running `brew cleanup cmake`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Pouring ninja--1.11.1.monterey.bottle.tar.gz
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall ninja
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/ninja
+==> Summary
+🍺  /usr/local/Cellar/ninja/1.11.1: 10 files, 464.9KB
+==> Running `brew cleanup ninja`...
+==> Pouring sccache--0.4.2.monterey.bottle.tar.gz
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall sccache
+==> Summary
+🍺  /usr/local/Cellar/sccache/0.4.2: 7 files, 13.0MB
+==> Running `brew cleanup sccache`...
+==> Caveats
+==> cmake
+To install the CMake documentation, run:
+  brew install cmake-docs
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> ninja
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/ninja
