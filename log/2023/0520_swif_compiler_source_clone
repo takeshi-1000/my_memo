@@ -1,0 +1,1185 @@
+komoritakeshi@komoritakeshinoMacBook-Air-6:~/me/takeshi-1000/swift-project/swift (main)
+$ utils/update-checkout --clone
+Skipping icu on Darwin
+Skipping cmake on Darwin
+Skipping clone of 'swift', directory already exists
+Skipping clone of 'icu', requested by user
+Skipping clone of 'cmake', requested by user
+Running ``obtain_additional_swift_sources`` with up to 8 processes.
+Cloning 'cmark'
+Cloning 'swift-argument-parser'
+Cloning 'swift-collections'
+Cloning 'swift-certificates'
+Cloning 'swift-driver'
+Cloning 'swift-tools-support-core'
+Cloning 'swift-syntax'
+Cloning 'swift-stress-tester'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-certificates.git swift-certificates
+Cloning into 'swift-certificates'...
+Cloning 'swift-asn1'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-stress-tester.git swift-stress-tester
+Cloning into 'swift-stress-tester'...
+Cloning 'swift-corelibs-xctest'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-argument-parser.git swift-argument-parser
+Cloning into 'swift-argument-parser'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-tools-support-core.git swift-tools-support-core
+Cloning into 'swift-tools-support-core'...
+Cloning 'swift-atomics'
+Cloning 'swiftpm'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-asn1.git swift-asn1
+Cloning into 'swift-asn1'...
+Cloning 'swift-corelibs-foundation'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-cmark.git cmark
+Cloning into 'cmark'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-atomics.git swift-atomics
+Cloning into 'swift-atomics'...
+Cloning 'llbuild'
+Cloning 'swift-integration-tests'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-collections.git swift-collections
+Cloning into 'swift-collections'...
+Updating files:  71% (464/652)
+Updating files:  72% (470/652)
+Updating files:  73% (476/652)
+Updating files:  74% (483/652)
+Updating files:  75% (489/652)
+Updating files:  76% (496/652)
+Updating files:  77% (503/652)
+Updating files:  78% (509/652)
+Updating files:  79% (516/652)
+Updating files:  80% (522/652)
+Updating files:  81% (529/652)
+Updating files:  82% (535/652)
+Updating files:  83% (542/652)
+Updating files:  84% (548/652)
+Updating files:  85% (555/652)
+Updating files:  86% (561/652)
+Updating files:  87% (568/652)
+Updating files:  88% (574/652)
+Updating files:  89% (581/652)
+Updating files:  90% (587/652)
+Updating files:  91% (594/652)
+Updating files:  92% (600/652)
+Updating files:  93% (607/652)
+Updating files:  94% (613/652)
+Updating files:  95% (620/652)
+Updating files:  96% (626/652)
+Updating files:  97% (633/652)
+Updating files:  98% (639/652)
+Updating files:  99% (646/652)
+Updating files: 100% (652/652)
+Updating files: 100% (652/652), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-corelibs-xctest.git swift-corelibs-xctest
+Cloning into 'swift-corelibs-xctest'...
+Cloning 'ninja'
+Cloning 'swift-crypto'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-driver.git swift-driver
+Cloning into 'swift-driver'...
+Updating files:  71% (383/533)
+Updating files:  72% (384/533)
+Updating files:  73% (390/533)
+Updating files:  74% (395/533)
+Updating files:  75% (400/533)
+Updating files:  76% (406/533)
+Updating files:  77% (411/533)
+Updating files:  78% (416/533)
+Updating files:  79% (422/533)
+Updating files:  80% (427/533)
+Updating files:  81% (432/533)
+Updating files:  82% (438/533)
+Updating files:  83% (443/533)
+Updating files:  84% (448/533)
+Updating files:  85% (454/533)
+Updating files:  86% (459/533)
+Updating files:  87% (464/533)
+Updating files:  88% (470/533)
+Updating files:  89% (475/533)
+Updating files:  90% (480/533)
+Updating files:  91% (486/533)
+Updating files:  92% (491/533)
+Updating files:  93% (496/533)
+Updating files:  94% (502/533)
+Updating files:  95% (507/533)
+Updating files:  96% (512/533)
+Updating files:  97% (518/533)
+Updating files:  98% (523/533)
+Updating files:  99% (528/533)
+Updating files: 100% (533/533)
+Updating files: 100% (533/533), done.
+Cloning 'swift-numerics'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-integration-tests.git swift-integration-tests
+Cloning into 'swift-integration-tests'...
+Cloning 'swift-xcode-playground-support'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-numerics.git swift-numerics
+Cloning into 'swift-numerics'...
+Cloning 'indexstore-db'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/ninja-build/ninja.git ninja
+Cloning into 'ninja'...
+Cloning 'yams'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-xcode-playground-support.git swift-xcode-playground-support
+Cloning into 'swift-xcode-playground-support'...
+Cloning 'swift-format'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/indexstore-db.git indexstore-db
+Cloning into 'indexstore-db'...
+Updating files:  67% (273/403)
+Updating files:  68% (275/403)
+Updating files:  69% (279/403)
+Updating files:  70% (283/403)
+Updating files:  71% (287/403)
+Updating files:  72% (291/403)
+Updating files:  73% (295/403)
+Updating files:  74% (299/403)
+Updating files:  75% (303/403)
+Updating files:  76% (307/403)
+Updating files:  77% (311/403)
+Updating files:  78% (315/403)
+Updating files:  79% (319/403)
+Updating files:  80% (323/403)
+Updating files:  81% (327/403)
+Updating files:  82% (331/403)
+Updating files:  83% (335/403)
+Updating files:  84% (339/403)
+Updating files:  85% (343/403)
+Updating files:  86% (347/403)
+Updating files:  87% (351/403)
+Updating files:  88% (355/403)
+Updating files:  89% (359/403)
+Updating files:  90% (363/403)
+Updating files:  91% (367/403)
+Updating files:  92% (371/403)
+Updating files:  93% (375/403)
+Updating files:  94% (379/403)
+Updating files:  95% (383/403)
+Updating files:  96% (387/403)
+Updating files:  97% (391/403)
+Updating files:  98% (395/403)
+Updating files:  99% (399/403)
+Updating files: 100% (403/403)
+Updating files: 100% (403/403), done.
+Cloning 'sourcekit-lsp'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-syntax.git swift-syntax
+Cloning into 'swift-syntax'...
+Updating files:  51% (287/560)
+Updating files:  52% (292/560)
+Updating files:  53% (297/560)
+Updating files:  54% (303/560)
+Updating files:  55% (308/560)
+Updating files:  56% (314/560)
+Updating files:  57% (320/560)
+Updating files:  58% (325/560)
+Updating files:  59% (331/560)
+Updating files:  60% (336/560)
+Updating files:  61% (342/560)
+Updating files:  62% (348/560)
+Updating files:  63% (353/560)
+Updating files:  64% (359/560)
+Updating files:  65% (364/560)
+Updating files:  66% (370/560)
+Updating files:  67% (376/560)
+Updating files:  68% (381/560)
+Updating files:  69% (387/560)
+Updating files:  70% (392/560)
+Updating files:  71% (398/560)
+Updating files:  72% (404/560)
+Updating files:  73% (409/560)
+Updating files:  74% (415/560)
+Updating files:  75% (420/560)
+Updating files:  76% (426/560)
+Updating files:  77% (432/560)
+Updating files:  78% (437/560)
+Updating files:  79% (443/560)
+Updating files:  80% (448/560)
+Updating files:  81% (454/560)
+Updating files:  82% (460/560)
+Updating files:  83% (465/560)
+Updating files:  84% (471/560)
+Updating files:  85% (476/560)
+Updating files:  86% (482/560)
+Updating files:  87% (488/560)
+Updating files:  88% (493/560)
+Updating files:  88% (497/560)
+Updating files:  89% (499/560)
+Updating files:  90% (504/560)
+Updating files:  91% (510/560)
+Updating files:  92% (516/560)
+Updating files:  93% (521/560)
+Updating files:  94% (527/560)
+Updating files:  95% (532/560)
+Updating files:  96% (538/560)
+Updating files:  97% (544/560)
+Updating files:  98% (549/560)
+Updating files:  99% (555/560)
+Updating files: 100% (560/560)
+Updating files: 100% (560/560), done.
+Cloning 'swift-system'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-crypto.git swift-crypto
+Cloning into 'swift-crypto'...
+Updating files:  43% (335/765)
+Updating files:  44% (337/765)
+Updating files:  45% (345/765)
+Updating files:  46% (352/765)
+Updating files:  47% (360/765)
+Updating files:  48% (368/765)
+Updating files:  49% (375/765)
+Updating files:  50% (383/765)
+Updating files:  51% (391/765)
+Updating files:  52% (398/765)
+Updating files:  53% (406/765)
+Updating files:  54% (414/765)
+Updating files:  55% (421/765)
+Updating files:  56% (429/765)
+Updating files:  57% (437/765)
+Updating files:  58% (444/765)
+Updating files:  59% (452/765)
+Updating files:  60% (459/765)
+Updating files:  61% (467/765)
+Updating files:  62% (475/765)
+Updating files:  63% (482/765)
+Updating files:  64% (490/765)
+Updating files:  65% (498/765)
+Updating files:  66% (505/765)
+Updating files:  67% (513/765)
+Updating files:  68% (521/765)
+Updating files:  69% (528/765)
+Updating files:  70% (536/765)
+Updating files:  71% (544/765)
+Updating files:  72% (551/765)
+Updating files:  72% (552/765)
+Updating files:  73% (559/765)
+Updating files:  74% (567/765)
+Updating files:  75% (574/765)
+Updating files:  76% (582/765)
+Updating files:  77% (590/765)
+Updating files:  78% (597/765)
+Updating files:  79% (605/765)
+Updating files:  80% (612/765)
+Updating files:  81% (620/765)
+Updating files:  82% (628/765)
+Updating files:  83% (635/765)
+Updating files:  84% (643/765)
+Updating files:  85% (651/765)
+Updating files:  86% (658/765)
+Updating files:  87% (666/765)
+Updating files:  88% (674/765)
+Updating files:  89% (681/765)
+Updating files:  90% (689/765)
+Updating files:  91% (697/765)
+Updating files:  92% (704/765)
+Updating files:  92% (711/765)
+Updating files:  93% (712/765)
+Updating files:  94% (720/765)
+Updating files:  95% (727/765)
+Updating files:  96% (735/765)
+Updating files:  97% (743/765)
+Updating files:  98% (750/765)
+Updating files:  99% (758/765)
+Updating files: 100% (765/765)
+Updating files: 100% (765/765), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-llbuild.git llbuild
+Cloning into 'llbuild'...
+Updating files:  43% (338/781)
+Updating files:  44% (344/781)
+Updating files:  45% (352/781)
+Updating files:  46% (360/781)
+Updating files:  47% (368/781)
+Updating files:  48% (375/781)
+Updating files:  49% (383/781)
+Updating files:  50% (391/781)
+Updating files:  51% (399/781)
+Updating files:  52% (407/781)
+Updating files:  53% (414/781)
+Updating files:  54% (422/781)
+Updating files:  55% (430/781)
+Updating files:  56% (438/781)
+Updating files:  57% (446/781)
+Updating files:  58% (453/781)
+Updating files:  59% (461/781)
+Updating files:  60% (469/781)
+Updating files:  61% (477/781)
+Updating files:  62% (485/781)
+Updating files:  63% (493/781)
+Updating files:  64% (500/781)
+Updating files:  65% (508/781)
+Updating files:  66% (516/781)
+Updating files:  67% (524/781)
+Updating files:  68% (532/781)
+Updating files:  69% (539/781)
+Updating files:  70% (547/781)
+Updating files:  71% (555/781)
+Updating files:  72% (563/781)
+Updating files:  73% (571/781)
+Updating files:  74% (578/781)
+Updating files:  75% (586/781)
+Updating files:  76% (594/781)
+Updating files:  77% (602/781)
+Updating files:  78% (610/781)
+Updating files:  78% (612/781)
+Updating files:  79% (617/781)
+Updating files:  80% (625/781)
+Updating files:  81% (633/781)
+Updating files:  82% (641/781)
+Updating files:  83% (649/781)
+Updating files:  84% (657/781)
+Updating files:  85% (664/781)
+Updating files:  86% (672/781)
+Updating files:  87% (680/781)
+Updating files:  88% (688/781)
+Updating files:  89% (696/781)
+Updating files:  90% (703/781)
+Updating files:  91% (711/781)
+Updating files:  92% (719/781)
+Updating files:  93% (727/781)
+Updating files:  94% (735/781)
+Updating files:  95% (742/781)
+Updating files:  96% (750/781)
+Updating files:  97% (758/781)
+Updating files:  98% (766/781)
+Updating files:  99% (774/781)
+Updating files: 100% (781/781)
+Updating files: 100% (781/781), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-format.git swift-format
+Cloning into 'swift-format'...
+Cloning 'swift-docc'
+Cloning 'swift-docc-render-artifact'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/jpsim/Yams.git yams
+Cloning into 'yams'...
+Cloning 'swift-installer-scripts'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-system.git swift-system
+Cloning into 'swift-system'...
+Cloning 'swift-markdown'
+Cloning 'swift-nio-ssl'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-installer-scripts.git swift-installer-scripts
+Cloning into 'swift-installer-scripts'...
+Cloning 'swift-llvm-bindings'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/sourcekit-lsp.git sourcekit-lsp
+Cloning into 'sourcekit-lsp'...
+Updating files:  61% (232/379)
+Updating files:  62% (235/379)
+Updating files:  63% (239/379)
+Updating files:  64% (243/379)
+Updating files:  65% (247/379)
+Updating files:  66% (251/379)
+Updating files:  67% (254/379)
+Updating files:  68% (258/379)
+Updating files:  69% (262/379)
+Updating files:  70% (266/379)
+Updating files:  71% (270/379)
+Updating files:  72% (273/379)
+Updating files:  73% (277/379)
+Updating files:  74% (281/379)
+Updating files:  75% (285/379)
+Updating files:  76% (289/379)
+Updating files:  77% (292/379)
+Updating files:  78% (296/379)
+Updating files:  79% (300/379)
+Updating files:  80% (304/379)
+Updating files:  81% (307/379)
+Updating files:  82% (311/379)
+Updating files:  83% (315/379)
+Updating files:  84% (319/379)
+Updating files:  85% (323/379)
+Updating files:  86% (326/379)
+Updating files:  87% (330/379)
+Updating files:  88% (334/379)
+Updating files:  89% (338/379)
+Updating files:  90% (342/379)
+Updating files:  91% (345/379)
+Updating files:  92% (349/379)
+Updating files:  93% (353/379)
+Updating files:  94% (357/379)
+Updating files:  95% (361/379)
+Updating files:  96% (364/379)
+Updating files:  97% (368/379)
+Updating files:  98% (372/379)
+Updating files:  99% (376/379)
+Updating files: 100% (379/379)
+Updating files: 100% (379/379), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-markdown.git swift-markdown
+Cloning into 'swift-markdown'...
+Cloning 'swift-nio'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-llvm-bindings.git swift-llvm-bindings
+Cloning into 'swift-llvm-bindings'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-docc-render-artifact.git swift-docc-render-artifact
+Cloning into 'swift-docc-render-artifact'...
+Cloning 'llvm-project'
+Cloning 'swift-docc-symbolkit'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-docc-symbolkit.git swift-docc-symbolkit
+Cloning into 'swift-docc-symbolkit'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-nio-ssl.git swift-nio-ssl
+Cloning into 'swift-nio-ssl'...
+Updating files:  68% (467/682)
+Updating files:  69% (471/682)
+Updating files:  70% (478/682)
+Updating files:  71% (485/682)
+Updating files:  72% (492/682)
+Updating files:  73% (498/682)
+Updating files:  74% (505/682)
+Updating files:  75% (512/682)
+Updating files:  76% (519/682)
+Updating files:  77% (526/682)
+Updating files:  78% (532/682)
+Updating files:  79% (539/682)
+Updating files:  80% (546/682)
+Updating files:  81% (553/682)
+Updating files:  82% (560/682)
+Updating files:  83% (567/682)
+Updating files:  84% (573/682)
+Updating files:  85% (580/682)
+Updating files:  86% (587/682)
+Updating files:  87% (594/682)
+Updating files:  88% (601/682)
+Updating files:  89% (607/682)
+Updating files:  90% (614/682)
+Updating files:  91% (621/682)
+Updating files:  92% (628/682)
+Updating files:  93% (635/682)
+Updating files:  94% (642/682)
+Updating files:  95% (648/682)
+Updating files:  96% (655/682)
+Updating files:  97% (662/682)
+Updating files:  98% (669/682)
+Updating files:  99% (676/682)
+Updating files: 100% (682/682)
+Updating files: 100% (682/682), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-corelibs-foundation.git swift-corelibs-foundation
+Cloning into 'swift-corelibs-foundation'...
+Updating files:  25% (261/1020)
+Updating files:  26% (266/1020)
+Updating files:  27% (276/1020)
+Updating files:  28% (286/1020)
+Updating files:  29% (296/1020)
+Updating files:  30% (306/1020)
+Updating files:  31% (317/1020)
+Updating files:  32% (327/1020)
+Updating files:  33% (337/1020)
+Updating files:  34% (347/1020)
+Updating files:  35% (357/1020)
+Updating files:  36% (368/1020)
+Updating files:  37% (378/1020)
+Updating files:  38% (388/1020)
+Updating files:  39% (398/1020)
+Updating files:  40% (408/1020)
+Updating files:  41% (419/1020)
+Updating files:  42% (429/1020)
+Updating files:  43% (439/1020)
+Updating files:  44% (449/1020)
+Updating files:  45% (459/1020)
+Updating files:  46% (470/1020)
+Updating files:  47% (480/1020)
+Updating files:  47% (485/1020)
+Updating files:  48% (490/1020)
+Updating files:  49% (500/1020)
+Updating files:  50% (510/1020)
+Updating files:  51% (521/1020)
+Updating files:  52% (531/1020)
+Updating files:  53% (541/1020)
+Updating files:  54% (551/1020)
+Updating files:  55% (561/1020)
+Updating files:  56% (572/1020)
+Updating files:  57% (582/1020)
+Updating files:  58% (592/1020)
+Updating files:  59% (602/1020)
+Updating files:  60% (612/1020)
+Updating files:  61% (623/1020)
+Updating files:  62% (633/1020)
+Updating files:  63% (643/1020)
+Updating files:  64% (653/1020)
+Updating files:  65% (663/1020)
+Updating files:  66% (674/1020)
+Updating files:  67% (684/1020)
+Updating files:  68% (694/1020)
+Updating files:  69% (704/1020)
+Updating files:  70% (714/1020)
+Updating files:  71% (725/1020)
+Updating files:  72% (735/1020)
+Updating files:  73% (745/1020)
+Updating files:  74% (755/1020)
+Updating files:  75% (765/1020)
+Updating files:  76% (776/1020)
+Updating files:  77% (786/1020)
+Updating files:  78% (796/1020)
+Updating files:  79% (806/1020)
+Updating files:  80% (816/1020)
+Updating files:  81% (827/1020)
+Updating files:  82% (837/1020)
+Updating files:  83% (847/1020)
+Updating files:  84% (857/1020)
+Updating files:  85% (867/1020)
+Updating files:  86% (878/1020)
+Updating files:  87% (888/1020)
+Updating files:  88% (898/1020)
+Updating files:  89% (908/1020)
+Updating files:  90% (918/1020)
+Updating files:  91% (929/1020)
+Updating files:  92% (939/1020)
+Updating files:  92% (940/1020)
+Updating files:  93% (949/1020)
+Updating files:  94% (959/1020)
+Updating files:  95% (969/1020)
+Updating files:  96% (980/1020)
+Updating files:  97% (990/1020)
+Updating files:  98% (1000/1020)
+Updating files:  99% (1010/1020)
+Updating files: 100% (1020/1020)
+Updating files: 100% (1020/1020), done.
+Cloning 'swift-corelibs-libdispatch'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-package-manager.git swiftpm
+Cloning into 'swiftpm'...
+Updating files:  26% (361/1343)
+Updating files:  27% (363/1343)
+Updating files:  28% (377/1343)
+Updating files:  29% (390/1343)
+Updating files:  30% (403/1343)
+Updating files:  31% (417/1343)
+Updating files:  32% (430/1343)
+Updating files:  33% (444/1343)
+Updating files:  34% (457/1343)
+Updating files:  35% (471/1343)
+Updating files:  36% (484/1343)
+Updating files:  37% (497/1343)
+Updating files:  38% (511/1343)
+Updating files:  39% (524/1343)
+Updating files:  40% (538/1343)
+Updating files:  41% (551/1343)
+Updating files:  42% (565/1343)
+Updating files:  43% (578/1343)
+Updating files:  44% (591/1343)
+Updating files:  45% (605/1343)
+Updating files:  46% (618/1343)
+Updating files:  47% (632/1343)
+Updating files:  48% (645/1343)
+Updating files:  49% (659/1343)
+Updating files:  50% (672/1343)
+Updating files:  51% (685/1343)
+Updating files:  52% (699/1343)
+Updating files:  53% (712/1343)
+Updating files:  54% (726/1343)
+Updating files:  55% (739/1343)
+Updating files:  56% (753/1343)
+Updating files:  57% (766/1343)
+Updating files:  58% (779/1343)
+Updating files:  59% (793/1343)
+Updating files:  60% (806/1343)
+Updating files:  61% (820/1343)
+Updating files:  62% (833/1343)
+Updating files:  63% (847/1343)
+Updating files:  64% (860/1343)
+Updating files:  65% (873/1343)
+Updating files:  66% (887/1343)
+Updating files:  67% (900/1343)
+Updating files:  67% (913/1343)
+Updating files:  68% (914/1343)
+Updating files:  69% (927/1343)
+Updating files:  70% (941/1343)
+Updating files:  71% (954/1343)
+Updating files:  72% (967/1343)
+Updating files:  73% (981/1343)
+Updating files:  74% (994/1343)
+Updating files:  75% (1008/1343)
+Updating files:  76% (1021/1343)
+Updating files:  77% (1035/1343)
+Updating files:  78% (1048/1343)
+Updating files:  79% (1061/1343)
+Updating files:  80% (1075/1343)
+Updating files:  81% (1088/1343)
+Updating files:  82% (1102/1343)
+Updating files:  83% (1115/1343)
+Updating files:  84% (1129/1343)
+Updating files:  85% (1142/1343)
+Updating files:  86% (1155/1343)
+Updating files:  87% (1169/1343)
+Updating files:  88% (1182/1343)
+Updating files:  89% (1196/1343)
+Updating files:  90% (1209/1343)
+Updating files:  91% (1223/1343)
+Updating files:  92% (1236/1343)
+Updating files:  93% (1249/1343)
+Updating files:  94% (1263/1343)
+Updating files:  95% (1276/1343)
+Updating files:  96% (1290/1343)
+Updating files:  97% (1303/1343)
+Updating files:  98% (1317/1343)
+Updating files:  99% (1330/1343)
+Updating files: 100% (1343/1343)
+Updating files: 100% (1343/1343), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-nio.git swift-nio
+Cloning into 'swift-nio'...
+Updating files:  94% (462/491)
+Updating files:  95% (467/491)
+Updating files:  96% (472/491)
+Updating files:  97% (477/491)
+Updating files:  98% (482/491)
+Updating files:  99% (487/491)
+Updating files: 100% (491/491)
+Updating files: 100% (491/491), done.
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-docc.git swift-docc
+Cloning into 'swift-docc'...
+Updating files:  45% (570/1260)
+Updating files:  46% (580/1260)
+Updating files:  47% (593/1260)
+Updating files:  48% (605/1260)
+Updating files:  49% (618/1260)
+Updating files:  50% (630/1260)
+Updating files:  51% (643/1260)
+Updating files:  52% (656/1260)
+Updating files:  53% (668/1260)
+Updating files:  54% (681/1260)
+Updating files:  55% (693/1260)
+Updating files:  56% (706/1260)
+Updating files:  57% (719/1260)
+Updating files:  58% (731/1260)
+Updating files:  59% (744/1260)
+Updating files:  60% (756/1260)
+Updating files:  61% (769/1260)
+Updating files:  62% (782/1260)
+Updating files:  63% (794/1260)
+Updating files:  64% (807/1260)
+Updating files:  65% (819/1260)
+Updating files:  66% (832/1260)
+Updating files:  67% (845/1260)
+Updating files:  67% (853/1260)
+Updating files:  68% (857/1260)
+Updating files:  69% (870/1260)
+Updating files:  70% (882/1260)
+Updating files:  71% (895/1260)
+Updating files:  72% (908/1260)
+Updating files:  73% (920/1260)
+Updating files:  74% (933/1260)
+Updating files:  75% (945/1260)
+Updating files:  76% (958/1260)
+Updating files:  77% (971/1260)
+Updating files:  78% (983/1260)
+Updating files:  79% (996/1260)
+Updating files:  80% (1008/1260)
+Updating files:  81% (1021/1260)
+Updating files:  82% (1034/1260)
+Updating files:  83% (1046/1260)
+Updating files:  84% (1059/1260)
+Updating files:  85% (1071/1260)
+Updating files:  86% (1084/1260)
+Updating files:  87% (1097/1260)
+Updating files:  88% (1109/1260)
+Updating files:  89% (1122/1260)
+Updating files:  90% (1134/1260)
+Updating files:  91% (1147/1260)
+Updating files:  92% (1160/1260)
+Updating files:  93% (1172/1260)
+Updating files:  94% (1185/1260)
+Updating files:  95% (1197/1260)
+Updating files:  96% (1210/1260)
+Updating files:  97% (1223/1260)
+Updating files:  98% (1235/1260)
+Updating files:  99% (1248/1260)
+Updating files: 100% (1260/1260)
+Updating files: 100% (1260/1260), done.
+Cloning 'swift-experimental-string-processing'
+Cloning 'swift-lmdb'
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-corelibs-libdispatch.git swift-corelibs-libdispatch
+Cloning into 'swift-corelibs-libdispatch'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-experimental-string-processing.git swift-experimental-string-processing
+Cloning into 'swift-experimental-string-processing'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/swift-lmdb.git swift-lmdb
+Cloning into 'swift-lmdb'...
++ env CPATH=/usr/local/include GEM_HOME=/Users/komoritakeshi/.gems GIT_TERMINAL_PROMPT=0 HOME=/Users/komoritakeshi LANG=ja_JP.UTF-8 LIBRARY_PATH=/usr/local/lib LOGNAME=komoritakeshi OLDPWD=/Users/komoritakeshi/me/takeshi-1000/swift-project PATH=/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.nodebrew/current/bin:/Users/komoritakeshi/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/komoritakeshi/.composer/vendor/bin:/usr/local/pgsql/bin/:/Users/komoritakeshi/.gems/bin 'PS1=\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ ' PWD=/Users/komoritakeshi/me/takeshi-1000/swift-project/swift RBENV_SHELL=bash SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk SHELL=/bin/bash SHLVL=1 SSH_AGENT_PID=7914 SSH_AUTH_SOCK=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T//ssh-AjnFailtelyC/agent.7913 TERM=xterm-256color TERM_PROGRAM=Apple_Terminal TERM_PROGRAM_VERSION=445 TERM_SESSION_ID=A7B9F359-C466-48AA-85CD-A0D6A5B45B37 TMPDIR=/var/folders/vy/byx36ckn2qvd4mdwkmv2njch0000gn/T/ USER=komoritakeshi XPC_FLAGS=0x0 XPC_SERVICE_NAME=0 _=utils/update-checkout __CFBundleIdentifier=com.apple.Terminal __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE git clone --recursive https://github.com/apple/llvm-project.git llvm-project
+Cloning into 'llvm-project'...
+Updating files:   1% (1733/131527)
+Updating files:   2% (2631/131527)
+Updating files:   3% (3946/131527)
+Updating files:   3% (4075/131527)
+Updating files:   3% (5226/131527)
+Updating files:   4% (5262/131527)
+Updating files:   4% (6249/131527)
+Updating files:   5% (6577/131527)
+Updating files:   6% (7892/131527)
+Updating files:   6% (8141/131527)
+Updating files:   7% (9207/131527)
+Updating files:   7% (10070/131527)
+Updating files:   8% (10523/131527)
+Updating files:   8% (11376/131527)
+Updating files:   9% (11838/131527)
+Updating files:  10% (13153/131527)
+Updating files:  10% (14098/131527)
+Updating files:  11% (14468/131527)
+Updating files:  12% (15784/131527)
+Updating files:  13% (17099/131527)
+Updating files:  13% (17139/131527)
+Updating files:  14% (18414/131527)
+Updating files:  15% (19730/131527)
+Updating files:  15% (20155/131527)
+Updating files:  16% (21045/131527)
+Updating files:  17% (22360/131527)
+Updating files:  17% (22892/131527)
+Updating files:  18% (23675/131527)
+Updating files:  19% (24991/131527)
+Updating files:  19% (25097/131527)
+Updating files:  20% (26306/131527)
+Updating files:  21% (27621/131527)
+Updating files:  21% (27769/131527)
+Updating files:  22% (28936/131527)
+Updating files:  23% (30252/131527)
+Updating files:  23% (30351/131527)
+Updating files:  23% (31346/131527)
+Updating files:  24% (31567/131527)
+Updating files:  25% (32882/131527)
+Updating files:  25% (32965/131527)
+Updating files:  26% (34198/131527)
+Updating files:  26% (34836/131527)
+Updating files:  27% (35513/131527)
+Updating files:  28% (36828/131527)
+Updating files:  28% (37161/131527)
+Updating files:  29% (38143/131527)
+Updating files:  30% (39459/131527)
+Updating files:  30% (39666/131527)
+Updating files:  31% (40774/131527)
+Updating files:  32% (42089/131527)
+Updating files:  32% (42322/131527)
+Updating files:  33% (43404/131527)
+Updating files:  34% (44720/131527)
+Updating files:  34% (45129/131527)
+Updating files:  35% (46035/131527)
+Updating files:  35% (47337/131527)
+Updating files:  36% (47350/131527)
+Updating files:  37% (48665/131527)
+Updating files:  37% (48820/131527)
+Updating files:  38% (49981/131527)
+Updating files:  38% (51232/131527)
+Updating files:  39% (51296/131527)
+Updating files:  40% (52611/131527)
+Updating files:  40% (53597/131527)
+Updating files:  41% (53927/131527)
+Updating files:  41% (55164/131527)
+Updating files:  42% (55242/131527)
+Updating files:  43% (56557/131527)
+Updating files:  43% (56893/131527)
+Updating files:  44% (57872/131527)
+Updating files:  44% (57987/131527)
+Updating files:  45% (59188/131527)
+Updating files:  45% (59495/131527)
+Updating files:  46% (60503/131527)
+Updating files:  46% (60834/131527)
+Updating files:  47% (61818/131527)
+Updating files:  47% (62150/131527)
+Updating files:  48% (63133/131527)
+Updating files:  48% (63776/131527)
+Updating files:  49% (64449/131527)
+Updating files:  49% (64949/131527)
+Updating files:  50% (65764/131527)
+Updating files:  50% (65959/131527)
+Updating files:  50% (66518/131527)
+Updating files:  51% (67079/131527)
+Updating files:  51% (67607/131527)
+Updating files:  52% (68395/131527)
+Updating files:  52% (68698/131527)
+Updating files:  53% (69710/131527)
+Updating files:  53% (69857/131527)
+Updating files:  53% (70793/131527)
+Updating files:  54% (71025/131527)
+Updating files:  54% (72033/131527)
+Updating files:  55% (72340/131527)
+Updating files:  56% (73656/131527)
+Updating files:  56% (74369/131527)
+Updating files:  57% (74971/131527)
+Updating files:  57% (75453/131527)
+Updating files:  58% (76286/131527)
+Updating files:  58% (76631/131527)
+Updating files:  59% (77601/131527)
+Updating files:  59% (77789/131527)
+Updating files:  60% (78917/131527)
+Updating files:  60% (79995/131527)
+Updating files:  61% (80232/131527)
+Updating files:  62% (81547/131527)
+Updating files:  62% (82116/131527)
+Updating files:  63% (82863/131527)
+Updating files:  63% (84122/131527)
+Updating files:  64% (84178/131527)
+Updating files:  65% (85493/131527)
+Updating files:  65% (86161/131527)
+Updating files:  66% (86808/131527)
+Updating files:  66% (87406/131527)
+Updating files:  67% (88124/131527)
+Updating files:  68% (89439/131527)
+Updating files:  68% (89737/131527)
+Updating files:  69% (90754/131527)
+Updating files:  69% (91598/131527)
+Updating files:  70% (92069/131527)
+Updating files:  70% (93297/131527)
+Updating files:  71% (93385/131527)
+Updating files:  71% (94084/131527)
+Updating files:  72% (94700/131527)
+Updating files:  72% (95168/131527)
+Updating files:  73% (96015/131527)
+Updating files:  73% (96355/131527)
+Updating files:  74% (97330/131527)
+Updating files:  74% (98152/131527)
+Updating files:  75% (98646/131527)
+Updating files:  75% (99826/131527)
+Updating files:  76% (99961/131527)
+Updating files:  77% (101276/131527)
+Updating files:  77% (101362/131527)
+Updating files:  78% (102592/131527)
+Updating files:  78% (103733/131527)
+Updating files:  79% (103907/131527)
+Updating files:  80% (105222/131527)
+Updating files:  80% (106130/131527)
+Updating files:  81% (106537/131527)
+Updating files:  82% (107853/131527)
+Updating files:  82% (107944/131527)
+Updating files:  83% (109168/131527)
+Updating files:  83% (109881/131527)
+Updating files:  84% (110483/131527)
+Updating files:  84% (111537/131527)
+Updating files:  85% (111798/131527)
+Updating files:  86% (113114/131527)
+Updating files:  86% (113609/131527)
+Updating files:  87% (114429/131527)
+Updating files:  87% (115725/131527)
+Updating files:  88% (115744/131527)
+Updating files:  89% (117060/131527)
+Updating files:  89% (117529/131527)
+Updating files:  90% (118375/131527)
+Updating files:  90% (119435/131527)
+Updating files:  91% (119690/131527)
+Updating files:  92% (121005/131527)
+Updating files:  92% (121054/131527)
+Updating files:  93% (122321/131527)
+Updating files:  93% (122916/131527)
+Updating files:  94% (123636/131527)
+Updating files:  94% (124539/131527)
+Updating files:  95% (124951/131527)
+Updating files:  96% (126266/131527)
+Updating files:  96% (126423/131527)
+Updating files:  97% (127582/131527)
+Updating files:  97% (128303/131527)
+Updating files:  98% (128897/131527)
+Updating files:  99% (130212/131527)
+Updating files:  99% (130556/131527)
+Updating files: 100% (131527/131527)
+Updating files: 100% (131527/131527), done.
++ pushd /Users/komoritakeshi/me/takeshi-1000/swift-project/swift
++ popd
+Running ``update_single_repository`` with up to 8 processes.
+[swift]                                 Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift'
+[llbuild]                               Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/llbuild'
+[swift-atomics]                         Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-atomics'
+[swift-crypto]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-crypto'
+[swift-asn1]                            Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-asn1'
+[swift-numerics]                        Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-numerics'
+[swiftpm]                               Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swiftpm'
+[swift-atomics]                         + git checkout 1.0.2
+[swift-atomics]                         HEAD is now at 919eb1d Merge pull request #48 from lorentey/fix-UnsafeAtomic-Sendable
+[swift-numerics]                        + git checkout 1.0.1
+[swift-numerics]                        HEAD is now at 0a23770 Merge pull request #198 from stephentyrone/clarify-stability-differentiable
+[swift-asn1]                            + git checkout 0.7.0
+[swift-asn1]                            HEAD is now at 805deae Merge pull request #19 from Lukasa/cb-asn1-raw-bytes-serializer
+[llbuild]                               + git checkout main
+[llbuild]                               Already on 'main'
+[llbuild]                               Your branch is up to date with 'origin/main'.
+[swift-system]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-system'
+[swift-system]                          + git checkout 1.1.1
+[swift-system]                          HEAD is now at 836[swift-crypto]                          + git checkout 2.5.0
+[swift-crypto]                          HEAD is now at 33a20e6 Set CRYPTO_IN_SWIFTPM (#177)
+bc45 Merge pull request #74 from compnerd/leaky-cauldron
+[swiftpm]                               + git checkout main
+[swiftpm]                               Already on 'main'
+[swiftpm]                               Your branch is up to date with 'origin/main'.
+[swift-atomics]                         + git fetch --recurse-submodules=yes --tags
+[swift-atomics]                         Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-numerics]                        + git fetch --recurse-submodules=yes --tags
+[swift-numerics]                        Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-asn1]                            + git fetch --recurse-submodules=yes --tags
+[swift-asn1]                            Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-system]                          + git fetch --recurse-submodules=yes --tags
+[swift-crypto]                          + git fetch --recurse-submodules=yes --tags
+[swift-system]                          Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-crypto]                          Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-atomics]                         + git submodule update --recursive
+[swift-collections]                     Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-collections'
+[swift-numerics]                        + git submodule update --recursive
+[swift-tools-support-core]              Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-tools-support-core'
+[swift-asn1]                            + git submodule update --recursive
+[swift-driver]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-driver'
+[swift-tools-support-core]              + git checkout main
+[swift-tools-support-core]              Already on 'main'
+[swift-tools-support-core]              Your branch is up to date with 'origin/main'.
+[swift-collections]                     + git checkout 1.0.1
+[swift-collections]                     HEAD is now at 2d33a0e Merge pull request #111 from neonichu/fix-aarch64
+[swift-driver]                          + git checkout main
+[swift-driver]                          Already on 'main'
+[swift-driver]                          Your branch is up to date with 'origin/main'.
+[swift-system]                          + git submodule update --recursive
+[swift-stress-tester]                   Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-stress-tester'
+[swift-crypto]                          + git submodule update --recursive
+[swift-certificates]                    Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-certificates'
+[swift-stress-tester]                   + git checkout main
+[swift-stress-tester]                   Already on 'main'
+[swift-stress-tester]                   Your branch is up to date with 'origin/main'.
+[swift-certificates]                    + git checkout 0.4.1
+[swift-certificates]                    HEAD is now at 35a7df2 X509: make the code more portable (#72)
+[swift-collections]                     + git fetch --recurse-submodules=yes --tags
+[swift]                                 + git checkout main
+[swift]                                 Already on 'main'
+[swift]                                 Your branch is up to date with 'origin/main'.
+[swift-collections]                     Detached HEAD; probably checked out a tag. No need to rebase.
+[llbuild]                               + git fetch --recurse-submodules=yes --tags
+[llbuild]                               + git rebase FETCH_HEAD
+[llbuild]                               Current branch main is up to date.
+[swift-certificates]                    + git fetch --recurse-submodules=yes --tags
+[swift-certificates]                    Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-tools-support-core]              + git fetch --recurse-submodules=yes --tags
+[swift-collections]                     + git submodule update --recursive
+[swift-driver]                          + git fetch --recurse-submodules=yes --tags
+[swift-corelibs-xctest]                 Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-corelibs-xctest'
+[llbuild]                               + git submodule update --recursive
+[swift-argument-parser]                 Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-argument-parser'
+[swift-certificates]                    + git submodule update --recursive
+[swift-stress-tester]                   + git fetch --recurse-submodules=yes --tags
+[swift-corelibs-libdispatch]            Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-corelibs-libdispatch'
+[swift-tools-support-core]              + git rebase FETCH_HEAD
+[swift-tools-support-core]              Current branch main is up to date.
+[swift-driver]                          + git rebase FETCH_HEAD
+[swift-driver]                          Current branch main is up to date.
+[swift-stress-tester]                   + git rebase FETCH_HEAD
+[swift-corelibs-xctest]                 + git checkout main
+[swift-corelibs-xctest]                 Already on 'main'
+[swift-corelibs-xctest]                 Your branch is up to date with 'origin/main'.
+[swift-stress-tester]                   Current branch main is up to date.
+[swiftpm]                               + git fetch --recurse-submodules=yes --tags
+[swift-driver]                          + git submodule update --recursive
+[swift-tools-support-core]              + git submodule update --recursive
+[swift-xcode-playground-support]        Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-xcode-playground-support'
+[yams]                                  Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/yams'
+[swift-argument-parser]                 + git checkout 1.2.2
+[swift-argument-parser]                 HEAD is now at fee6933 Update changelog for 1.2.2 release (#549)
+[swiftpm]                               + git rebase FETCH_HEAD
+[swiftpm]                               Current branch main is up to date.
+[swift-xcode-playground-support]        + git checkout main
+[swift-xcode-playground-support]        Already on 'main'
+[swift-xcode-playground-support]        Your branch is up to date with 'origin/main'.
+[yams]                                  + git checkout 5.0.1
+[yams]                                  HEAD is now at 01835dc Release 5.0.1
+[swift-corelibs-libdispatch]            + git checkout main
+[swift-corelibs-libdispatch]            Already on 'main'
+[swift-corelibs-libdispatch]            Your branch is up to date with 'origin/main'.
+[swift-stress-tester]                   + git submodule update --recursive
+[indexstore-db]                         Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/indexstore-db'
+[swiftpm]                               + git submodule update --recursive
+[swift-syntax]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-syntax'
+[indexstore-db]                         + git checkout main
+[indexstore-db]                         Already on 'main'
+[indexstore-db]                         Your branch is up to date with 'origin/main'.
+[swift-syntax]                          + git checkout main
+[swift-syntax]                          Already on 'main'
+[swift-syntax]                          Your branch is up to date with 'origin/main'.
+[swift-argument-parser]                 + git fetch --recurse-submodules=yes --tags
+[yams]                                  + git fetch --recurse-submodules=yes --tags
+[swift-argument-parser]                 Detached HEAD; probably checked out a tag. No need to rebase.
+[yams]                                  Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-argument-parser]                 + git submodule update --recursive
+[sourcekit-lsp]                         Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/sourcekit-lsp'
+[yams]                                  + git submodule update --recursive
+[swift-installer-scripts]               Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-installer-scripts'
+[indexstore-db]                         + git fetch --recurse-submodules=yes --tags
+[indexstore-db]                         + git rebase FETCH_HEAD
+[indexstore-db]                         Current branch main is up to date.
+[swift-installer-scripts]               + git checkout main
+[swift-installer-scripts]               Already on 'main'
+[swift-installer-scripts]               Your branch is up to date with 'origin/main'.
+[swift-xcode-playground-support]        + git fetch --recurse-submodules=yes --tags
+[swift-xcode-playground-support]        + git rebase FETCH_HEAD
+[swift-xcode-playground-support]        Curre[swift-corelibs-xctest]                 + git fetch --recurse-submodules=yes --tags
+[swift-corelibs-libdispatch]            + git fetch --recurse-submodules=yes --tags
+[indexstore-db]                         + git submodule update --recursive
+[sourcekit-lsp]                         + git checkout main
+[sourcekit-lsp]                         Already on 'main'
+[sourcekit-lsp]                         Your branch is up to date with 'origin/main'.
+nt branch main is up to date.
+[swift-lmdb]                            Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-lmdb'
+[swift-corelibs-libdispatch]            + git rebase FETCH_HEAD
+[swift-corelibs-libdispatch]            Current branch main is up to date.
+[swift-corelibs-xctest]                 + git rebase FETCH_HEAD
+[swift-corelibs-xctest]                 Current branch main is up to date.
+[swift-lmdb]                            + git checkout main
+[swift-lmdb]                            Already on 'main'
+[swift-lmdb]                            Your branch is up to date with 'origin/main'.
+[swift-xcode-playground-support]        + git submodule update --recursive
+[ninja]                                 Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/ninja'
+[swift-installer-scripts]               + git fetch --recurse-submodules=yes --tags
+[swift-corelibs-xctest]                 + git submodule update --recursive
+[swift-corelibs-foundation]             Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-corelibs-foundation'
+[swift-installer-scripts]               + git rebase FETCH_HEAD
+[swift-installer-scripts]               Current branch main is up to date.
+[swift-corelibs-libdispatch]            + git submodule update --recursive
+[swift-integration-tests]               Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-integration-tests'
+[ninja]                                 + git checkout release
+[ninja]                                 Already on 'release'
+[ninja]                                 Your branch is up to date with 'origin/release'.
+[swift-corelibs-foundation]             + git checkout main
+[swift-corelibs-foundation]             Already on 'main'
+[swift-corelibs-foundation]             Your branch is up to date with 'origin/main'.
+[swift-integration-tests]               + git checkout main
+[swift-integration-tests]               Already on 'main'
+[swift-integration-tests]               Your branch is up to date with 'origin/main'.
+[swift-installer-scripts]               + git submodule update --recursive
+[swift-docc]                            Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-docc'
+[sourcekit-lsp]                         + git fetch --recurse-submodules=yes --tags
+[sourcekit-lsp]                         + git rebase FETCH_HEAD
+[sourcekit-lsp]                         Current branch main is up to date.
+[swift-docc]                            + git checkout main
+[swift-docc]                            Already on 'main'
+[swift-docc]                            Your branch is up to date with 'origin/main'.
+[swift-lmdb]                            + git fetch --recurse-submodules=yes --tags
+[swift-lmdb]                            + git rebase FETCH_HEAD
+[swift-lmdb]                            Current branch main is up to date.
+[ninja]                                 + git fetch --recurse-submodules=yes --tags
+[ninja]                                 + git rebase FETCH_HEAD
+[ninja]                                 Current branch release is up to date.
+[swift-syntax]                          + git fetch --recurse-submodules=yes --tags
+[swift-syntax]                          From https://github.com/apple/swift-syntax
+[swift-syntax]                             0711d213..66450960  main       -> origin/main
+[sourcekit-lsp]                         + git submodule update --recursive
+[swift-format]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-format'
+[swift-syntax]                          + git rebase FETCH_HEAD
+[swift-lmdb]                            + git submodule update --recursive
+[ninja]                                 + git submodule update --recursive
+[swift-syntax]                          
+[swift-syntax]                          Successfully rebased and updated refs/heads/main.
+[swift-docc-render-artifact]            Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-docc-render-artifact'
+[swift-docc-symbolkit]                  Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-docc-symbolkit'
+[swift-format]                          + git checkout main
+[swift-format]                          Already on 'main'
+[swift-format]                          Your branch is up to date with 'origin/main'.
+[swift-docc-symbolkit]                  + git checkout main
+[swift-docc-symbolkit]                  Already on 'main'
+[swift-docc-symbolkit]                  Your branch is up to date with 'origin/main'.
+[swift-integration-tests]               + git fetch --recurse-submodules=yes --tags
+[swift-integration-tests]               + git rebase FETCH_HEAD
+[swift-integration-tests]               Current branch main is up to date.
+[swift-docc]                            + git fetch --recurse-submodules=yes --tags
+[swift-docc-render-artifact]            + git checkout main
+[swift-docc-render-artifact]            Already on 'main'
+[swift-docc-render-artifact]            Your branch is up to date with 'origin/main'.
+[swift-docc]                            + git rebase FETCH_HEAD
+[swift-docc]                            Current branch main is up to date.
+[swift-syntax]                          + git submodule update --recursive
+[swift-nio]                             Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-nio'
+[swift-integration-tests]               + git submodule update --recursive
+[swift-experimental-string-processing]  Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-experimental-string-processing'
+[swift-docc]                            + git submodule update --recursive
+[llvm-project]                          Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/llvm-project'
+[swift-corelibs-foundation]             + git fetch --recurse-submodules=yes --tags
+[swift-corelibs-foundation]             + git rebase FETCH_HEAD
+[swift-corelibs-foundation]             Current branch main is up to date.
+[swift-format]                          + git fetch --recurse-submodules=yes --tags
+[swift-format]                          + git rebase FETCH_HEAD
+[swift-format]                          Current branch main is up to date.
+[swift-docc-symbolkit]                  + git fetch --recurse-submodules=yes --tags
+[swift-docc-render-artifact]            + git fetch --recurse-submodules=yes --tags
+[swift-docc-symbolkit]                  + git rebase FETCH_HEAD
+[swift-docc-symbolkit]                  Current branch main is up to date.
+[swift-corelibs-foundation]             + git submodule update --recursive
+[swift-docc-render-artifact]            + git rebase FETCH_HEAD
+[swift-docc-render-artifact]            Current branch main is up to date.
+[swift-format]                          + git submodule update --recursive
+[swift-nio]                             + git checkout 2.31.2
+[swift-nio]                             HEAD is now at 1d425b08 Work around Xcode 13 GM SDK issues. (#1956) (#1968)
+[swift-experimental-string-processing]  + git checkout swift/main
+[swift-experimental-string-processing]  Already on 'swift/main'
+[swift-experimental-string-processing]  Your branch is up to date with 'origin/swift/main'.
+[swift-docc-symbolkit]                  + git submodule update --recursive
+[swift-markdown]                        Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-markdown'
+[swift-markdown]                        + git checkout main
+[swift-markdown]                        Already on 'main'
+[swift-markdown]                        Your branch is up to date with 'origin/main'.
+[swift-docc-render-artifact]            + git submodule update --recursive
+[swift-nio]                             + git fetch --recurse-submodules=yes --tags
+[swift-nio]                             Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-markdown]                        + git fetch --recurse-submodules=yes --tags
+[swift-experimental-string-processing]  + git fetch --recurse-submodules=yes --tags
+[swift-experimental-string-processing]  + git rebase FETCH_HEAD
+[swift-experimental-string-processing]  Current branch swift/main is up to date.
+[swift-markdown]                        + git rebase FETCH_HEAD
+[swift-markdown]                        Current branch main is up to date.
+[swift-nio]                             + git submodule update --recursive
+[swift-nio-ssl]                         Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-nio-ssl'
+[swift-experimental-string-processing]  + git submodule update --recursive
+[swift-llvm-bindings]                   Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/swift-llvm-bindings'
+[swift-markdown]                        + git submodule update --recursive
+[swift-llvm-bindings]                   + git checkout stable/20221013
+[swift-llvm-bindings]                   Already on 'stable/20221013'
+[swift-llvm-bindings]                   Your branch is up to date with 'origin/stable/20221013'.
+[swift-nio-ssl]                         + git checkout 2.15.0
+[swift-nio-ssl]                         HEAD is now at 2e74773 issue-231: Adding CA Names to the TLS handshake. (#307)
+[swift-llvm-bindings]                   + git fetch --recurse-submodules=yes --tags
+[swift-nio-ssl]                         + git fetch --recurse-submodules=yes --tags
+[swift-llvm-bindings]                   + git rebase FETCH_HEAD
+[swift-llvm-bindings]                   Current branch stable/20221013 is up to date.
+[swift-nio-ssl]                         Detached HEAD; probably checked out a tag. No need to rebase.
+[swift-nio-ssl]                         + git submodule update --recursive
+[swift-llvm-bindings]                   + git submodule update --recursive
+[swift]                                 + git fetch --recurse-submodules=yes --tags
+[swift]                                 From https://github.com/apple/swift
+[swift]                                    181161cccc8..d1dd4c164e1  main                -> origin/main
+[swift]                                  * [new branch]              pick-rdar-109207043 -> origin/pick-rdar-109207043
+[llvm-project]                          + git checkout stable/20221013
+[llvm-project]                          Already on 'stable/20221013'
+[llvm-project]                          Your branch is up to date with 'origin/stable/20221013'.
+[swift]                                 + git rebase FETCH_HEAD
+[swift]                                 
+[swift]                                 Successfully rebased and updated refs/heads/main.
+[swift]                                 + git submodule update --recursive
+[cmark]                                 Updating '/Users/komoritakeshi/me/takeshi-1000/swift-project/cmark'
+[cmark]                                 + git checkout gfm
+[cmark]                                 Already on 'gfm'
+[cmark]                                 Your branch is up to date with 'origin/gfm'.
+[cmark]                                 + git fetch --recurse-submodules=yes --tags
+[cmark]                                 + git rebase FETCH_HEAD
+[cmark]                                 Current branch gfm is up to date.
+[cmark]                                 + git submodule update --recursive
+[llvm-project]                          + git fetch --recurse-submodules=yes --tags
+[llvm-project]                          From https://github.com/apple/llvm-project
+[llvm-project]                             a673113cdfb8..4fad280d839d  cached/next   -> origin/cached/next
+[llvm-project]                             6f0344f76a8e..1fef1f97dbf2  llvm.org/main -> origin/llvm.org/main
+[llvm-project]                             55a799e7260c..4fad280d839d  next          -> origin/next
+[llvm-project]                          + git rebase FETCH_HEAD
+[llvm-project]                          Current branch stable/20221013 is up to date.
+[llvm-project]                          + git submodule update --recursive
+update-checkout succeeded
+cmake                              : skip                               
+cmark                              : 6c7037758492a28593264aaa22ef659afa94e5bf
+icu                                : skip                               
+indexstore-db                      : 89ec16c2ac1bb271614e734a2ee792224809eb20
+llbuild                            : af5683429477cd71fefc4f8942b59207ef08b311
+llvm-project                       : d038f7b5a67578670414727fbe69c97cc082836a
+ninja                              : 448ae1ccacd17025457ace965d78a45a113c70c6
+sourcekit-lsp                      : 7dafe17adf4818e302e39ed33aa243dc849e9111
+swift                              : d1dd4c164e11569f891dd31f43ae5fd7690a29a0
+swift-argument-parser              : fee6933f37fde9a5e12a1e4aeaa93fe60116ff2a
+swift-asn1                         : 805deae27a7506dcad043604c00a9dc52d465dcb
+swift-atomics                      : 919eb1d83e02121cdb434c7bfc1f0c66ef17febe
+swift-certificates                 : 35a7df2d9d71c401a47de9be2e3de629a01370c2
+swift-cmark-gfm                    : skip                               
+swift-collections                  : 2d33a0ea89c961dcb2b3da2157963d9c0370347e
+swift-corelibs-foundation          : 818de4858f3c3f72f75d25fbe94d2388ca653f18
+swift-corelibs-libdispatch         : 7fb9d5ceea562d60fe34ec55b6b165ae5aca38eb
+swift-corelibs-xctest              : 1a6726ede9a5818f6e7d8556d820a00d3336abe4
+swift-crypto                       : 33a20e650c33f6d72d822d558333f2085effa3dc
+swift-docc                         : d9ec4aeec09bdb7e27812ab423cdd64174ad33c2
+swift-docc-render-artifact         : 4d728e9c42913eaee6ce6c6936042022f670d131
+swift-docc-symbolkit               : 1d5aba8186fc648e17b30631b34043110ca8dd19
+swift-driver                       : 3794e757aa48596af4325609861f97514dd81c20
+swift-experimental-string-processing: 836f3270f55fc7f8af35fdfe67edaea7ae47dd8d
+swift-format                       : 5bcfbff16e42ea22a697504db6f3b88e058535e6
+swift-installer-scripts            : 9e565c2fed43770931f536df18341f5e0911b19b
+swift-integration-tests            : 18ffb553ce824a7f4dede83f232d2fc485ada489
+swift-llvm-bindings                : 46c67a9c1018980b92a869ad58a5ac290e64b9e0
+swift-lmdb                         : 584941b1236b15bad74d8163785d389c028b1ad8
+swift-markdown                     : 40f7f858e01a6ca512d96088087ffa861861eee5
+swift-nio                          : 1d425b0851ffa2695d488cce1d68df2539f42500
+swift-nio-ssl                      : 2e74773972bd6254c41ceeda827f229bccbf1c0f
+swift-numerics                     : 0a23770641f65a4de61daf5425a37ae32a3fd00d
+swift-stress-tester                : 6e7a1e61dffbdf71fb902653ea8d02036c09b7d1
+swift-syntax                       : 66450960b1ed88b842d63f7a38254aaba08bbd4d
+swift-system                       : 836bc4557b74fe6d2660218d56e3ce96aff76574
+swift-tools-support-core           : b3d8257d8b59da6d5dfc2d65e9587daecf47130a
+swift-xcode-playground-support     : bbba1ba704c37d1d0131bb7d6986a80ad8cb6d6c
+swiftpm                            : c0f529e26a4a88d876efa2a498bdd8c01cf6b87f
+yams                               : 01835dc202670b5bb90d07f3eae41867e9ed29f6
