@@ -18,3 +18,10 @@ wwdc 個人的な反省と得た知見
 - swiftui scrollview が新しくなった?
 - SwiftData型
 - Swiftgen的なものがあるっぽい?
+
+swift api generator
+
+- new swift package plugin
+  - https://developer.apple.com/videos/play/wwdc2022/110359/ これ見た方が良さそう
+  - https://github.com/apple/swift-openapi-generator/blob/main/Plugins/OpenAPIGenerator/plugin.swift ここでプラグインの実装はありそう
+  - R.swift にもpluginありそう
