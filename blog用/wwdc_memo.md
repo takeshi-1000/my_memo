@@ -15,3 +15,4 @@ wwdc 個人的な反省と得た知見
 - Swift observation。リアクティブな実装方法他にもあるのか?
 - swiftui scrollview が新しくなった?
 - SwiftData型
+- Swiftgen的なものがあるっぽい?
