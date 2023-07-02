@@ -4,7 +4,7 @@ $ brew install qemu
 // install後、使っているshellのプロファイルに、下記記載（versionは適宜変更）
 $ export PATH="/usr/local/Cellar/qemu/8.0.2/bin:$PATH"
 
-`` `
+```
 
 ```
 $ ls /usr/local/Cellar/qemu/8.0.2/bin/
@@ -29,4 +29,5 @@ $ qemu-system-riscv64 --version
 QEMU emulator version 8.0.2
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
+
 参考: https://qemu.hateblo.jp/entry/2020/12/30/101221
